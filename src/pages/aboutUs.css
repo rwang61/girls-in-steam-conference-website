@@ -1,0 +1,23 @@
+.container {
+  background-color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.team-photo {
+  width: 300px;
+  height: 200px;
+  /* left: 874.77px;
+  top: 813.84px; */
+  padding-left: 100px;
+    padding-right: 100px;
+  /* transform: rotate(4.67deg); */
+}
+
+.gis-font {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 134.5%;    
+}
