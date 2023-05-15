@@ -51,13 +51,13 @@
   .CommImg { 
       max-width: 100%;
       height: auto; 
- }
- .EdImg {
+  }
+  .EdImg {
   width: 100%;
   height: auto;
-}
-.AccImg {
+  }
+  .AccImg {
   width: 100%;
   height: auto;
-}
+  }
 }
