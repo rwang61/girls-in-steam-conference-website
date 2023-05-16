@@ -7,6 +7,9 @@ import edimg from './assets/EducationImage.png';
 import accimg from './assets/AccessImage.png';
 import "./fonts/JosefinSans-VariableFont_wght.ttf"
 import './App.css';
+import OurValues from './OurValues.js';
+import './OurValues.css';
+
 
 function Home() {
   return (
@@ -22,11 +25,7 @@ function Home() {
         >
           Learn React
         </a>
-        <div className='Our-values'>
-          <p>OUR VALUES</p>
-          <img className='CommImg' src={commimg} alt='Community' />
-          <img className='AccImg' src={accimg} alt='Access' />
-        </div>
+        <OurValues />
       </header>
       <Footer />
     </div>

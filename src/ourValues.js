@@ -1,4 +1,4 @@
-import './ourValues.css';
+import './OurValues.css';
 import commimg from './assets/CommunityImage.png';
 import edimg from './assets/EducationImage.png';
 import accimg from './assets/AccessImage.png';
