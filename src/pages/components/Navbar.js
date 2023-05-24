@@ -6,12 +6,18 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import logo from '../images/gis-logo.png';
 
 export default function ButtonAppBar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
+                    <img src={logo} aria-label="logo" height="50px" />
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        News
+                    </Typography>
+                    <Button color="inherit">Login</Button>
                     <IconButton
                         size="large"
                         edge="start"
@@ -21,10 +27,6 @@ export default function ButtonAppBar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        News
-                    </Typography>
-                    <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
         </Box>
