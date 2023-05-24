@@ -1,5 +1,7 @@
 .App-footer {
     background-color: #575696;
+}
 
-    color: white;
+.font {
+    font-family: "Josefin Sans";
 }
