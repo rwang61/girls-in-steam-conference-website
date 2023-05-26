@@ -1,6 +1,7 @@
 import { Grid, Typography, Card, CardContent } from "@mui/material";
 import map from "./images/map.png";
 import "./aboutUs.css";
+import "../fonts/JosefinSans-VariableFont_wght.ttf"
 
 export default function AboutUs() {
   return (
@@ -19,8 +20,9 @@ export default function AboutUs() {
             sx={{
               textAlign: "left",
               color: "#6363AB",
+              fontFamily: "Josefin Sans",
             }}
-            className="gis-font"
+            
           >
             ABOUT US
           </Typography>
@@ -30,8 +32,8 @@ export default function AboutUs() {
             sx={{
               textAlign: "left",
               color: "#6363AB",
-            }}
-            className="gis-font"
+              fontFamily: "Josefin Sans",
+            }} 
           >
             Girls in STEAM is a Canadian non-profit organization that supports
             access to STEAM (Science, Technology, Engineering, Art & Design,
@@ -43,8 +45,9 @@ export default function AboutUs() {
             sx={{
               textAlign: "left",
               color: "#5A4067",
+              fontFamily: "Josefin Sans",
             }}
-            className="gis-font"
+             
           >
             We aim to help balance the gender disparity in the tech industry
             through creating community, educational programming, and an
@@ -70,6 +73,7 @@ export default function AboutUs() {
           sx={{
             textAlign: "center",
             color: "#5A4067",
+            fontFamily: "Josefin Sans",
           }}
         >
           The Girls in STEAM team is based all across the world!
