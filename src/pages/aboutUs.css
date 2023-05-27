@@ -4,18 +4,35 @@
   padding-right: 100px;
 }
 
-.team-photo {
-  width: 300px;
-  height: 200px;
-  /* left: 874.77px;
-  top: 813.84px; */
-  padding-left: 100px;
-    padding-right: 100px;
-  /* transform: rotate(4.67deg); */
-}
-
 @font-face {
-  font-family: "Medium 500";
+  font-family: "JosefinSans";
   src: local('JosefinSans'),
   url("../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
+
+@font-face {
+  font-family: "Rastano";
+  src: url("../fonts/Rastano.ttf") format('truetype');
+}
+
+.shadow-rectangle {
+  width: 460px;
+  height: 344px;
+  transform: rotate(4.67deg);
+  border: 8px solid transparent;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  border-radius: 8px;
+
+}
+
+.photo {
+  position: relative;
+  top: 10px;
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+ 
