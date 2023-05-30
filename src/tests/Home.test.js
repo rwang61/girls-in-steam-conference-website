@@ -6,3 +6,11 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders toolbar logo', () => {
+  render(<Home />);
+  const logo = screen.getByTestId('App-logo');
+  expect(logo).toHaveAttribute('src', 'gis-logo.png');
+  expect(logo).toHaveAttribute('aria-label', 'logo');
+});
+
