@@ -1,4 +1,4 @@
-import { Grid, Typography, Card, CardContent } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import map1 from "./images/map1.png";
 import steambbt from "./images/steambbt.png";
 import "./aboutUs.css";
@@ -8,13 +8,7 @@ import "../fonts/Rastano.ttf";
 export default function AboutUs() {
   return (
     <Grid container spacing={2} className="container">
-      <Grid
-        item
-        xs={6}
-        sx={{
-          paddingRight: "100px",
-        }}
-      >
+      <Grid item xs={12} sm={6}>
         <div sx={{ maxWidth: 400 }}>
           <Typography
             variant="h4"
@@ -50,7 +44,7 @@ export default function AboutUs() {
               color: "#5A4067",
               fontFamily: "Josefin Sans",
               fontWeight: "medium",
-              marginBottom: "70px"
+              marginBottom: "70px",
             }}
           >
             We aim to help balance the gender disparity in the tech industry
@@ -60,7 +54,7 @@ export default function AboutUs() {
           </Typography>
         </div>
       </Grid>
-      <Grid item xs={5}>
+      <Grid item xs={12} sm={6}>
         <div className="shadow-rectangle">
           <div className="photo-wrapper">
             <img src={steambbt} alt="Team Photo" className="photo" />
@@ -86,6 +80,7 @@ export default function AboutUs() {
             color: "#5A4067",
             fontFamily: "Josefin Sans",
             fontWeight: "medium",
+            marginTop: "70px",
           }}
         >
           The Girls in STEAM team is based all across the world!
