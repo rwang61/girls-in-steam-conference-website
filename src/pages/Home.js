@@ -1,9 +1,11 @@
 import logo from './images/logo.svg';
 import './styles/Home.css';
+import Navbar from '../pages/components/Navbar.js'
 
 function Home() {
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
