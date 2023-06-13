@@ -1,7 +1,6 @@
-import logo from './images/logo.svg';
 import './styles/Home.css';
-import Navbar from '../pages/components/Navbar.js'
-import AboutUs from "./AboutUs";
+import Navbar from './components/Navbar.js'
+import AboutUs from "./components/AboutUs";
 
 function Home() {
   return (

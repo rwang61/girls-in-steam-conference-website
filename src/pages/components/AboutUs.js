@@ -1,9 +1,9 @@
 import { Grid, Typography } from "@mui/material";
-import map1 from "./images/map1.png";
-import steambbt from "./images/steambbt.png";
-import "./aboutUs.css";
-import "../fonts/JosefinSans-VariableFont_wght.ttf";
-import "../fonts/Rastano.ttf";
+import map1 from "./../images/map1.png";
+import steambbt from "./../images/steambbt.png";
+import "./../styles/AboutUs.css";
+import "./../../fonts/JosefinSans-VariableFont_wght.ttf";
+import "./../../fonts/Rastano.ttf";
 
 export default function AboutUs() {
   return (
@@ -57,7 +57,7 @@ export default function AboutUs() {
       <Grid item xs={12} sm={6}>
         <div className="shadow-rectangle">
           <div className="photo-wrapper">
-            <img src={steambbt} alt="Team Photo" className="photo" />
+            <img src={steambbt} alt="Girls in STEAM Exec team" className="photo" />
             <Typography
               variant="h4"
               sx={{
