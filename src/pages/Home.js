@@ -2,18 +2,12 @@ import './styles/Home.css';
 import AboutUs from "./components/AboutUs";
 import Footer from './components/Footer.js'
 import Navbar from '../pages/components/Navbar.js'
-import commimg from './assets/CommunityImage.png';
-import edimg from './assets/EducationImage.png';
-import accimg from './assets/AccessImage.png';
-import "./fonts/JosefinSans-VariableFont_wght.ttf"
-import './App.css';
-import OurValues from './OurValues.js';
-import './OurValues.css';
-import TheTeam from './TheTeam.js';
-import './TheTeam.css';
+import "./../fonts/JosefinSans-VariableFont_wght.ttf"
+import OurValues from './components/OurValues.js';
+import TheTeam from './components/TheTeam.js';
 
 
-function Home() {
+export default function Home() {
   return (
     <div className="App">
       <Navbar />
