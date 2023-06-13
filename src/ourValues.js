@@ -5,7 +5,7 @@ import accimg from './assets/AccessImage.png';
 
 export default function OurValues() {
     return (
-        <div className='Our-values'>
+        <div className='Our-Values'>
           <p>OUR VALUES</p>
           <div className='flexbox-container'>
             <img className='CommImg' src={commimg} alt='Community'/>

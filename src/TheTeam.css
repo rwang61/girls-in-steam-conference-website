@@ -1,0 +1,84 @@
+.The-Team {
+    background-color: #ffffff; 
+}
+
+.slider {
+    width: 100%;
+    background-color: #A6A8CE;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.slide-track {
+    display: flex;
+    width: calc(200px * 20);
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 20));
+    }
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    perspective: 100px;
+}
+
+img {
+    width: 100%;
+    transition: transform 0.5s;
+    /* border-radius: 30px; */
+}
+
+img:hover {
+    transform: translateZ(20px);
+}
+
+/* .container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    white-space: nowrap;
+    box-sizing: border-box; 
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: #6363AB;
+    display: inline-block;
+    perspective: 100px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {transform: translateX(-100%);}
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+    border-radius: 20px;
+    animation: 5s slide infinite linear;
+    transition: transform
+}
+
+.box img:hover {
+    transform: translateZ(20px);
+} */

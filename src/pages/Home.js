@@ -9,6 +9,8 @@ import "./fonts/JosefinSans-VariableFont_wght.ttf"
 import './App.css';
 import OurValues from './OurValues.js';
 import './OurValues.css';
+import TheTeam from './TheTeam.js';
+import './TheTeam.css';
 
 
 function Home() {
@@ -26,6 +28,7 @@ function Home() {
           Learn React
         </a>
         <OurValues />
+        <TheTeam />
       </header>
       <Footer />
     </div>
