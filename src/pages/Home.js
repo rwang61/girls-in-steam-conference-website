@@ -1,24 +1,13 @@
-import logo from './images/logo.svg';
 import './styles/Home.css';
-import Navbar from '../pages/components/Navbar.js'
+import Navbar from './components/Navbar.js'
+import AboutUs from "./components/AboutUs";
 
 function Home() {
   return (
     <div className="App">
       <Navbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/Home.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <AboutUs />
       </header>
     </div>
   );
