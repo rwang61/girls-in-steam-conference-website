@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
-import "./styles/Footer.css";
+import "./../styles/Footer.css";
 
 export default function Footer() {
 

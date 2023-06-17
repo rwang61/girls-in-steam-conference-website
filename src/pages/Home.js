@@ -1,7 +1,7 @@
 import './styles/Home.css';
 import Navbar from './components/Navbar.js'
 import AboutUs from "./components/AboutUs";
-import Footer from './Footer.js'
+import Footer from './components/Footer.js'
 
 function Home() {
   return (
