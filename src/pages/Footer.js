@@ -14,7 +14,7 @@ export default function Footer() {
                     <header>girls in STEAM</header>
                     <Typography
                         sx={{
-                            color: "#FFFFF",
+                            color: "#FFFFFF",
                         }}
                         className="font"
                     >
@@ -24,7 +24,7 @@ export default function Footer() {
                 <div className="Quick-links">
                     <Typography
                         sx={{
-                            color: "#FFFFF",
+                            color: "#FFFFFF",
                         }}
                         className="font"
                     >
@@ -40,7 +40,7 @@ export default function Footer() {
                 <div className="Support">
                     <Typography
                         sx={{
-                            color: "#FFFFF",
+                            color: "#FFFFFF",
                         }}
                         className="font"
                     >
