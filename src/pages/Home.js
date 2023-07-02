@@ -1,6 +1,7 @@
 import './styles/Home.css';
 import Navbar from './components/Navbar.js'
 import AboutUs from "./components/AboutUs";
+import Footer from './components/Footer.js'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <header className="App-header">
         <AboutUs />
       </header>
+      <Footer />
     </div>
   );
 }
