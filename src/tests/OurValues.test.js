@@ -5,7 +5,7 @@ import OurValues from '../pages/components/OurValues';
 test('renders Our Values section', () => {
     render(<OurValues />);
 
-    const ourValuesHeading = screen.getByTestId('OUR VALUES');
+    const ourValuesHeading = screen.getByText('OUR VALUES');
     expect(ourValuesHeading).toBeInTheDocument();
 
     const communityImage = screen.getByAltText('Community');

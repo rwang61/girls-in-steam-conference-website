@@ -19,10 +19,10 @@ import rachel from './../images/rachel.png';
 
 export default function Slider() {
     return (
-        <div className="the-team"> 
-        <p>THE TEAM BEHIND GIS</p>
+        <div className="the-team">
+            <p>THE TEAM BEHIND GIS</p>
             <div className="slider">
-                <div class="imgs-slide">
+                <div className="imgs-slide">
                     <img src={allison} alt="Allison" />
                     <img src={ariel} alt="Ariel" />
                     <img src={britney} alt="Britney" />
@@ -41,8 +41,8 @@ export default function Slider() {
                     <img src={nika} alt="Nika" />
                     <img src={rachel} alt="Rachel" />
                 </div>
-                <div class="imgs-slide">
-                <img src={allison} alt="Allison" />
+                <div className="imgs-slide">
+                    <img src={allison} alt="Allison" />
                     <img src={ariel} alt="Ariel" />
                     <img src={britney} alt="Britney" />
                     <img src={claire} alt="Claire" />
