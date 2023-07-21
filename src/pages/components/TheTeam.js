@@ -23,42 +23,42 @@ export default function Slider() {
         <p>THE TEAM BEHIND GIS</p>
             <div className="slider">
                 <div class="imgs-slide">
-                    <img src={allison} alt="allison" />
-                    <img src={ariel} alt="ariel" />
-                    <img src={britney} alt="britney" />
-                    <img src={claire} alt="claire" />
-                    <img src={coco} alt="coco" />
-                    <img src={crystal} alt="crystal" />
-                    <img src={donna} alt="donna" />
-                    <img src={doreen} alt="doreen" />
-                    <img src={haley} alt="haley" />
-                    <img src={haruka} alt="haruka" />
-                    <img src={jackie} alt="jackie" />
-                    <img src={julia} alt="julia" />
-                    <img src={kristy} alt="kristy" />
-                    <img src={marina} alt="marina" />
-                    <img src={melanie} alt="melanie" />
-                    <img src={nika} alt="nika" />
-                    <img src={rachel} alt="rachel" />
+                    <img src={allison} alt="Allison" />
+                    <img src={ariel} alt="Ariel" />
+                    <img src={britney} alt="Britney" />
+                    <img src={claire} alt="Claire" />
+                    <img src={coco} alt="Coco" />
+                    <img src={crystal} alt="Crystal" />
+                    <img src={donna} alt="Donna" />
+                    <img src={doreen} alt="Doreen" />
+                    <img src={haley} alt="Haley" />
+                    <img src={haruka} alt="Haruka" />
+                    <img src={jackie} alt="Jackie" />
+                    <img src={julia} alt="Julia" />
+                    <img src={kristy} alt="Kristy" />
+                    <img src={marina} alt="Marina" />
+                    <img src={melanie} alt="Melanie" />
+                    <img src={nika} alt="Nika" />
+                    <img src={rachel} alt="Rachel" />
                 </div>
                 <div class="imgs-slide">
-                <img src={allison} alt="allison" />
-                    <img src={ariel} alt="ariel" />
-                    <img src={britney} alt="britney" />
-                    <img src={claire} alt="claire" />
-                    <img src={coco} alt="coco" />
-                    <img src={crystal} alt="crystal" />
-                    <img src={donna} alt="donna" />
-                    <img src={doreen} alt="doreen" />
-                    <img src={haley} alt="haley" />
-                    <img src={haruka} alt="haruka" />
-                    <img src={jackie} alt="jackie" />
-                    <img src={julia} alt="julia" />
-                    <img src={kristy} alt="kristy" />
-                    <img src={marina} alt="marina" />
-                    <img src={melanie} alt="melanie" />
-                    <img src={nika} alt="nika" />
-                    <img src={rachel} alt="rachel" />
+                <img src={allison} alt="Allison" />
+                    <img src={ariel} alt="Ariel" />
+                    <img src={britney} alt="Britney" />
+                    <img src={claire} alt="Claire" />
+                    <img src={coco} alt="Coco" />
+                    <img src={crystal} alt="Crystal" />
+                    <img src={donna} alt="Donna" />
+                    <img src={doreen} alt="Doreen" />
+                    <img src={haley} alt="Haley" />
+                    <img src={haruka} alt="Haruka" />
+                    <img src={jackie} alt="Jackie" />
+                    <img src={julia} alt="Julia" />
+                    <img src={kristy} alt="Kristy" />
+                    <img src={marina} alt="Marina" />
+                    <img src={melanie} alt="Melanie" />
+                    <img src={nika} alt="Nika" />
+                    <img src={rachel} alt="Rachel" />
                 </div>
             </div>
         </div>
