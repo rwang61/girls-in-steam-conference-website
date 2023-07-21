@@ -1,5 +1,4 @@
 import './../styles/OurValues.css';
-
 import commimg from './../images/CommunityImage.png';
 import edimg from './../images/EducationImage.png';
 import accimg from './../images/AccessImage.png';
