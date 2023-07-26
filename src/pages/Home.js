@@ -13,8 +13,10 @@ export default function Home() {
       <Navbar />
       <header className="App-header">
         <AboutUs />
-        <OurValues />
-        <TheTeam />
+        <div className='Values-Team-Background'>
+          <OurValues />
+          <TheTeam />
+        </div>
       </header>
       <Footer />
     </div>
