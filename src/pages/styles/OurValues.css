@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Josephin Sans";
+  font-family: "Josefin Sans";
   src: local('JosefinSans'),
     url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
 
 .Our-Values {
   /* background-image: linear-gradient(#6363AB, #A6A8CE); */
-  font-family: "Josephin Sans";
+  font-family: "Josefin Sans";
   font-weight: 500;
   font-size: xx-large;
 }

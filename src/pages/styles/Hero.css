@@ -7,33 +7,29 @@
 .Hero {
     background-color: #EBE9FA;
     color: #6363AB;
+    font-family: "Josefin Sans";
     text-align: left;
-    padding-bottom: 40px;
-    font-family: "Josephin Sans";
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 10%;
 }
 
-.title {
+.girls-in {
+    font-size: 40px;
+    color: #A6A8CE;
+    line-height: 10%;
+}
+
+.STEAM {
     font-size: 60px;
-    margin-left: 10%;
+    line-height: 50%;
 }
 
 .description {
     font-size: large;
-    margin-left: 10%;
-}
-
-.get-involved {
-    margin-left: 10%;
-    border-radius: 14px;
-    font-family: "Josefin Sans";
-    font-weight: 600;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 .logo {
-    margin-left: 10%;
     margin-top: 10%;
     width: 400px;
 }
