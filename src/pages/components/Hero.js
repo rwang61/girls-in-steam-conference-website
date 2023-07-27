@@ -16,14 +16,15 @@ export default function Hero() {
             <div className="row">
                 <div className="column">
                     <h1 className="girls-in">girls in <br/></h1>
-                    <h1 className="STEAM">STEAM</h1>
+                    <h1 className="STEAM">STE<span style={{color: '#A6A8CE'}}>A</span>M</h1>
                     <h4 className="description">Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community. </h4>
                     <Button className="get-involved" 
-                                sx={{width: 200,
+                                sx={{width: 180,
+                                    backgroundColor: '#54547E',
                                     color: 'white',
-                                    borderRadius: 5,
+                                    borderRadius: 4,
                                     fontFamily: 'Josefin Sans',
-                                    fontSize: 18,
+                                    fontSize: 16,
                                     }}
                                 variant="contained">GET INVOLVED
                     </Button>

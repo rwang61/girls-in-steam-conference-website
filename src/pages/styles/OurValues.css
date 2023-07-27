@@ -5,7 +5,6 @@
 }
 
 .Our-Values {
-  /* background-image: linear-gradient(#6363AB, #A6A8CE); */
   font-family: "Josefin Sans";
   font-weight: 500;
   font-size: xx-large;
@@ -14,41 +13,37 @@
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1%;
 }
 
-.CommImg {
+.val-column {
   max-width: 33.33%;
   height: auto;
 }
 
-.EdImg {
-  width: 33.33%;
-  height: auto;
+.val-img {
+  width: 100%;
+  filter: opacity(60%);
+}
+/* try using material ui cards instead */
+.val-icon {
+  width: 50px;
 }
 
-.AccImg {
-  width: 33.33%;
-  height: auto;
+.val-title {
+  font-size: x-large;
 }
 
-@media only screen and (max-width: 700px) {
+.val-info {
+  font-size: large;
+}
+
+@media only screen and (max-width: 800px) {
   .Our-Values {
     font-size: large;
   }
 
-  .CommImg {
+  .val-column {
     max-width: 100%;
-    height: auto;
-  }
-
-  .EdImg {
-    width: 100%;
-    height: auto;
-  }
-
-  .AccImg {
-    width: 100%;
     height: auto;
   }
 }
