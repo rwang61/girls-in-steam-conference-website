@@ -1,33 +1,48 @@
 import "./../styles/Hero.css";
-import { Button, Grid } from "@mui/material";
+import { Button } from "@mui/material";
 import "./../../fonts/JosefinSans-VariableFont_wght.ttf";
-import gislogo from './../images/gis-logo.png';
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import white from './../images/white.png';
+import pink from './../images/pink.png';
+import lightPurple from './../images/light-purple.png';
+import darkPurple from './../images/dark-purple.png';
+import leftArrow from './../images/left-arrow.svg';
+import rightArrow from './../images/right-arrow.svg';
 
 export default function Hero() {
     return (
         <div className="Hero">
-            <Grid container spacing={{ sm: 1, md: 2}}>
-                <Grid item xs={6}>
-                    
-                        <h1 className="girls-in">girls in <br/></h1>
-                        <h1 className="STEAM">STEAM</h1>
-                        <h4 className="description">Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community. </h4>
-                        <Button className="get-involved" 
+            <div className="row">
+                <div className="column">
+                    <h1 className="girls-in">girls in <br/></h1>
+                    <h1 className="STEAM">STEAM</h1>
+                    <h4 className="description">Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community. </h4>
+                    <Button className="get-involved" 
                                 sx={{width: 200,
                                     color: 'white',
                                     borderRadius: 5,
                                     fontFamily: 'Josefin Sans',
                                     fontSize: 18,
                                     }}
-                                variant="contained">GET INVOLVED</Button>
-                </Grid>
-                <Grid item xs={6}>
-                    
-                        <img className="logo" src={gislogo} alt="logo"/>
-                </Grid>
-            </Grid>
-        </div>
-
-        
+                                variant="contained">GET INVOLVED
+                    </Button>
+                </div>
+                <div className="column">
+                    <AliceCarousel autoPlay autoPlayInterval="3000"
+                        renderPrevButton={() => {
+                        return <img src={leftArrow} alt="left-arrow" />
+                      }}
+                      renderNextButton={() => {
+                        return <img src={rightArrow} alt="right-arrow" />
+                      }}>
+                        <img className="slide-image" src={lightPurple} alt="light-purple"/>
+                        <img className="slide-image" src={darkPurple} alt="dark-purple"/>
+                        <img className="slide-image" src={pink} alt="pink"/>
+                        <img className="slide-image" src={white} alt="white"/>
+                    </AliceCarousel>
+                </div>
+            </div>
+        </div>  
     );
 }

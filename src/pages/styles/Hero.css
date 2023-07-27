@@ -9,9 +9,12 @@
     color: #6363AB;
     font-family: "Josefin Sans";
     text-align: left;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    padding-left: 10%;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    padding: 5%;
 }
 
 .girls-in {
@@ -29,7 +32,17 @@
     font-size: large;
 }
 
-.logo {
-    margin-top: 10%;
-    width: 400px;
+.slide-image {
+    width: 100%;
+    object-fit: cover;
 }
+
+.alice-carousel__wrapper {
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 90%;
+    }
+  }
