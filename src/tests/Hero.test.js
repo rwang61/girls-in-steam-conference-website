@@ -7,6 +7,7 @@ test('renders Hero section', () => {
     const girlsInHeading = screen.getByText('girls in');
     expect(girlsInHeading).toBeInTheDocument();
 
+    // edit test to be more flexible (accepts spanning styles)
     const steamHeading = screen.getByText('STEAM');
     expect(steamHeading).toBeInTheDocument();
 

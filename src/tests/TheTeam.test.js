@@ -7,54 +7,57 @@ test('renders The Team section', () => {
     const theTeamBehindGISHeading = screen.getByText('THE TEAM BEHIND GIS');
     expect(theTeamBehindGISHeading).toBeInTheDocument();
 
-    const allisonImage = screen.getByAltText('Allison');
-    expect(allisonImage).toBeInTheDocument();
+    const image = screen.getAllByAltText('Allison');
+    expect(image.length).toEqual(2);
 
-    const arielImage = screen.getByAltText('Ariel');
-    expect(arielImage).toBeInTheDocument();
+    const allisonImage = screen.getAllByAltText('Allison');
+    expect(allisonImage.length).toEqual(2);
 
-    const britneyImage = screen.getByAltText('Britney');
-    expect(britneyImage).toBeInTheDocument();
+    const arielImage = screen.getAllByAltText('Ariel');
+    expect(arielImage.length).toEqual(2);
 
-    const claireImage = screen.getByAltText('Claire');
-    expect(claireImage).toBeInTheDocument();
+    const britneyImage = screen.getAllByAltText('Britney');
+    expect(britneyImage.length).toEqual(2);
 
-    const cocoImage = screen.getByAltText('Coco');
-    expect(cocoImage).toBeInTheDocument();
+    const claireImage = screen.getAllByAltText('Claire');
+    expect(claireImage.length).toEqual(2);
 
-    const crystalImage = screen.getByAltText('Crystal');
-    expect(crystalImage).toBeInTheDocument();
+    const cocoImage = screen.getAllByAltText('Coco');
+    expect(cocoImage.length).toEqual(2);
 
-    const donnaImage = screen.getByAltText('Donna');
-    expect(donnaImage).toBeInTheDocument();
+    const crystalImage = screen.getAllByAltText('Crystal');
+    expect(crystalImage.length).toEqual(2);
 
-    const doreenImage = screen.getByAltText('Doreen');
-    expect(doreenImage).toBeInTheDocument();
+    const donnaImage = screen.getAllByAltText('Donna');
+    expect(donnaImage.length).toEqual(2);
 
-    const haleyImage = screen.getByAltText('Haley');
-    expect(haleyImage).toBeInTheDocument();
+    const doreenImage = screen.getAllByAltText('Doreen');
+    expect(doreenImage.length).toEqual(2);
 
-    const harukaImage = screen.getByAltText('Haruka');
-    expect(harukaImage).toBeInTheDocument();
+    const haleyImage = screen.getAllByAltText('Haley');
+    expect(haleyImage.length).toEqual(2);
 
-    const jackieImage = screen.getByAltText('Jackie');
-    expect(jackieImage).toBeInTheDocument();
+    const harukaImage = screen.getAllByAltText('Haruka');
+    expect(harukaImage.length).toEqual(2);
 
-    const juliaImage = screen.getByAltText('Julia');
-    expect(juliaImage).toBeInTheDocument();
+    const jackieImage = screen.getAllByAltText('Jackie');
+    expect(jackieImage.length).toEqual(2);
 
-    const kristyImage = screen.getByAltText('Kristy');
-    expect(kristyImage).toBeInTheDocument();
+    const juliaImage = screen.getAllByAltText('Julia');
+    expect(juliaImage.length).toEqual(2);
 
-    const marinaImage = screen.getByAltText('Marina');
-    expect(marinaImage).toBeInTheDocument();
+    const kristyImage = screen.getAllByAltText('Kristy');
+    expect(kristyImage.length).toEqual(2);
 
-    const melanieImage = screen.getByAltText('Melanie');
-    expect(melanieImage).toBeInTheDocument();
+    const marinaImage = screen.getAllByAltText('Marina');
+    expect(marinaImage.length).toEqual(2);
 
-    const nikaImage = screen.getByAltText('Nika');
-    expect(nikaImage).toBeInTheDocument();
+    const melanieImage = screen.getAllByAltText('Melanie');
+    expect(melanieImage.length).toEqual(2);
 
-    const rachelImage = screen.getByAltText('Rachel');
-    expect(rachelImage).toBeInTheDocument();
+    const nikaImage = screen.getAllByAltText('Nika');
+    expect(nikaImage.length).toEqual(2);
+
+    const rachelImage = screen.getAllByAltText('Rachel');
+    expect(rachelImage.length).toEqual(2);
 });

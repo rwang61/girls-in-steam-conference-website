@@ -1,6 +1,7 @@
 import { getByTestId, render, screen } from '@testing-library/react';
 import OurValues from '../pages/components/OurValues';
 
+// add tests that check background images
 test('renders Our Values section', () => {
     render(<OurValues />);
 
