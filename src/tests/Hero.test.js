@@ -4,29 +4,29 @@ import Hero from '../pages/components/Hero';
 test('renders Hero section', () => {
     render(<Hero/>);
 
-    const girlsInHeading = screen.getByText('girls in');
+    const girlsInHeading = document.getElementsByClassName('girls-in')[0];
     expect(girlsInHeading).toBeInTheDocument();
 
     // edit test to be more flexible (accepts spanning styles)
-    const steamHeading = screen.getByText('STEAM');
+    const steamHeading = document.getElementsByClassName('STEAM')[0];
     expect(steamHeading).toBeInTheDocument();
 
     const info = screen.getByText('Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community.');
     expect(info).toBeInTheDocument();
 
-    const getInvolvedButton = screen.getByRole('button', {name: 'get-involved'});
+    const getInvolvedButton = screen.getByRole('button', {name: 'GET INVOLVED'});
     expect(getInvolvedButton).toBeInTheDocument();
 
     // Change these tests later when placeholder images are replaced
-    const whiteImage = screen.getAllByAltText('White');
-    expect(whiteImage).toBeInTheDocument();
+    const whiteImage = screen.getAllByAltText('white');
+    expect(whiteImage.length).toEqual(2);
 
-    const pinkImage = screen.getAllByAltText('pink');
+    const pinkImage = screen.getByAltText('pink');
     expect(pinkImage).toBeInTheDocument();
 
     const lightPurpleImage = screen.getAllByAltText('light-purple');
-    expect(lightPurpleImage).toBeInTheDocument();
+    expect(lightPurpleImage.length).toEqual(2);
 
-    const darkPurpleImage = screen.getAllByAltText('dark-purple');
+    const darkPurpleImage = screen.getByAltText('dark-purple');
     expect(darkPurpleImage).toBeInTheDocument();
 });

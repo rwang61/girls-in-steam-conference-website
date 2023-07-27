@@ -38,7 +38,7 @@ test('renders Our Values section', () => {
     const accessTitle = screen.getByText('ACCESS');
     expect(accessTitle).toBeInTheDocument();
 
-    const accessInfo = screen.getByText('Providing support, resouces & educational programming through inclusive design spaces.');
+    const accessInfo = screen.getByText('Providing support, resources & educational programming through inclusive design spaces.');
     expect(accessInfo).toBeInTheDocument();
 
     const accessIcon = screen.getByAltText('access-icon');

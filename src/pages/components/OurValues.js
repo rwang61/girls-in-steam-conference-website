@@ -21,7 +21,7 @@ export default function OurValues() {
         <div className='val-column-access'>
           <img className='val-icon' src={accessIcon} alt='access-icon'/>
           <h6 className='val-title'>ACCESS</h6>
-          <p className='val-info'>Providing support, resouces & educational programming through inclusive design spaces.</p>
+          <p className='val-info'>Providing support, resources & educational programming through inclusive design spaces.</p>
         </div>
       </div>
     </div>
