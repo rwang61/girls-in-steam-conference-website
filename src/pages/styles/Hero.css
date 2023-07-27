@@ -44,5 +44,7 @@
 @media screen and (max-width: 900px) {
     .column {
       width: 90%;
+      padding-top: 10%;
+      padding-bottom: 10%;
     }
   }
