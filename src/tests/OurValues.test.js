@@ -8,9 +8,6 @@ test('renders Our Values section', () => {
     const ourValuesHeading = screen.getByText('OUR VALUES');
     expect(ourValuesHeading).toBeInTheDocument();
 
-    // const communityImage = screen.getByAltText('community');
-    // expect(communityImage).toBeInTheDocument();
-
     const communityTitle = screen.getByText('COMMUNITY');
     expect(communityTitle).toBeInTheDocument();
 
@@ -20,9 +17,6 @@ test('renders Our Values section', () => {
     const communityIcon = screen.getByAltText('community-icon');
     expect(communityIcon).toBeInTheDocument();
 
-    // const educationImage = screen.getByAltText('education');
-    // expect(educationImage).toBeInTheDocument();
-
     const educationTitle = screen.getByText('EDUCATION');
     expect(educationTitle).toBeInTheDocument();
 
@@ -31,9 +25,6 @@ test('renders Our Values section', () => {
 
     const educationIcon = screen.getByAltText('education-icon');
     expect(educationIcon).toBeInTheDocument();
-
-    // const accessImage = screen.getByAltText('access');
-    // expect(accessImage).toBeInTheDocument();
 
     const accessTitle = screen.getByText('ACCESS');
     expect(accessTitle).toBeInTheDocument();
