@@ -1,7 +1,4 @@
 import './../styles/OurValues.css';
-import community from './../images/community.jpeg';
-import education from './../images/education.jpg';
-import access from './../images/access.jpeg';
 import communityIcon from './../images/community-icon.svg';
 import educationIcon from './../images/education-icon.svg';
 import accessIcon from './../images/access-icon.svg';
