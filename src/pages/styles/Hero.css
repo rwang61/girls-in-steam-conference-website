@@ -41,6 +41,24 @@
     border-radius: 15px;
 }
 
+.hero-carousel {
+    padding: 25px;
+}
+
+.right {
+    margin-right: 100px;
+    position: absolute;
+    left: -10%;
+    top: 40%;
+}
+
+.left {
+    margin-left: 100px;
+    position: absolute;
+    right: -10%;
+    top: 40%;
+}
+
 @media screen and (max-width: 900px) {
     .column {
       width: 90%;

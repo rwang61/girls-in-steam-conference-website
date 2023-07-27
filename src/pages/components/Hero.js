@@ -29,18 +29,20 @@ export default function Hero() {
                     </Button>
                 </div>
                 <div className="column">
-                    <AliceCarousel autoPlay autoPlayInterval="3000" infinite="true" 
+                    <div className="hero-carousel">
+                    <AliceCarousel autoPlay autoPlayInterval="3000" infinite="true" disableDotsControls="true"
                         renderPrevButton={() => {
-                        return <img className="right" src={leftArrow} alt="left-arrow" />
+                        return <img className="left" src={leftArrow} alt="left-arrow" />
                       }}
-                      renderNextButton={() => {
-                        return <img className="left" src={rightArrow} alt="right-arrow" />
+                        renderNextButton={() => {
+                        return <img className="right" src={rightArrow} alt="right-arrow" />
                       }}>
                         <img className="slide-image" src={lightPurple} alt="light-purple"/>
                         <img className="slide-image" src={darkPurple} alt="dark-purple"/>
                         <img className="slide-image" src={pink} alt="pink"/>
                         <img className="slide-image" src={white} alt="white"/>
                     </AliceCarousel>
+                    </div>
                 </div>
             </div>
         </div>  
