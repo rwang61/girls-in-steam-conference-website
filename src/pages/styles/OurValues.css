@@ -15,34 +15,59 @@
   flex-wrap: wrap;
 }
 
-.val-column {
+.val-column-community {
   max-width: 33.33%;
-  height: auto;
+  background-image:  linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/community.jpeg");
+  background-size: cover;
 }
 
-.val-img {
-  width: 100%;
-  filter: opacity(60%);
+.val-column-education {
+  max-width: 33.33%;
+  background-image: linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/education.jpg");
+  background-size: cover;
 }
-/* try using material ui cards instead */
+
+.val-column-access {
+  max-width: 33.33%;
+  background-image: linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/access.jpeg");
+  background-size: cover;
+}
+
 .val-icon {
   width: 50px;
+  margin-bottom: -30px;
+  margin-top: 30px;
 }
 
 .val-title {
   font-size: x-large;
+  line-height: 1%;
 }
 
 .val-info {
   font-size: large;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   .Our-Values {
     font-size: large;
   }
 
-  .val-column {
+  .val-column-community {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .val-column-education {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .val-column-access {
     max-width: 100%;
     height: auto;
   }

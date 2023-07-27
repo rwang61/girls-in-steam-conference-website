@@ -11,6 +11,8 @@
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-top: solid;
+    border-top-color: #A6A8CE;
 }
 
 .column {
