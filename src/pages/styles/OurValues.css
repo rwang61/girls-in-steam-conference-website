@@ -1,50 +1,74 @@
 @font-face {
-  font-family: "Medium 500";
+  font-family: "Josefin Sans";
   src: local('JosefinSans'),
     url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
 
 .Our-Values {
-  background-image: linear-gradient(#6363AB, #A6A8CE);
-  font-family: "Medium 500";
-  font-weight: 600;
+  font-family: "Josefin Sans";
+  font-weight: 500;
   font-size: xx-large;
 }
 
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 5%;
 }
 
-.CommImg {
+.val-column-community {
   max-width: 33.33%;
-  height: auto;
+  background-image:  linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/community.jpeg");
+  background-size: cover;
 }
 
-.EdImg {
-  width: 33.33%;
-  height: auto;
+.val-column-education {
+  max-width: 33.33%;
+  background-image: linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/education.jpg");
+  background-size: cover;
 }
 
-.AccImg {
-  width: 33.33%;
-  height: auto;
+.val-column-access {
+  max-width: 33.33%;
+  background-image: linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/access.jpeg");
+  background-size: cover;
+}
+
+.val-icon {
+  width: 50px;
+  margin-bottom: -30px;
+  margin-top: 30px;
+}
+
+.val-title {
+  font-size: x-large;
+  line-height: 1%;
+}
+
+.val-info {
+  font-size: large;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 @media only screen and (max-width: 700px) {
-  .CommImg {
+  .Our-Values {
+    font-size: large;
+  }
+
+  .val-column-community {
     max-width: 100%;
     height: auto;
   }
 
-  .EdImg {
-    width: 100%;
+  .val-column-education {
+    max-width: 100%;
     height: auto;
   }
 
-  .AccImg {
-    width: 100%;
+  .val-column-access {
+    max-width: 100%;
     height: auto;
   }
 }
