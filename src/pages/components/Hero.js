@@ -14,7 +14,6 @@ export default function Hero() {
     return (
         <div className="Hero">
             <div className="row">
-            {/* change the size of the respective columns (make carousel column wider) */}
                 <div className="column">
                     <h1 className="girls-in">girls in <br/></h1>
                     <h1 className="STEAM">STE<span style={{color: '#A6A8CE'}}>A</span>M</h1>

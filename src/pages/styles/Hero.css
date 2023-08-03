@@ -14,7 +14,7 @@
     border-top: solid;
     border-top-color: #A6A8CE;
 }
-/* change the size of the respective columns (make carousel column wider) */
+
 .column {
     float: left;
     width: 38%;
