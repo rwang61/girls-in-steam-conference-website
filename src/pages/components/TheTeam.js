@@ -1,4 +1,5 @@
 import './../styles/TheTeam.css';
+import React from 'react';
 import allison from './../images/allison.png';
 import ariel from './../images/ariel.png';
 import britney from './../images/britney.png';

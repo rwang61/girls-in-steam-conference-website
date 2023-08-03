@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Josefin Sans";
+    src: local('JosefinSans'),
+    url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
+}
+
+.GISAlert {
+    font-family: "Josefin Sans";
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #A6A8CE;
+}

@@ -1,4 +1,5 @@
 import './styles/Home.css';
+import Alert from './components/Alert';
 import AboutUs from "./components/AboutUs";
 import Footer from './components/Footer.js'
 import Navbar from '../pages/components/Navbar.js'
@@ -10,6 +11,7 @@ import Hero from "./components/Hero.js";
 export default function Home() {
   return (
     <div className="App">
+      <Alert />
       <Navbar />
       <header className="App-header">
         <Hero />

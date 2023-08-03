@@ -14,17 +14,18 @@ export default function Hero() {
     return (
         <div className="Hero">
             <div className="row">
+            {/* change the size of the respective columns (make carousel column wider) */}
                 <div className="column">
                     <h1 className="girls-in">girls in <br/></h1>
                     <h1 className="STEAM">STE<span style={{color: '#A6A8CE'}}>A</span>M</h1>
-                    <h4 className="description">Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community. </h4>
+                    <h4 className="description">Supporting access to STEAM <br />education for girls, gender-diverse <br />people, and the LGBTQ+ community. </h4>
                     <Button className="get-involved" 
-                                sx={{width: 180,
+                                sx={{width: 200,
                                     backgroundColor: '#54547E',
                                     color: 'white',
                                     borderRadius: 4,
                                     fontFamily: 'Josefin Sans',
-                                    fontSize: 16,
+                                    fontSize: 18,
                                     }}
                                 variant="contained">GET INVOLVED
                     </Button>
