@@ -18,18 +18,18 @@
 
 .info-column {
     float: left;
-    width: 30%;
+    width: 34%;
     margin: 6%;
 }
 
 .carousel-column {
     float: left;
-    width: 46%;
+    width: 40%;
     margin: 6%;
 }
 
 .girls-in {
-    font-size: 54px;
+    font-size: 55px;
     color: #A6A8CE;
     line-height: 10%;
 }
@@ -53,10 +53,6 @@
     max-height: 400px;
 }
 
-.hero-carousel {
-    padding: 50px;
-}
-
 .right {
     margin-right: 100px;
     position: absolute;
@@ -76,10 +72,10 @@
         margin-left: 40px;
     }
     .girls-in {
-        font-size: 120%;
+        font-size: 40px;
     }
     .STEAM {
-        font-size: 200%;
+        font-size: 74px;
     }
     .description {
         font-size: large;
@@ -102,5 +98,8 @@
     }
     .carousel-column {
         width: 90%;
+    }
+    .hero-carousel {
+        padding: 40px;
     }
   }
