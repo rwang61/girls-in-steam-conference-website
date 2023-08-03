@@ -14,7 +14,7 @@ export default function Hero() {
     return (
         <div className="Hero">
             <div className="row">
-                <div className="column">
+                <div className="info-column">
                     <h1 className="girls-in">girls in <br/></h1>
                     <h1 className="STEAM">STE<span style={{color: '#A6A8CE'}}>A</span>M</h1>
                     <h4 className="description">Supporting access to STEAM <br />education for girls, gender-diverse <br />people, and the LGBTQ+ community. </h4>
@@ -29,7 +29,7 @@ export default function Hero() {
                                 variant="contained">GET INVOLVED
                     </Button>
                 </div>
-                <div className="column">
+                <div className="carousel-column">
                     <div className="hero-carousel">
                     <AliceCarousel autoPlay autoPlayInterval="3000" infinite="true" disableDotsControls="true"
                         renderPrevButton={() => {

@@ -10,27 +10,33 @@
     font-family: "Josefin Sans";
     text-align: left;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
     border-top: solid;
     border-top-color: #A6A8CE;
+    max-height: 800px;
 }
 
-/* change the size of the respective columns (make carousel column wider) */
-.column {
+.info-column {
     float: left;
-    width: 38%;
-    padding: 6%;
+    width: 30%;
+    margin: 6%;
+}
+
+.carousel-column {
+    float: left;
+    width: 46%;
+    margin: 6%;
 }
 
 .girls-in {
-    font-size: 60px;
+    font-size: 54px;
     color: #A6A8CE;
     line-height: 10%;
 }
 
 .STEAM {
     font-size: 100px;
-    line-height: 50%;
+    line-height: 30px;
 }
 
 .description {
@@ -38,25 +44,63 @@
 }
 
 .slide-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.alice-carousel__wrapper {
+    border-radius: 15px;
+    max-height: 400px;
+}
+
+.hero-carousel {
+    padding: 50px;
+}
+
+.right {
+    margin-right: 100px;
+    position: absolute;
+    left: -40px;
     top: 40%;
 }
 
-@media screen and (max-width: 900px) {
-    .column {
-      width: 90%;
-      padding-top: 10%;
-      padding-bottom: 10%;
-    }
+.left {
+    margin-left: 100px;
+    position: absolute;
+    right: -40px;
+    top: 40%;
+}
 
+@media screen and (max-width: 1100px) {
+    .info-column {
+        margin-left: 40px;
+    }
     .girls-in {
-        font-size: 30px;
+        font-size: 120%;
     }
-
     .STEAM {
-        font-size: 60px;
+        font-size: 200%;
     }
-
     .description {
         font-size: large;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .girls-in {
+        font-size: 200%;
+    }
+    .STEAM {
+        font-size: 280%;
+    }
+    .info-column {
+        width: 90%;
+        margin-top: 8%;
+        margin-bottom: 0;
+        margin-left: 10%;
+        
+    }
+    .carousel-column {
+        width: 90%;
     }
   }
