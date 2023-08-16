@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import josefinSans from './fonts/JosefinSans-VariableFont_wght.ttf';
 
 export const theme = createTheme({
     palette: {
@@ -19,6 +20,14 @@ export const theme = createTheme({
             main: '#0044ff',
             // dark: will be calculated from palette.secondary.main,
             contrastText: '#ffcc00',
+        },
+        giscolor: {
+            main: '#6363AB;',
+            contrastText: '#ffffff',
         }
     },
+    typography: {
+        "fontFamily": [josefinSans],
+        "fontSize": 16,
+    }
 });
