@@ -53,3 +53,15 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .shadow-rectangle {
+    width: 95%;
+    height: auto;
+  }
+
+  .photo {
+    width: 90%;
+    height: 90%;
+  }
+}
