@@ -18,6 +18,7 @@ export default function Hero() {
                     <h1 className="STEAM">STE<span style={{ color: '#A6A8CE' }}>A</span>M</h1>
                     <h4 className="description">Supporting access to STEAM <br />education for girls, gender-diverse <br />people, and the LGBTQ+ community. </h4>
                     <Button className="get-involved"
+                        onClick={e => { window.open('https://linktr.ee/girlsinsteamorg'); }}
                         sx={{
                             width: 200,
                             backgroundColor: '#54547E',
@@ -25,6 +26,7 @@ export default function Hero() {
                             borderRadius: 4,
                             fontFamily: 'Josefin Sans',
                             fontSize: 18,
+                            fontWeight: 700,
                         }}
                         variant="contained">GET INVOLVED
                     </Button>
