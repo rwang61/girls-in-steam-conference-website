@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import map1 from "./../images/map-with-pins.png";
-import steambbt from "./../images/steambbt.png";
+import booth from './../images/booth.jpg';
 import "./../styles/AboutUs.css";
 import "./../../fonts/JosefinSans-VariableFont_wght.ttf";
 import "./../../fonts/Rastano.ttf";
@@ -9,7 +9,7 @@ export default function AboutUs() {
   return (
     <div id="About">
       <Grid container spacing={2} className="AboutUsContainer">
-        <Grid item xs={12} sm={6}>
+        <Grid item sm={12} md={6}>
           <div sx={{ maxWidth: 400 }}>
             <Typography
               variant="h4"
@@ -54,10 +54,13 @@ export default function AboutUs() {
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <div className="shadow-rectangle">
+        <Grid item sm={12} md={6}>
+          <div className="shadow-rectangle" style={{
+            marginLeft: "auto",
+            marginRight: "auto"
+          }}>
             <div className="photo-wrapper">
-              <img src={steambbt} alt="Girls in STEAM Exec team" className="photo" />
+              <img src={booth} alt="Girls in STEAM Exec team" className="photo" />
               <Typography
                 variant="h4"
                 sx={{
@@ -84,7 +87,7 @@ export default function AboutUs() {
           >
             The Girls in STEAM team is based all across the world!
           </Typography>
-          <img src={map1} alt="Map" style={{ width: "70%", height: "auto" }} />
+          <img src={map1} alt="Map" style={{ width: "70%", maxWidth: "800px", height: "auto" }} />
         </Grid>
       </Grid>
     </div>
