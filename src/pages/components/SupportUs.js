@@ -96,11 +96,9 @@ export default function SupportUs() {
                     </div>
                 </Grid>
                 <Grid item sm={12} md={6}>
-                    <Grid container >
-                        <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
-                            <img style={{ maxWidth: "225px" }} src={thermometer} alt="Donation tracker thermometer" />
-                        </Grid>
-                    </Grid>
+                    <Box sx={{ display: "flex", justifyContent: "center" }}>
+                        <img style={{ maxWidth: "225px" }} src={thermometer} alt="Donation tracker thermometer" />
+                    </Box>
                 </Grid>
             </Grid>
         </div>
