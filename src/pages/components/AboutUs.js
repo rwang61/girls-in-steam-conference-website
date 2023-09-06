@@ -13,7 +13,6 @@ export default function AboutUs() {
           <div sx={{ maxWidth: 400 }}>
             <Typography
               variant="h4"
-              gutterBottom
               sx={{
                 textAlign: "left",
                 color: "#6363AB",
@@ -25,7 +24,6 @@ export default function AboutUs() {
             </Typography>
             <Typography
               variant="h6"
-              gutterBottom
               sx={{
                 textAlign: "left",
                 color: "#6363AB",
@@ -77,7 +75,6 @@ export default function AboutUs() {
         <Grid item xs={12} sx={{ margin: "0 2", backgroundColor: "white" }}>
           <Typography
             variant="h6"
-            gutterbottom
             sx={{
               textAlign: "center",
               color: "#5A4067",
