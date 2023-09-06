@@ -7,17 +7,19 @@ import "./../fonts/JosefinSans-VariableFont_wght.ttf"
 import OurValues from './components/OurValues.js';
 import TheTeam from "./components/TheTeam.js";
 import Hero from "./components/Hero.js";
+import SupportUs from "./components/SupportUs.js";
 
 export default function Home() {
   return (
-    <div className="App">
-      <Alert />
+    <div id="App">
+      <Alert rounded={false}> Want to join the team? <a href="https://linktr.ee/girlsinsteamorg" target="_blank" rel="noreferrer">We're hiring Campus Ambassadors!</a> </Alert>
       <Navbar />
       <Hero />
       <AboutUs />
       <div className='Values-Team-Background'>
         <OurValues />
         <TheTeam />
+        <SupportUs />
       </div>
       <Footer />
     </div>

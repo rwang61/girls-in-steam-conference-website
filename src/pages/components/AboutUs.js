@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
-import map1 from "./../images/map1.png";
-import steambbt from "./../images/steambbt.png";
+import map1 from "./../images/map-with-pins.png";
+import booth from './../images/booth.jpg';
 import "./../styles/AboutUs.css";
 import "./../../fonts/JosefinSans-VariableFont_wght.ttf";
 import "./../../fonts/Rastano.ttf";
@@ -9,11 +9,10 @@ export default function AboutUs() {
   return (
     <div id="About">
       <Grid container spacing={2} className="AboutUsContainer">
-        <Grid item xs={12} sm={6}>
+        <Grid item sm={12} md={6}>
           <div sx={{ maxWidth: 400 }}>
             <Typography
               variant="h4"
-              gutterBottom
               sx={{
                 textAlign: "left",
                 color: "#6363AB",
@@ -25,7 +24,6 @@ export default function AboutUs() {
             </Typography>
             <Typography
               variant="h6"
-              gutterBottom
               sx={{
                 textAlign: "left",
                 color: "#6363AB",
@@ -43,7 +41,6 @@ export default function AboutUs() {
               sx={{
                 textAlign: "left",
                 color: "#5A4067",
-                fontFamily: "Josefin Sans",
                 fontWeight: "medium",
                 marginBottom: "70px",
               }}
@@ -55,10 +52,13 @@ export default function AboutUs() {
             </Typography>
           </div>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <div className="shadow-rectangle">
+        <Grid item sm={12} md={6}>
+          <div className="shadow-rectangle" style={{
+            marginLeft: "auto",
+            marginRight: "auto"
+          }}>
             <div className="photo-wrapper">
-              <img src={steambbt} alt="Girls in STEAM Exec team" className="photo" />
+              <img src={booth} alt="Girls in STEAM Exec team" className="photo" />
               <Typography
                 variant="h4"
                 sx={{
@@ -75,18 +75,16 @@ export default function AboutUs() {
         <Grid item xs={12} sx={{ margin: "0 2", backgroundColor: "white" }}>
           <Typography
             variant="h6"
-            gutterbottom
             sx={{
               textAlign: "center",
               color: "#5A4067",
-              fontFamily: "Josefin Sans",
               fontWeight: "medium",
               marginTop: "70px",
             }}
           >
             The Girls in STEAM team is based all across the world!
           </Typography>
-          <img src={map1} alt="Map" style={{ width: "70%", height: "auto" }} />
+          <img src={map1} alt="Map" style={{ width: "70%", maxWidth: "800px", height: "auto" }} />
         </Grid>
       </Grid>
     </div>

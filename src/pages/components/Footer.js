@@ -113,7 +113,7 @@ export default function Footer() {
                         <Typography variant="h6" fontWeight={700} fontSize="1rem">
                             QUICK LINKS
                         </Typography>
-                        <Link href="/" variant="subtitle1">Home</Link><br />
+                        <Link href="#App" variant="subtitle1">Home</Link><br />
                         <Link href="#About" variant="subtitle1">About Us</Link><br />
                         <Link href="#Values" variant="subtitle1">Our Values</Link><br />
                         {/* <Link href="/" variant="subtitle1">Events</Link><br /> */}
