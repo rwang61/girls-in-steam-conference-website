@@ -13,14 +13,12 @@ export default function Home() {
     <div className="App">
       <Alert />
       <Navbar />
-      <header className="App-header">
-        <Hero />
-        <AboutUs />
-        <div className='Values-Team-Background'>
-          <OurValues />
-          <TheTeam />
-        </div>
-      </header>
+      <Hero />
+      <AboutUs />
+      <div className='Values-Team-Background'>
+        <OurValues />
+        <TheTeam />
+      </div>
       <Footer />
     </div>
   )
