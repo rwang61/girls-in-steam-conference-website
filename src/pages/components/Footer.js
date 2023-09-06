@@ -93,10 +93,10 @@ export default function Footer() {
         >
             <Container maxWidth="lg">
                 <Grid container spacing={1} textAlign="left">
-                    <Grid item xs={12} sm={2} >
-                        <img src={whiteLogo} alt="White Girls in STEAM logo" style={{ width: "100%", maxWidth: "100px", height: "auto" }} />
+                    <Grid item xs={12} sm={2} textAlign="right" style={{ paddingRight: "10px" }}>
+                        <img src={whiteLogo} alt="White Girls in STEAM logo" style={{ width: "80%", maxWidth: "100px", height: "auto" }} />
                     </Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={6} style={{ paddingRight: "50px" }}>
                         <Typography variant="h6" gutterBottom>
                             girls in STEAM
                         </Typography>
