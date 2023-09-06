@@ -11,7 +11,7 @@ import Hero from "./components/Hero.js";
 export default function Home() {
   return (
     <div className="App">
-      <Alert />
+      <Alert rounded={false}> Want to join the team? <a href="https://linktr.ee/girlsinsteamorg">We're hiring Campus Ambassadors!</a> </Alert>
       <Navbar />
       <Hero />
       <AboutUs />
