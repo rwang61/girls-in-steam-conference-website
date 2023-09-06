@@ -97,10 +97,10 @@ export default function Footer() {
                         <img src={whiteLogo} alt="White Girls in STEAM logo" style={{ width: "80%", maxWidth: "100px", height: "auto" }} />
                     </Grid>
                     <Grid item xs={12} sm={6} style={{ paddingRight: "50px" }}>
-                        <Typography variant="h6" gutterBottom>
+                        <Typography variant="h6" fontWeight={700}>
                             girls in STEAM
                         </Typography>
-                        <Typography variant="body2">
+                        <Typography variant="body2" style={{ maxWidth: "400px" }}>
                             Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community.
                         </Typography>
                         <Typography variant="body2" style={{ marginTop: "30px" }}>
@@ -110,24 +110,23 @@ export default function Footer() {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={2}>
-                        <Typography variant="h6" gutterBottom>
+                        <Typography variant="h6" fontWeight={700} fontSize="1rem">
                             QUICK LINKS
                         </Typography>
                         <Link href="/" variant="subtitle1">Home</Link><br />
-                        <Link href="/" variant="subtitle1">About Us</Link><br />
-                        <Link href="/" variant="subtitle1">Our Values</Link><br />
-                        <Link href="/" variant="subtitle1">Events</Link><br />
-                        <Link href="/" variant="subtitle1">Resources</Link><br />
+                        <Link href="#About" variant="subtitle1">About Us</Link><br />
+                        <Link href="#Values" variant="subtitle1">Our Values</Link><br />
+                        {/* <Link href="/" variant="subtitle1">Events</Link><br /> */}
+                        {/* <Link href="/" variant="subtitle1">Resources</Link><br /> */}
                     </Grid>
                     <Grid item xs={12} sm={2}>
-                        <Typography variant="h6" gutterBottom>
+                        <Typography variant="h6" fontWeight={700} fontSize="1rem">
                             SUPPORT
                         </Typography>
-                        <Link href="/" variant="subtitle1">Become a Sponsor</Link><br />
-                        <Link href="/" variant="subtitle1">Work With Us</Link><br />
-                        <Link href="/" variant="subtitle1">Donate</Link><br />
-                        <Link href="/" variant="subtitle1">FAQ</Link><br />
-                        <Link href="/" variant="subtitle1">Join GIS</Link><br />
+                        {/* <Link href="/" variant="subtitle1">Donate</Link><br /> */}
+                        {/* <Link href="/" variant="subtitle1">Become a Sponsor</Link><br /> */}
+                        {/* <Link href="/" variant="subtitle1">FAQ</Link><br /> */}
+                        {/* <Link href="/" variant="subtitle1">Join GIS</Link><br /> */}
                     </Grid>
                 </Grid>
             </Container>

@@ -1,4 +1,4 @@
-.container {
+.AboutUsContainer {
   background-color: white;
   padding: 20px;
 }
@@ -8,13 +8,13 @@
 }
 
 @media (min-width: 1000px) {
-  .container {
+  .AboutUsContainer {
     padding: 20px 50px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container {
+  .AboutUsContainer {
     padding-top: 50px;
     padding-left: 150px;
   }
