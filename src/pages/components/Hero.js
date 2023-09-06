@@ -17,7 +17,7 @@ export default function Hero() {
                     <h1 className="girls-in">girls in <br /></h1>
                     <h1 className="STEAM">STE<span style={{ color: '#A6A8CE' }}>A</span>M</h1>
                     <h4 className="description">Supporting access to STEAM <br />education for girls, gender-diverse <br />people, and the LGBTQ+ community. </h4>
-                    <Button className="get-involved"
+                    <Button
                         onClick={e => { window.open('https://linktr.ee/girlsinsteamorg'); }}
                         sx={{
                             width: 200,

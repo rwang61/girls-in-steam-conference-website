@@ -1,0 +1,24 @@
+.SupportUsContainer {
+  padding: 20px;
+}
+
+@media (min-width: 1000px) {
+  .SupportUsContainer {
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .SupportUsContainer {
+    padding-top: 50px;
+    padding-left: 150px;
+  }
+}
+
+.SupportSectionContainer {
+  margin-bottom: 50px;
+}
+
+.social-icon {
+  width: 40px;
+}
