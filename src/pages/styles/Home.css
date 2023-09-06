@@ -1,8 +1,9 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-header {
+.App {
+  text-align: center;
   background-color: #ffffff;
   min-height: 100vh;
   display: flex;

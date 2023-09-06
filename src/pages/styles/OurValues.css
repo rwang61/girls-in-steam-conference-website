@@ -4,7 +4,7 @@
     url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
 
-.Our-Values {
+.OurValuesContainer {
   font-family: "Josefin Sans";
   font-weight: 500;
   font-size: xx-large;
@@ -17,7 +17,7 @@
 
 .val-column-community {
   max-width: 33.33%;
-  background-image:  linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/community.jpeg");
+  background-image: linear-gradient(rgba(146, 146, 201, .6), rgba(146, 146, 201, .6)), url("./../images/community.jpeg");
   background-size: cover;
 }
 
