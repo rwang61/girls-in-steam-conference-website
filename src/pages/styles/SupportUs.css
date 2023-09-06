@@ -1,5 +1,28 @@
 .SupportUsContainer {
   padding: 20px;
+  text-align: center;
+}
+
+#social-icon-box {
+  justify-content: center;
+}
+
+.SupportSectionContainer {
+  margin-bottom: 50px;
+}
+
+.social-icon {
+  width: 40px;
+}
+
+@media (min-width: 900px) {
+  .SupportUsContainer {
+    text-align: left;
+  }
+
+  #social-icon-box {
+    justify-content: left;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -13,12 +36,4 @@
     padding-top: 50px;
     padding-left: 150px;
   }
-}
-
-.SupportSectionContainer {
-  margin-bottom: 50px;
-}
-
-.social-icon {
-  width: 40px;
 }

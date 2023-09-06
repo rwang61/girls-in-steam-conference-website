@@ -5,21 +5,20 @@ import ig from "./../images/logo-ig.png";
 import fb from "./../images/logo-fb.png";
 import yt from "./../images/logo-yt.png";
 import linkedin from "./../images/logo-linkedin.png";
-import notion from "./../images/logo-notion.png";
+// import notion from "./../images/logo-notion.png";
+
+import thermometer from "./../images/thermometer.svg";
 
 export default function SupportUs() {
     return (
         <div id="Support">
             <Grid container spacing={2} className="SupportUsContainer">
-                <Grid item lg={12} xl={6}>
-                    <div style={{
-                        maxWidth: 400, textAlign: "left",
-                    }}>
+                <Grid item sm={12} md={6}>
+                    <div >
                         <div className="SupportSectionContainer">
                             <Typography
                                 variant="h4"
                                 sx={{
-                                    textAlign: "left",
                                     fontWeight: "bold",
                                 }}
                             >
@@ -28,16 +27,17 @@ export default function SupportUs() {
                             <Typography
                                 variant="body1"
                                 sx={{
-                                    textAlign: "left",
                                     fontWeight: "bold",
                                 }}
                             >
                                 Girls in STEAM appreciates your support.
                             </Typography>
+
                             <Typography
                                 variant="body1"
                             >
-                                Join us in our journey to support access to STEAM education for girls, women, gender-diverse* people, and the LBGT+ community across North America.
+                                Join us in our journey to support access to STEAM education for girls, women, <br />
+                                gender-diverse* people, and the LBGT+ community across North America.
                             </Typography>
                             <Button
                                 onClick={e => { window.open('https://linktr.ee/girlsinsteamorg'); }}
@@ -59,7 +59,6 @@ export default function SupportUs() {
                             <Typography
                                 variant="h5"
                                 sx={{
-                                    textAlign: "left",
                                     fontWeight: "bold",
                                 }}
                             >
@@ -75,17 +74,15 @@ export default function SupportUs() {
                             <Typography
                                 variant="h5"
                                 sx={{
-                                    textAlign: "left",
                                     fontWeight: "bold",
                                 }}
                             >
 
                                 SEE WHAT WE'RE UP TO!
                             </Typography>
-                            <Box
+                            <Box id="social-icon-box"
                                 sx={{
                                     flexGrow: 1,
-                                    justifyContent: "left",
                                     display: "flex",
                                     gap: "20px",
                                 }}
@@ -98,7 +95,13 @@ export default function SupportUs() {
                         </div>
                     </div>
                 </Grid>
-                <Grid item lg={12} xl={6}></Grid>
+                <Grid item sm={12} md={6}>
+                    <Grid container >
+                        <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
+                            <img style={{ maxWidth: "225px" }} src={thermometer} alt="Donation tracker thermometer" />
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Grid>
         </div>
     );

@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Josefin Sans";
     src: local('JosefinSans'),
-    url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
+        url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
 
 .Hero {
@@ -71,12 +71,15 @@
     .info-column {
         margin-left: 40px;
     }
+
     .girls-in {
         font-size: 40px;
     }
+
     .STEAM {
         font-size: 74px;
     }
+
     .description {
         font-size: large;
     }
@@ -86,20 +89,28 @@
     .girls-in {
         font-size: 200%;
     }
+
     .STEAM {
         font-size: 280%;
     }
+
     .info-column {
         width: 90%;
         margin-top: 8%;
         margin-bottom: 0;
         margin-left: 10%;
-        
+
     }
+
     .carousel-column {
         width: 90%;
     }
+
     .hero-carousel {
         padding: 40px;
     }
-  }
+
+    .Hero {
+        max-height: 850px;
+    }
+}
