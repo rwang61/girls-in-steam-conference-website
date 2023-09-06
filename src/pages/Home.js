@@ -12,7 +12,7 @@ import SupportUs from "./components/SupportUs.js";
 export default function Home() {
   return (
     <div id="App">
-      <Alert rounded={false}> Want to join the team? <a href="https://linktr.ee/girlsinsteamorg">We're hiring Campus Ambassadors!</a> </Alert>
+      <Alert rounded={false}> Want to join the team? <a href="https://linktr.ee/girlsinsteamorg" target="_blank" rel="noreferrer">We're hiring Campus Ambassadors!</a> </Alert>
       <Navbar />
       <Hero />
       <AboutUs />
