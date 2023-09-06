@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import map1 from "./../images/map1.png";
+import map1 from "./../images/map-with-pins.png";
 import steambbt from "./../images/steambbt.png";
 import "./../styles/AboutUs.css";
 import "./../../fonts/JosefinSans-VariableFont_wght.ttf";
@@ -43,7 +43,6 @@ export default function AboutUs() {
               sx={{
                 textAlign: "left",
                 color: "#5A4067",
-                fontFamily: "Josefin Sans",
                 fontWeight: "medium",
                 marginBottom: "70px",
               }}
@@ -79,7 +78,6 @@ export default function AboutUs() {
             sx={{
               textAlign: "center",
               color: "#5A4067",
-              fontFamily: "Josefin Sans",
               fontWeight: "medium",
               marginTop: "70px",
             }}
