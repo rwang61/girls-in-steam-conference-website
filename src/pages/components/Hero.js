@@ -34,10 +34,10 @@ export default function Hero() {
                 <div className="carousel-column">
                     <div className="hero-carousel">
                         <AliceCarousel autoPlay autoPlayInterval="3000" infinite="true" disableDotsControls="true"
-                            renderPrevButton={() => {
+                            renderNextButton={() => {
                                 return <img className="left" src={leftArrow} alt="left-arrow" />
                             }}
-                            renderNextButton={() => {
+                            renderPrevButton={() => {
                                 return <img className="right" src={rightArrow} alt="right-arrow" />
                             }}>
                             <img className="slide-image" src={workshop} alt="GiS Workshop" />
