@@ -1,5 +1,8 @@
 import './../styles/TheTeam.css';
 import React from 'react';
+import BioDialog from './BioDialog.js';
+
+import { Typography } from "@mui/material";
 import allison from './../images/allison.png';
 import ariel from './../images/ariel.png';
 import britney from './../images/britney.png';
@@ -18,50 +21,47 @@ import melanie from './../images/melanie.png';
 import nika from './../images/nika.png';
 import rachel from './../images/rachel.png';
 
+const imgSrcs = [
+    { name: "Allison", src: allison },
+    { name: "Ariel", src: ariel },
+    { name: "Britney", src: britney },
+    { name: "Claire", src: claire },
+    { name: "Coco", src: coco },
+    { name: "Crystal", src: crystal },
+    { name: "Donna", src: donna },
+    { name: "Doreen", src: doreen },
+    { name: "Haley", src: haley },
+    { name: "Haruka", src: haruka },
+    { name: "Jackie", src: jackie },
+    { name: "Julia", src: julia },
+    { name: "Kristy", src: kristy },
+    { name: "Marina", src: marina },
+    { name: "Melanie", src: melanie },
+    { name: "Nika", src: nika },
+    { name: "Rachel", src: rachel }
+];
+
 export default function Slider() {
+    const [open, setOpen] = React.useState(false);
+    const handleBioImgClick = () => {
+        setOpen(true);
+    };
+
     return (
         <div className="the-team">
-            <p>THE TEAM BEHIND GIS</p>
+            <Typography variant="h4" sx={{ fontWeight: "bold", marginTop: "30px" }} >
+                THE TEAM BEHIND GiS
+            </Typography>
             <div className="slider">
+                {/* need two for infinite scrolling */}
                 <div className="imgs-slide">
-                    <img src={allison} alt="Allison" />
-                    <img src={ariel} alt="Ariel" />
-                    <img src={britney} alt="Britney" />
-                    <img src={claire} alt="Claire" />
-                    <img src={coco} alt="Coco" />
-                    <img src={crystal} alt="Crystal" />
-                    <img src={donna} alt="Donna" />
-                    <img src={doreen} alt="Doreen" />
-                    <img src={haley} alt="Haley" />
-                    <img src={haruka} alt="Haruka" />
-                    <img src={jackie} alt="Jackie" />
-                    <img src={julia} alt="Julia" />
-                    <img src={kristy} alt="Kristy" />
-                    <img src={marina} alt="Marina" />
-                    <img src={melanie} alt="Melanie" />
-                    <img src={nika} alt="Nika" />
-                    <img src={rachel} alt="Rachel" />
+                    {imgSrcs.map((imgSrc) => <img src={imgSrc.src} alt={imgSrc.name} key={imgSrc.name} onClick={handleBioImgClick} />)}
                 </div>
                 <div className="imgs-slide">
-                    <img src={allison} alt="Allison" />
-                    <img src={ariel} alt="Ariel" />
-                    <img src={britney} alt="Britney" />
-                    <img src={claire} alt="Claire" />
-                    <img src={coco} alt="Coco" />
-                    <img src={crystal} alt="Crystal" />
-                    <img src={donna} alt="Donna" />
-                    <img src={doreen} alt="Doreen" />
-                    <img src={haley} alt="Haley" />
-                    <img src={haruka} alt="Haruka" />
-                    <img src={jackie} alt="Jackie" />
-                    <img src={julia} alt="Julia" />
-                    <img src={kristy} alt="Kristy" />
-                    <img src={marina} alt="Marina" />
-                    <img src={melanie} alt="Melanie" />
-                    <img src={nika} alt="Nika" />
-                    <img src={rachel} alt="Rachel" />
+                    {imgSrcs.map((imgSrc) => <img src={imgSrc.src} alt={imgSrc.name} key={imgSrc.name} onClick={handleBioImgClick} />)}
                 </div>
             </div>
+            <BioDialog open={open} setOpen={setOpen} />
         </div>
     );
 }

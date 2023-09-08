@@ -3,10 +3,14 @@ import communityIcon from './../images/community-icon.svg';
 import educationIcon from './../images/education-icon.svg';
 import accessIcon from './../images/access-icon.svg';
 
+import { Typography } from "@mui/material";
+
 export default function OurValues() {
   return (
     <div id='Values' className='OurValuesContainer'>
-      <p>OUR VALUES</p>
+      <Typography variant="h4" sx={{ fontWeight: "bold", marginTop: "30px", marginBottom: "30px" }} >
+        OUR VALUES
+      </Typography>
       <div className='flexbox-container'>
         <div className='val-column-community'>
           <img className='val-icon' src={communityIcon} alt='community-icon' />
