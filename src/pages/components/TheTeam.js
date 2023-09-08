@@ -7,8 +7,10 @@ import { Typography } from "@mui/material";
 
 export default function Slider() {
     const [open, setOpen] = React.useState(false);
-    const handleBioImgClick = () => {
+    const [dialogContent, setDialogContent] = React.useState(bioData[0]);
+    const handleBioImgClick = (bio) => {
         setOpen(true);
+        setDialogContent(bio);
     };
     return (
         <div className="the-team">
@@ -18,13 +20,13 @@ export default function Slider() {
             <div className="slider">
                 {/* need two for infinite scrolling */}
                 <div className="imgs-slide">
-                    {bioData.map((imgSrc) => <img src={imgSrc.src} alt={imgSrc.name} key={imgSrc.name} onClick={handleBioImgClick} />)}
+                    {bioData.map((bio) => <img src={bio.src} alt={bio.name} key={bio.name} onClick={() => handleBioImgClick(bio)} />)}
                 </div>
                 <div className="imgs-slide">
-                    {bioData.map((imgSrc) => <img src={imgSrc.src} alt={imgSrc.name} key={imgSrc.name} onClick={handleBioImgClick} />)}
+                    {bioData.map((bio) => <img src={bio.src} alt={bio.name} key={bio.name} onClick={() => handleBioImgClick(bio)} />)}
                 </div>
             </div>
-            <BioDialog open={open} setOpen={setOpen} />
+            <BioDialog open={open} setOpen={setOpen} dialogContent={dialogContent} />
         </div>
     );
 }

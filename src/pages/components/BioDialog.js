@@ -19,14 +19,11 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 }));
 
 export default function BioDialog(props) {
-    // const [open, setOpen] = React.useState(false);
-
-    // const handleClickOpen = () => {
-    //     setOpen(true);
-    // };
     const handleClose = () => {
         props.setOpen(false);
     };
+
+    const bio = props.dialogContent;
 
     return (
         <div>
@@ -36,7 +33,7 @@ export default function BioDialog(props) {
                 open={props.open}
             >
                 <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-                    Modal title
+                    {bio.name ?? ''}
                 </DialogTitle>
                 <IconButton
                     aria-label="close"
