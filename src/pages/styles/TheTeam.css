@@ -50,15 +50,6 @@
     border-radius: 20px;
 }
 
-
-.bioImg {
-    height: 80px;
-    width: 80px;
-    margin: 0 24px;
-    transition: transform 0.5s;
-    border-radius: 20px;
-}
-
 .imgs-slide img:hover {
     transform: scale(1.2);
 }

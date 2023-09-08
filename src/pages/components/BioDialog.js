@@ -23,7 +23,7 @@ export default function BioDialog(props) {
         props.setOpen(false);
     };
 
-    const bio = props.dialogContent;
+    const bio = props.bio;
 
     return (
         <div>
@@ -33,7 +33,7 @@ export default function BioDialog(props) {
                 open={props.open}
             >
                 <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-                    {bio.name ?? ''}
+                    {bio.name}
                 </DialogTitle>
                 <IconButton
                     aria-label="close"
@@ -64,7 +64,7 @@ export default function BioDialog(props) {
                     </Typography>
                 </DialogContent>
                 <DialogActions>
-                    <Button autoFocus onClick={handleClose}>
+                    <Button onClick={handleClose}>
                         Save changes
                     </Button>
                 </DialogActions>
