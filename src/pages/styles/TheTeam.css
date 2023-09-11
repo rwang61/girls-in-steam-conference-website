@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Josefin Sans";
     src: local('JosefinSans'),
-    url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
+        url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
 
 .the-team {
@@ -30,6 +30,7 @@
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -42,7 +43,7 @@
 }
 
 .imgs-slide img {
-    height: 80px; 
+    height: 80px;
     width: 80px;
     margin: 0 24px;
     transition: transform 0.5s;
@@ -57,4 +58,4 @@
     .the-team {
         font-size: large;
     }
-  }
+}
