@@ -68,7 +68,7 @@ export const bioData = [
     {
         name: "Ariel",
         src: ariel,
-        role: "",
+        role: "President",
         email: "president@girlsinsteam.org",
         pronouns: PRONOUN_STRINGS.SHEHER,
         position: POSITION_STRINGS.EXEC,
