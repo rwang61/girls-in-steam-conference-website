@@ -2,7 +2,7 @@
   "name": "girls-in-steam-official",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://girls-in-steam.github.io/girls-in-steam-official/",
+  "homepage": "https://girlsinsteam.org/",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
