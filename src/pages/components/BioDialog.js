@@ -34,7 +34,7 @@ export default function BioDialog(props) {
                 open={props.open}
             >
                 <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-                    {bio.name + " " + bio.emojis}
+                    {bio.name + ": " + bio.role}
                 </DialogTitle>
                 <IconButton
                     aria-label="close"
@@ -49,8 +49,11 @@ export default function BioDialog(props) {
                     <CloseIcon />
                 </IconButton>
                 <DialogContent dividers>
-                    <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: "100%", marginBottom: "18px" }}>
+                    <Grid container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column", width: "100%", marginBottom: "18px" }}>
                         <img style={{ maxWidth: "200px", borderRadius: "100%" }} src={bio.src} alt="bio headshot" />
+                        <Typography fontSize={"40px"}>
+                            {bio.emojis}
+                        </Typography>
                     </Grid>
                     <Typography gutterBottom>
                         {bio.desc}
