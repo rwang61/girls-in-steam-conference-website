@@ -1,3 +1,7 @@
+#toolbar {
+    padding: 0px;
+}
+
 @media (max-width: 600px) {
     .navbar-buttons {
         display: none;

@@ -20,8 +20,8 @@ export default function ButtonAppBar() {
     };
 
     return (
-        <Box color="primary" sx={{ flexGrow: 1, paddingLeft: "60px", paddingRight: "60px" }}>
-            <Toolbar color="primary" sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box color="primary" sx={{ flexGrow: 1, paddingLeft: "5%", paddingRight: "5%" }}>
+            <Toolbar id="toolbar" color="primary" sx={{ display: "flex", justifyContent: "space-between" }}>
                 <div className='navbar-logo' style={{ flexGrow: 1, display: "flex" }} >
                     <a href="/">
                         <img src={logo} aria-label="logo" height="50px" data-testid="App-logo" style={{ justifyContent: "left" }} />

@@ -4,28 +4,25 @@
         url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
 }
 
-.Hero {
+#Hero {
     background-color: #EBE9FA;
     color: #6363AB;
     font-family: "Josefin Sans";
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 14px;
+    padding: 5%;
     border-top: solid;
     border-top-color: #A6A8CE;
-    max-height: 800px;
+    max-height: 850px;
 }
 
 .info-column {
     float: left;
     width: 34%;
-    margin: 6%;
 }
 
 .carousel-column {
-    float: left;
+    float: right;
     width: 40%;
-    margin: 6%;
 }
 
 .girls-in {
@@ -69,7 +66,7 @@
 
 @media screen and (max-width: 1100px) {
     .info-column {
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
 
     .girls-in {
@@ -96,9 +93,8 @@
 
     .info-column {
         width: 90%;
-        margin-top: 8%;
         margin-bottom: 0;
-        margin-left: 10%;
+        margin-top: 10px;
 
     }
 
@@ -110,7 +106,7 @@
         padding: 40px;
     }
 
-    .Hero {
-        max-height: 850px;
+    .description {
+        font-weight: normal;
     }
 }

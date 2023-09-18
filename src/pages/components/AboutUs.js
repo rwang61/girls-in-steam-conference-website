@@ -9,8 +9,8 @@ export default function AboutUs() {
   return (
     <div id="About">
       <Grid container spacing={2} className="AboutUsContainer">
-        <Grid item sm={12} md={6}>
-          <div sx={{ maxWidth: 400 }}>
+        <Grid item id="AboutUsDesc" sm={12} md={6}>
+          <div >
             <Typography
               variant="h4"
               sx={{
