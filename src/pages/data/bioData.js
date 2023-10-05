@@ -206,7 +206,7 @@ export const bioData = [
         position: POSITION_STRINGS.EXEC,
         location: LOCATION_STRINGS.VANCOUVER,
         emojis: "🎹🎨🏖🥏🍜",
-        desc: "Marina is a grade 12 student in Lord Byng Secondary School hoping to study Computer Science in post-secondary. Enrolled in Lord Byng’s mini arts program with a specialization in visual arts, Marina loves to express her creativity through all types of art forms. As a woman in STEAM, Marina became passionate about programming during the pandemic lockdown after stepping outside of her comfort zone in exploring a foreign digital space. Marina worked as a coding instructor during the summer, and eventually part-time now, at Under The GUI Coding Academy where she facilitates games and teaches children how to code their own mini-programs and debug in Python.",
+        desc: "Marina is a first-year Business and Computer Science student in the University of British Columbia.  As a woman in STEAM, Marina became passionate about programming during the pandemic lockdown after stepping outside of her comfort zone in exploring a foreign digital space. Marina works as a coding instructor at Under The GUI Coding Academy where she facilitates games and teaches Python, Web Development, and Robotics.",
         quote: "As a girl in STEAM, I hope to share my knowledge in arts and technology with others to provide an inclusive community that fosters learning and growth for those interested in the STEAM field.",
     },
     {
