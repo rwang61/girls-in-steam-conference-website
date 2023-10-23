@@ -20,7 +20,7 @@ export default function ButtonAppBar() {
     };
 
     return (
-        <Box color="primary" sx={{ flexGrow: 1, paddingLeft: "5%", paddingRight: "5%" }}>
+        <Box color="primary" sx={{ flexGrow: 1}}>
             <Toolbar id="toolbar" color="primary" sx={{ display: "flex", justifyContent: "space-between" }}>
                 <div className='navbar-logo' style={{ flexGrow: 1, display: "flex" }} >
                     <a href="/">

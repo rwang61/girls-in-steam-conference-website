@@ -1,10 +1,16 @@
+#Support {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
 .SupportUsContainer {
-  padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 #social-icon-box {
-  justify-content: center;
+  justify-content: left;
 }
 
 .SupportSectionContainer {
@@ -15,25 +21,17 @@
   width: 40px;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
+  #Support {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .SupportUsContainer {
-    text-align: left;
+    text-align: center;
   }
 
   #social-icon-box {
-    justify-content: left;
-  }
-}
-
-@media (min-width: 1000px) {
-  .SupportUsContainer {
-    padding: 20px 50px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .SupportUsContainer {
-    padding-top: 50px;
-    padding-left: 150px;
+    justify-content: center;
   }
 }
