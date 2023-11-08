@@ -20,6 +20,7 @@
     white-space: nowrap;
     overflow: hidden;
     padding: 20px 0;
+    cursor: pointer;
 }
 
 .slider:hover .imgs-slide {
