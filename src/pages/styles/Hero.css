@@ -5,13 +5,11 @@
 }
 
 #Hero {
-    background-color: #EBE9FA;
     color: #6363AB;
     font-family: "Josefin Sans";
     text-align: left;
-    padding: 5%;
-    border-top: solid;
-    border-top-color: #A6A8CE;
+    padding-top: 5%;
+    padding-bottom: 5%;
     max-height: 850px;
 }
 
@@ -23,6 +21,7 @@
 .carousel-column {
     float: right;
     width: 40%;
+    padding-right: 4%;
 }
 
 .girls-in {
@@ -65,8 +64,9 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .info-column {
-        /* margin-left: 40px; */
+    #Hero {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .girls-in {
@@ -95,10 +95,10 @@
         width: 90%;
         margin-bottom: 0;
         margin-top: 10px;
-
     }
 
     .carousel-column {
+        float: left;
         width: 90%;
     }
 

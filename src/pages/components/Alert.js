@@ -8,7 +8,7 @@ export default function GISAlert({ rounded, children }) {
     return (
         <div className='GISAlert'>
             <Collapse in={open}>
-                <Alert className='alert' color="giscolor" severity='info' variant='filled' square={!rounded} onClose={() => { setOpen(false) }}>{children}</Alert>
+                <Alert className='Alert' color="giscolor" severity='info' variant='filled' square={!rounded} onClose={() => { setOpen(false) }}>{children}</Alert>
             </Collapse>
         </div>
     );

@@ -13,13 +13,25 @@ export default function Home() {
   return (
     <div id="App">
       <Alert rounded={false}> Want to keep updated about our events? <a href="https://www.instagram.com/girlsinsteamorg/" target="_blank" rel="noreferrer">Check out our Instagram page!</a> </Alert>
-      <Navbar />
-      <Hero />
-      <AboutUs />
+      <div className='App-Component'>
+        <div className='Nav-Component'>
+          <Navbar />
+          </div>
+        </div>
+      <div className='Hero-Background'>
+       <div className='App-Component'>
+          <Hero />
+        </div>
+      </div>
+      <div className='App-Component'>
+        <AboutUs />
+      </div>
       <div className='Values-Team-Background'>
-        <OurValues />
-        <TheTeam />
-        <SupportUs />
+        <div className='App-Component'>
+          <OurValues />
+          <TheTeam />
+          <SupportUs />
+        </div>
       </div>
       <Footer />
     </div>
