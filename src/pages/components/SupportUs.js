@@ -67,7 +67,7 @@ export default function SupportUs() {
                             <Typography
                                 variant="body1"
                             >
-                                Email us at <a href="mailto:info@girlsinsteam.org">info@girlsinsteam.org</a> if you have any questions!
+                                💌 Email us at <a href="mailto:info@girlsinsteam.org">info@girlsinsteam.org</a> if you have any questions!
                             </Typography>
                         </div>
                         <div className="SupportSectionContainer">
