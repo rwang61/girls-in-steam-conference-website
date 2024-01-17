@@ -8,6 +8,7 @@ import OurValues from './components/OurValues.js';
 import TheTeam from "./components/TheTeam.js";
 import Hero from "./components/Hero.js";
 import SupportUs from "./components/SupportUs.js";
+import FAQ from "./components/FAQ.js";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <div className='App-Component'>
           <OurValues />
           <TheTeam />
+          <FAQ />
           <SupportUs />
         </div>
       </div>
