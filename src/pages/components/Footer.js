@@ -101,7 +101,7 @@ export default function Footer() {
                             girls in STEAM
                         </Typography>
                         <Typography variant="body2" style={{ maxWidth: "400px" }}>
-                            Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community.
+                            Supporting access to STEAM education for girls, gender-diverse students, and the LGBTQ+ community.
                         </Typography>
                         <Typography variant="body2" style={{ marginTop: "30px" }}>
                             {"© "}
