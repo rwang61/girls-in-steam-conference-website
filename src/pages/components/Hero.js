@@ -15,7 +15,7 @@ export default function Hero() {
             <div className="info-column">
                 <h1 className="girls-in">girls in <br /></h1>
                 <h1 className="STEAM">STE<span style={{ color: '#A6A8CE' }}>A</span>M</h1>
-                <h4 className="description">Supporting access to STEAM education for girls, gender-diverse people, and the LGBTQ+ community. </h4>
+                <h4 className="description">Supporting access to STEAM education for girls, gender-diverse students, and the LGBTQ+ community. </h4>
 
                 <Box className="hero-buttons">
                     <Button
