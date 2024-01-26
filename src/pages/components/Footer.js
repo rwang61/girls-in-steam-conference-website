@@ -123,6 +123,8 @@ export default function Footer() {
                         <Typography variant="h6" fontWeight={700} fontSize="1rem">
                             SUPPORT
                         </Typography>
+                        <Link href="#FAQ" variant="subtitle1">FAQ</Link><br />
+                        <Link href="mailto:info@girlsinsteam.org" variant="subtitle1">Email Us</Link><br />
                         {/* <Link href="/" variant="subtitle1">Donate</Link><br /> */}
                         {/* <Link href="/" variant="subtitle1">Become a Sponsor</Link><br /> */}
                         {/* <Link href="/" variant="subtitle1">FAQ</Link><br /> */}
