@@ -45,7 +45,7 @@ const AccordionItem = ({question, answer}) => {
 
 export default function FAQ() {
   return (
-    <div className="faq">
+    <div id="FAQ" className="faq">
         <Typography variant="h4" sx={{ fontWeight: "bold", marginTop: "30px", marginBottom: "10px" }} >
                 Frequently Asked Questions
         </Typography>
