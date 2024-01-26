@@ -10,5 +10,5 @@ export const FAQData = [
     {
         question: "How do I join the GIS team?",
         answer: "Recruitment for the executive team happens every year in January. Stay tuned!",
-    } 
+    }
 ];
