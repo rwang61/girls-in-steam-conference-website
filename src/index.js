@@ -1,22 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
 import './index.css';
 import Home from './pages/Home';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme'
-// import reportWebVitals from './reportWebVitals';
-
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
+import BlankPage from './pages/BlankPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <ThemeProvider theme={theme}><Home /></ThemeProvider>
+  },
+  {
+    path: "about-us",
+    element: <BlankPage />
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Home />
-    </ThemeProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
