@@ -30,6 +30,7 @@ export default function ButtonAppBar() {
                 <div className='navbar-buttons'>
                     <Button onClick={e => { window.location.href = '#About'; }} sx={{ textTransform: "none", fontWeight: 700 }} color="secondary">About Us</Button>
                     <Button onClick={e => { window.location.href = '#Values' }} sx={{ textTransform: "none", fontWeight: 700 }} color="secondary">Our Values</Button>
+                    <Button onClick={e => { window.location.href = '#FAQ' }} sx={{ textTransform: "none", fontWeight: 700 }} color="secondary">FAQ</Button>
                     {/* <Button color="secondary" sx={{ textTransform: "none", fontWeight: 700 }}>Events</Button> */}
                     {/* <Button color="secondary" sx={{ textTransform: "none", fontWeight: 700 }}>Get Involved</Button> */}
                     {/* <Button color="secondary" sx={{ textTransform: "none", fontWeight: 700 }}>Support Us</Button> */}
