@@ -1,5 +1,5 @@
 import './../styles/FAQ.css';
-import { FAQData } from '../data/FAQData.js';
+import { execTeamFAQData, eventsFAQData } from '../data/FAQData.js';
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -46,10 +46,18 @@ const AccordionItem = ({question, answer}) => {
 export default function FAQ() {
   return (
     <div id="FAQ" className="faq">
+      <div className="faq-section">
         <Typography variant="h4" sx={{ fontWeight: "bold", marginTop: "30px", marginBottom: "10px" }} >
-                Frequently Asked Questions
+          Exec Team FAQs
         </Typography>
-        {FAQData.map((data) => <AccordionItem question={data.question} answer={data.answer} />)}
+        {execTeamFAQData.map((data, index) => <AccordionItem key={`exec_${index}`} question={data.question} answer={data.answer} />)}
+      </div>
+      <div className="faq-section">
+        <Typography variant="h4" sx={{ fontWeight: "bold", marginTop: "30px", marginBottom: "10px" }} >
+          Events FAQs
+        </Typography>
+        {eventsFAQData.map((data, index) => <AccordionItem key={`events_${index}`} question={data.question} answer={data.answer} />)}
+      </div>
     </div>
   );
 }
