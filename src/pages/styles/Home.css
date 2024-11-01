@@ -4,7 +4,7 @@ html {
 
 #App {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #472E86;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,14 +24,23 @@ html {
 }
 
 .Hero-Background {
-  background-color: #EBE9FA;
-  border-top: solid;
-  border-top-color: #A6A8CE;
+  background-image: linear-gradient(#472E86, #7E7ED8);
   min-height: 500px;
+  margin-top: 70px;
 }
 
-.Values-Team-Background {
-  background-image: linear-gradient(#9292C9, #E0CBE8, #9F93C1);
+.About-Us-Background {
+  background-image: linear-gradient(#7E7ED8, #D0CDEA);
+  min-height: 200px;
+}
+
+.Agenda-Background {
+  background-image: linear-gradient(#D0CDEA, #7E7ED8, #472E86);
+  min-height: 200px;
+}
+
+.Sponsor-FAQ-Team-Background {
+  background-image: linear-gradient(#472E86, #5A4067, #472E86);
   background-size: 100vw !important;
 }
 

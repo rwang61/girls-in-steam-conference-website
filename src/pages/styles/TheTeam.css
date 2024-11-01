@@ -1,62 +1,63 @@
 @font-face {
-    font-family: "Josefin Sans";
-    src: local('JosefinSans'),
-        url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
+  font-family: 'Josefin Sans';
+  src:
+    local('JosefinSans'),
+    url('./../../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
 .the-team {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Josefin Sans";
-    font-weight: 500;
-    font-size: xx-large;
-    color: white;
-    text-align: center;
-    padding-top: 1%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans';
+  font-weight: 500;
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  padding-top: 1%;
 }
 
 .slider {
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 20px 0;
-    cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 20px 0;
+  cursor: pointer;
 }
 
 .slider:hover .imgs-slide {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes slide {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-100%);
-    }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .imgs-slide {
-    display: inline-block;
-    animation: 40s slide infinite linear;
-    perspective: 100px;
+  display: inline-block;
+  animation: 40s slide infinite linear;
+  perspective: 100px;
 }
 
 .imgs-slide img {
-    height: 80px;
-    width: 80px;
-    margin: 0 24px;
-    transition: transform 0.5s;
-    border-radius: 20px;
+  height: 80px;
+  width: 80px;
+  margin: 0 24px;
+  transition: transform 0.5s;
+  border-radius: 20px;
 }
 
 .imgs-slide img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 700px) {
-    .the-team {
-        font-size: large;
-    }
+  .the-team {
+    font-size: large;
+  }
 }

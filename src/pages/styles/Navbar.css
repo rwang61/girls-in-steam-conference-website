@@ -1,15 +1,15 @@
 #toolbar {
-    padding: 0px;
+  padding: 0px;
 }
 
 @media (max-width: 600px) {
-    .navbar-buttons {
-        display: none;
-    }
+  .navbar-buttons {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
-    #menu-button {
-        display: none;
-    }
+  #menu-button {
+    display: none;
+  }
 }

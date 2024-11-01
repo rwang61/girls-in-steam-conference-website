@@ -1,112 +1,156 @@
 @font-face {
-    font-family: "Josefin Sans";
-    src: local('JosefinSans'),
-        url("./../../fonts/JosefinSans-VariableFont_wght.ttf") format('truetype');
+  font-family: 'Josefin Sans';
+  src:
+    local('JosefinSans'),
+    url('./../../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
 #Hero {
-    color: #6363AB;
-    font-family: "Josefin Sans";
-    text-align: left;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    max-height: 850px;
+  color: #EDE9EA;
+  font-family: 'Josefin Sans';
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-height: 850px;
+}
+
+
+.description-container {
+  display: flex;          /* Use flexbox for alignment */
+  align-items: center;    /* Center vertically */
+  margin-top: 10px;      /* Optional: space above the container */
+}
+
+
+.pattern-background {
+  position: absolute; /* Position it absolutely within #Hero */
+  bottom: 150px;      /* Move it slightly lower than the button */
+  left: 0;            /* Align to the left */
+  width: 100%;        /* Full width */
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  z-index: 0;        /* Behind the text */
+}
+
+.rectangle {
+  position: relative; /* Set position to relative for stacking */
+  align-self: flex-end; /* Aligns rectangles to the bottom of the container */
+  margin: 0;         /* Remove margin to ensure they touch */
+}
+
+.rect-0 {
+  background-color: #59598E;
+  width: 80px;       /* Skinny rectangle */
+  height: 310px;     /* Taller */
+  z-index: -1;        /* Set a positive z-index to allow overlap */
+  position: relative; /* Position relative for stacking */
+}
+
+/* Rectangle 1 */
+.rect-1 {
+  background-color: #797DC1;
+  width: 150px;       /* Slightly wider */
+  height: 370px;     /* Taller than rect-0 */
+  opacity: 0.7;
+  z-index: 2;        /* Layer above rect-0 */
+  position: relative; /* Position relative for stacking */
+}
+
+/* Rectangle 2 */
+.rect-2 {
+  background-color: rgba(208, 206, 234, 100); /* Slightly transparent color */
+  width: 250px;       /* Wider rectangle */
+  height: 230px;      /* Shorter */
+  margin-left: -70px; /* Move left to create overlap with rect-1 */
+  z-index: 3;        /* Layer above rect-1 */
+  position: relative; /* Position relative for stacking */
+  opacity: 0.1;
+}
+
+
+.plant-image {
+  position: absolute;
+  top: 210px; /* Adjust as needed */
+  left: 3%;
+  transform: translateX(-50%);
+  width: 180px; /* Adjust to your preferred size */
+  z-index: 2; /* Ensure it appears above the rectangles */
+  opacity: 0.5;
 }
 
 .info-column {
-    float: left;
-    width: 34%;
+  display: flex;               /* Use flexbox */
+  flex-direction: column;      /* Stack items vertically */
+  justify-content: center;     /* Center horizontally (if needed) */
+  align-items: center;         /* Center vertically (if needed) */
+  height: 100%;                /* Ensure it takes full height of the parent */
 }
 
-.carousel-column {
-    float: right;
-    width: 40%;
-    padding-right: 4%;
+.gisConference {
+  font-size: 40px;
+  color: #D0CDEA;
+  text-align: center;         
+  margin: 0 0 10px; /* Add bottom margin to create space below */
 }
 
-.girls-in {
-    font-size: 55px;
-    color: #A6A8CE;
-    line-height: 10%;
+.blurb {
+  font-size: 50px;
+  margin: 0; /* Remove any margin */
+  text-shadow: 
+    2px 2px 0 rgba(0, 0, 0, 0.4), /* Hard shadow directly behind */
+    4px 4px 0 rgba(0, 0, 0, 0.3), /* Slightly offset shadow */
+    6px 6px 0 rgba(0, 0, 0, 0.2); /* Further offset shadow */
 }
 
-.STEAM {
-    font-size: 100px;
-    line-height: 30px;
-}
+
 
 .description {
-    font-size: x-large;
+  font-size: 35px; /* Adjust as needed */
+  margin: 0; /* No margin to eliminate space between description headings */
+  font-weight: normal;
 }
 
-.slide-image {
-    width: 100%;
-    object-fit: cover;
+/* Add gap below STEAM */
+.blurb + .description {
+  margin-top: 20px; /* Gap between the last STEAM and descriptions */
 }
 
-.alice-carousel__wrapper {
-    border-radius: 15px;
-    max-height: 400px;
-}
-
-.right {
-    margin-right: 100px;
-    position: absolute;
-    left: -40px;
-    top: 40%;
-}
-
-.left {
-    margin-left: 100px;
-    position: absolute;
-    right: -40px;
-    top: 40%;
-}
 
 @media screen and (max-width: 1100px) {
-    #Hero {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  #Hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    .girls-in {
-        font-size: 40px;
-    }
+  .gisConference {
+    font-size: 20px;
+  }
 
-    .STEAM {
-        font-size: 74px;
-    }
+  .blurb {
+    font-size: 30px;
+  }
 
-    .description {
-        font-size: large;
-    }
+  .description {
+    font-size: large;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .girls-in {
-        font-size: 200%;
-    }
+  .gisConference {
+    font-size: 60%;
+  }
 
-    .STEAM {
-        font-size: 280%;
-    }
+  .blurb {
+    font-size: 100%;
+  }
 
-    .info-column {
-        width: 90%;
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
+  .info-column {
+    width: 90%;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
 
-    .carousel-column {
-        float: left;
-        width: 90%;
-    }
-
-    .hero-carousel {
-        padding: 40px;
-    }
-
-    .description {
-        font-weight: normal;
-    }
+  .description {
+    font-weight: normal;
+  }
 }
