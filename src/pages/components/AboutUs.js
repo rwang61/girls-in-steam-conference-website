@@ -3,7 +3,7 @@ import booth from './../images/booth.jpg';
 import './../styles/AboutUs.css';
 import './../../fonts/JosefinSans-VariableFont_wght.ttf';
 import './../../fonts/Rastano.ttf';
-// format
+
 export default function AboutUs() {
   return (
     <div id="About">
