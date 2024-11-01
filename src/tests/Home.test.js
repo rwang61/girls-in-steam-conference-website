@@ -7,4 +7,3 @@ test('renders toolbar logo', () => {
   expect(logo).toHaveAttribute('src', 'gis-logo.png');
   expect(logo).toHaveAttribute('aria-label', 'logo');
 });
-
