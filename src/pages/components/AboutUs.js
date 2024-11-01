@@ -3,6 +3,7 @@ import booth from './../images/booth.jpg';
 import './../styles/AboutUs.css';
 import './../../fonts/JosefinSans-VariableFont_wght.ttf';
 import './../../fonts/Rastano.ttf';
+// lol
 
 export default function AboutUs() {
   return (
