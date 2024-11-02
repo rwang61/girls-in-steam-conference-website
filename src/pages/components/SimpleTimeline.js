@@ -1,7 +1,7 @@
 import React from 'react';
-import './../styles/Timeline.css';
+import './../styles/SimpleTimeline.css';
 
-const Timeline = () => {
+const SimpleTimeline = () => {
   const timelineItems = [
     {
       time: '6:00AM - 7:00AM',
@@ -88,4 +88,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default SimpleTimeline;

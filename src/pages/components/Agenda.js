@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './../styles/Agenda.css';
 import { ToggleButton } from '@mui/material';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import Timeline from './Timeline';
+import SimpleTimeline from './SimpleTimeline';
 
 export default function Agenda() {
   const [selected, setSelected] = useState(false);
@@ -33,7 +33,7 @@ export default function Agenda() {
         {selected ? (
           <>
             <div className="schedule-content">
-              <Timeline />
+              <SimpleTimeline />
             </div>
           </>
         ) : (
