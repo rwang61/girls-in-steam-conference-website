@@ -5,10 +5,8 @@
   text-align: center;
 }
 
-.AboutUsDesc {
-  padding-left: 0px;
-}
 .shadow-text {
+  color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adjust values for desired shadow effect */
 }
 

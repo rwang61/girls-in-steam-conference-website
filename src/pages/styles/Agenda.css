@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: local('JosefinSans'),
+         url('./../../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Agenda.css */
+
+.agenda-background {
+    background-image: linear-gradient(#D0CDEA, #7E7ED8, #472E86);
+    transition: min-height 0.3s ease; /* Smooth transition for height change */
+  }
+  
+  .agenda-background.expanded {
+    min-height: 200px; /* Adjust as needed for the expanded state */
+  }
+
+  .agenda-header {
+    display: flex;             /* Use flexbox for layout */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    color: white;
+  }
+  
+
+.schedule-content {
+    margin-top: 10px;
+    padding: 10px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.custom-toggle-button {
+    border: none;
+    font-size: 3rem;
+    padding: 8px 16px;
+    background-color: transparent; /* Ensure background is transparent */
+    color: white; /* Arrow is white in both states */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth expand effect */
+    box-shadow: none; /* Remove any box shadow */
+}
+
+/* Remove the default hover effect */
+.custom-toggle-button:hover {
+    background-color: transparent; /* Ensures no background color on hover */
+    border: none;
+    box-shadow: none;
+}
+
+/* Ensure no shadow or background when selected */
+.custom-toggle-button.Mui-selected {
+    background-color: transparent; /* Keep background transparent when selected */
+    box-shadow: none; /* Remove any box shadow when selected */
+    border: none;
+}
+
+/* Style the arrow icon */
+.arrow-icon {
+    font-size: 10rem;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: white; /* Arrow is white in both states */
+    transition: transform 0.2s ease-in-out; /* Smooth expand effect */
+}
+
+/* Hover effect to expand the arrow slightly */
+.custom-toggle-button:hover .arrow-icon {
+    border: none;
+    transform: scale(1.2); /* Expands slightly on hover */
+}
+
+/* Ensure that the ToggleButton has no border */
+.MuiToggleButton-root {
+    border: none !important; /* Override any default border styles */
+    background-color: transparent !important; /* Maintain transparency */
+}
+
+/* Ensure your custom toggle button styles are applied */
+.custom-toggle-button {
+    padding: 0; /* You can adjust this as needed */
+    box-shadow: none; /* Remove any box shadow if needed */
+}
