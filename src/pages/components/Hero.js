@@ -19,28 +19,6 @@ export default function Hero() {
           opacity: 0.2
         }}
       />
-      <FaGear
-        style={{
-          position: 'absolute',
-          top: '30px',
-          right: '10px',
-          fontSize: '190px', // Size for the top icon
-          zIndex: 1,
-          color: '#A36CBE',
-          opacity: 0.3
-        }}
-      />
-      <FaGear
-        style={{
-          position: 'absolute',
-          top: '200px', // Adjust to your liking
-          right: '200px', // Adjust to your liking
-          fontSize: '100px', // Smaller size for the bottom icon
-          zIndex: 1,
-          color: '#A36CBE',
-          opacity: 0.3
-        }}
-      />
       <div className="info-column">
         <h2 className="gisConference">
           GIS Conference 2025 <br />
@@ -62,13 +40,15 @@ export default function Hero() {
           </h4>
         </div>
 
-        <Box className="hero-buttons">
+        <Box className="hero-buttons" sx={{ display: 'flex', gap: 2 }}>
           <Button
             onClick={() => {
+              console.log('Button clicked');
               window.open('https://linktr.ee/girlsinsteamorg');
             }}
             sx={{
-              width: 200,
+              width: 180,
+              height: 50,
               backgroundColor: '#7D5390',
               color: 'white',
               borderRadius: 4,
@@ -77,12 +57,36 @@ export default function Hero() {
               fontWeight: 700,
               marginTop: 2,
               boxShadow: '0 0 10px white',
+              zIndex: 2,
               '&:hover': {
                 boxShadow: '0 0 15px white'
               }
             }}
             variant="contained">
             Notify Me
+          </Button>
+          <Button
+            onClick={() => {
+              window.open('https://linktr.ee/girlsinsteamorg');
+            }}
+            sx={{
+              width: 180,
+              height: 50,
+              backgroundColor: 'rgb(125, 83, 144, 0.4)',
+              color: 'white',
+              borderRadius: 4,
+              fontFamily: 'Josefin Sans',
+              fontSize: 18,
+              fontWeight: 700,
+              marginTop: 2,
+              boxShadow: '0 0 10px white',
+              zIndex: 2,
+              '&:hover': {
+                boxShadow: '0 0 15px white'
+              }
+            }}
+            variant="contained">
+            Support GIS
           </Button>
         </Box>
 
@@ -91,9 +95,12 @@ export default function Hero() {
           <div className="rectangle rect-0"></div>
           <div className="rectangle rect-1"></div>
           <div className="rectangle rect-2"></div>
-
-          {/* Plant Image */}
           <img src={Plant} alt="Plant" className="plant-image" />
+        </div>
+        <div className="pattern-background2">
+          <div className="rectangle2 rect-3"></div>
+          <div className="rectangle2 rect-4"></div>
+          <div className="rectangle2 rect-5"></div>
         </div>
       </div>
     </div>

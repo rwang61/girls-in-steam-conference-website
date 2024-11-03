@@ -15,6 +15,8 @@
 }
 
 
+
+
 .description-container {
   display: flex;          /* Use flexbox for alignment */
   align-items: center;    /* Center vertically */
@@ -35,7 +37,8 @@
 .rectangle {
   position: relative; /* Set position to relative for stacking */
   align-self: flex-end; /* Aligns rectangles to the bottom of the container */
-  margin: 0;         /* Remove margin to ensure they touch */
+  margin: 0; 
+  margin-bottom: -42px;
 }
 
 .rect-0 {
@@ -67,13 +70,58 @@
   opacity: 0.1;
 }
 
+.pattern-background2 {
+  position: absolute; /* Position it absolutely within #Hero */
+  bottom: 110px;     
+  right: 0;            
+  width: 100%;        
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  z-index: 0;        /* Behind the text */
+}
+
+.rectangle2 {
+  position: relative; /* Set position to relative for stacking */
+  align-self: flex-end; /* Aligns rectangles to the bottom of the container */
+  margin: 0; /* Remove any margin */
+}
+
+/* Rectangle Definitions */
+.rect-3 {
+  background-image: linear-gradient(#6363AB, rgba(99, 99, 171, 0.3));
+  width: 350px;       /* Adjust as needed */
+  height: 110px;     /* Taller */
+  z-index: 3;   
+  margin-right: -100px;    
+  position: relative; /* Position relative for stacking */
+}
+
+/* Rectangle 1 */
+.rect-4 {
+  background-color: #DCCDEA;
+  width: 180px;       /* Adjust as needed */
+  height: 590px;     /* Taller than rect-3 */
+  opacity: 0.38;
+  z-index: 2;        /* Layer above rect-3 */
+  position: relative; /* Position relative for stacking */
+}
+
+/* Rectangle 2 */
+.rect-5 {
+  background-color: #5A4067; /* Adjust as needed */
+  width: 100px;       /* Adjust as needed */
+  height: 620px;      /* Taller */
+  z-index: 3;        /* Layer above rect-4 */
+  position: relative; /* Position relative for stacking */
+}
+
 
 .plant-image {
   position: absolute;
-  top: 210px; /* Adjust as needed */
-  left: 3%;
+  top: 105px; /* Adjust as needed */
+  left: 100px;
   transform: translateX(-50%);
-  width: 180px; /* Adjust to your preferred size */
+  width: 300px; /* Adjust to your preferred size */
   z-index: 2; /* Ensure it appears above the rectangles */
   opacity: 0.5;
 }
