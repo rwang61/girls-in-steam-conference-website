@@ -29,35 +29,105 @@ export default function ButtonAppBar() {
             <img
               src={logo}
               aria-label="logo"
-              height="30px"
+              height="50px"
               data-testid="App-logo"
-              style={{ marginRight: '8px' }} // Optional: spacing after logo
+              //  style={{ marginLeft: '5px' }} // Optional: spacing after logo
             />
           </a>
         </div>
         <div className="navbar-buttons" style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             onClick={() => {
-              window.location.href = '#About';
+              window.location.href = '#Home';
             }}
-            sx={{ textTransform: 'none', fontWeight: 700 }}
-            color="secondary">
-            About Us
+            sx={{
+              textTransform: 'none', 
+              mx: 4,
+              fontSize: '1.2rem',
+              backgroundColor: 'transparent', // Set to transparent or any desired color
+              color: 'lightgrey', // Default text color
+              fontWeight: 700,
+              zIndex: 2,
+              '&:hover': {
+                color: 'white', // Change text color on hover
+              }
+            }}
+            >
+            Home
           </Button>
           <Button
             onClick={() => {
-              window.location.href = '#Values';
+              window.location.href = '#About';
             }}
-            sx={{ textTransform: 'none', fontWeight: 700 }}
-            color="secondary">
-            Our Values
+            sx={{
+              textTransform: 'none', 
+              mx: 4,
+              fontSize: '1.2rem',
+              backgroundColor: 'transparent', // Set to transparent or any desired color
+              color: 'lightgrey', // Default text color
+              fontWeight: 700,
+              zIndex: 2,
+              '&:hover': {
+                color: 'white', // Change text color on hover
+              }
+            }}
+            >
+            About
+          </Button>
+          <Button
+            onClick={() => {
+              window.location.href = '#Agenda';
+            }}
+            sx={{
+              textTransform: 'none', 
+              mx: 4,
+              fontSize: '1.2rem',
+              backgroundColor: 'transparent', // Set to transparent or any desired color
+              color: 'lightgrey', // Default text color
+              fontWeight: 700,
+              zIndex: 2,
+              '&:hover': {
+                color: 'white', // Change text color on hover
+              }
+            }}
+            >
+            Agenda
+          </Button>
+          <Button
+            onClick={() => {
+              window.location.href = '#Sponsors';
+            }}            
+            sx={{
+              textTransform: 'none', 
+              mx: 4,
+              fontSize: '1.2rem',
+              backgroundColor: 'transparent', // Set to transparent or any desired color
+              color: 'lightgrey', // Default text color
+              fontWeight: 700,
+              zIndex: 2,
+              '&:hover': {
+                color: 'white', // Change text color on hover
+              }
+            }}>
+            Sponsors
           </Button>
           <Button
             onClick={() => {
               window.location.href = '#FAQ';
             }}
-            sx={{ textTransform: 'none', fontWeight: 700 }}
-            color="secondary">
+            sx={{
+              textTransform: 'none', 
+              mx: 4,
+              fontSize: '1.2rem',
+              backgroundColor: 'transparent', // Set to transparent or any desired color
+              color: 'lightgrey', // Default text color
+              fontWeight: 700,
+              zIndex: 2,
+              '&:hover': {
+                color: 'white', // Change text color on hover
+              }
+            }}
+            >
             FAQ
           </Button>
         </div>
