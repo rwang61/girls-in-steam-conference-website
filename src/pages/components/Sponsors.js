@@ -3,7 +3,7 @@ import './../styles/SupportUs.css';
 import { Grid, Typography } from '@mui/material';
 // import notion from "./../images/logo-notion.png";
 
-export default function SupportUs() {
+export default function Sponsors() {
   return (
     <div id="Support">
       <Grid container spacing={2} className="SupportUsContainer">

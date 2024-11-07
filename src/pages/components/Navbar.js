@@ -41,7 +41,7 @@ export default function ButtonAppBar() {
               window.location.href = '#Home';
             }}
             sx={{
-              textTransform: 'none', 
+              textTransform: 'none',
               mx: 4,
               fontSize: '1.2rem',
               backgroundColor: 'transparent', // Set to transparent or any desired color
@@ -49,10 +49,9 @@ export default function ButtonAppBar() {
               fontWeight: 700,
               zIndex: 2,
               '&:hover': {
-                color: 'white', // Change text color on hover
+                color: 'white' // Change text color on hover
               }
-            }}
-            >
+            }}>
             Home
           </Button>
           <Button
@@ -60,7 +59,7 @@ export default function ButtonAppBar() {
               window.location.href = '#About';
             }}
             sx={{
-              textTransform: 'none', 
+              textTransform: 'none',
               mx: 4,
               fontSize: '1.2rem',
               backgroundColor: 'transparent', // Set to transparent or any desired color
@@ -68,10 +67,9 @@ export default function ButtonAppBar() {
               fontWeight: 700,
               zIndex: 2,
               '&:hover': {
-                color: 'white', // Change text color on hover
+                color: 'white' // Change text color on hover
               }
-            }}
-            >
+            }}>
             About
           </Button>
           <Button
@@ -79,7 +77,7 @@ export default function ButtonAppBar() {
               window.location.href = '#Agenda';
             }}
             sx={{
-              textTransform: 'none', 
+              textTransform: 'none',
               mx: 4,
               fontSize: '1.2rem',
               backgroundColor: 'transparent', // Set to transparent or any desired color
@@ -87,18 +85,17 @@ export default function ButtonAppBar() {
               fontWeight: 700,
               zIndex: 2,
               '&:hover': {
-                color: 'white', // Change text color on hover
+                color: 'white' // Change text color on hover
               }
-            }}
-            >
+            }}>
             Agenda
           </Button>
           <Button
             onClick={() => {
               window.location.href = '#Sponsors';
-            }}            
+            }}
             sx={{
-              textTransform: 'none', 
+              textTransform: 'none',
               mx: 4,
               fontSize: '1.2rem',
               backgroundColor: 'transparent', // Set to transparent or any desired color
@@ -106,7 +103,7 @@ export default function ButtonAppBar() {
               fontWeight: 700,
               zIndex: 2,
               '&:hover': {
-                color: 'white', // Change text color on hover
+                color: 'white' // Change text color on hover
               }
             }}>
             Sponsors
@@ -116,7 +113,7 @@ export default function ButtonAppBar() {
               window.location.href = '#FAQ';
             }}
             sx={{
-              textTransform: 'none', 
+              textTransform: 'none',
               mx: 4,
               fontSize: '1.2rem',
               backgroundColor: 'transparent', // Set to transparent or any desired color
@@ -124,10 +121,9 @@ export default function ButtonAppBar() {
               fontWeight: 700,
               zIndex: 2,
               '&:hover': {
-                color: 'white', // Change text color on hover
+                color: 'white' // Change text color on hover
               }
-            }}
-            >
+            }}>
             FAQ
           </Button>
         </div>
