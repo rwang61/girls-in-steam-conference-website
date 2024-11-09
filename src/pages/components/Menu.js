@@ -28,12 +28,12 @@ export default function NavbarMenu({ isOpen, handleClose, anchorEl }) {
         <MenuItem>
           <Button
             onClick={() => {
-              window.location.href = '#Values';
+              window.location.href = '#Sponsors';
               handleClose();
             }}
             color="secondary"
             sx={{ textTransform: 'none', fontWeight: 700 }}>
-            Our Values
+            Sponsors
           </Button>
         </MenuItem>
       </Menu>
