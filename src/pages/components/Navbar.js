@@ -23,127 +23,134 @@ export default function ButtonAppBar() {
       <Toolbar
         id="toolbar"
         color="primary"
-        sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center' }}>
-          <a href="/">
-            <img
-              src={logo}
-              aria-label="logo"
-              height="50px"
-              data-testid="App-logo"
-              //  style={{ marginLeft: '5px' }} // Optional: spacing after logo
-            />
-          </a>
+        sx={{
+          position: 'fixed',
+          top: 40,
+          width: '100%',
+          zIndex: 1000
+        }}>
+        {/* Add an inner container to control margin */}
+        <div style={{ display: 'flex', alignItems: 'center', width: '100%', marginLeft: '60px' }}>
+          <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center' }}>
+            <a href="/">
+              <img
+                src={logo}
+                aria-label="logo"
+                height="50px"
+                data-testid="App-logo"
+              />
+            </a>
+          </div>
+          <div className="navbar-buttons" style={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+            <Button
+              onClick={() => {
+                window.location.href = '#Hero';
+              }}
+              sx={{
+                textTransform: 'none',
+                mx: 4,
+                fontSize: '1.2rem',
+                backgroundColor: 'transparent',
+                color: 'lightgrey',
+                fontWeight: 700,
+                zIndex: 2,
+                '&:hover': {
+                  color: 'white'
+                }
+              }}>
+              Home
+            </Button>
+            <Button
+              onClick={() => {
+                window.location.href = '#About';
+              }}
+              sx={{
+                textTransform: 'none',
+                mx: 4,
+                fontSize: '1.2rem',
+                backgroundColor: 'transparent',
+                color: 'lightgrey',
+                fontWeight: 700,
+                zIndex: 2,
+                '&:hover': {
+                  color: 'white'
+                }
+              }}>
+              About
+            </Button>
+            <Button
+              onClick={() => {
+                window.location.href = '#Agenda';
+              }}
+              sx={{
+                textTransform: 'none',
+                mx: 4,
+                fontSize: '1.2rem',
+                backgroundColor: 'transparent',
+                color: 'lightgrey',
+                fontWeight: 700,
+                zIndex: 2,
+                '&:hover': {
+                  color: 'white'
+                }
+              }}>
+              Agenda
+            </Button>
+            <Button
+              onClick={() => {
+                window.location.href = '#Sponsors';
+              }}
+              sx={{
+                textTransform: 'none',
+                mx: 4,
+                fontSize: '1.2rem',
+                backgroundColor: 'transparent',
+                color: 'lightgrey',
+                fontWeight: 700,
+                zIndex: 2,
+                '&:hover': {
+                  color: 'white'
+                }
+              }}>
+              Sponsors
+            </Button>
+            <Button
+              onClick={() => {
+                window.location.href = '#FAQ';
+              }}
+              sx={{
+                textTransform: 'none',
+                mx: 4,
+                fontSize: '1.2rem',
+                backgroundColor: 'transparent',
+                color: 'lightgrey',
+                fontWeight: 700,
+                zIndex: 2,
+                '&:hover': {
+                  color: 'white'
+                }
+              }}>
+              FAQ
+            </Button>
+          </div>
+          <IconButton
+            id="menu-button"
+            onClick={handleClick}
+            size="large"
+            color="primary"
+            sx={{ mr: 2 }}>
+            <MenuIcon color="secondary" />
+          </IconButton>
+          <NavbarMenu
+            aria-controls={open ? 'basic-menu' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            isOpen={open}
+            handleClose={handleClose}
+            anchorEl={anchorEl}
+            aria-label="menu"
+          />
         </div>
-        <div className="navbar-buttons" style={{ display: 'flex', alignItems: 'center' }}>
-          <Button
-            onClick={() => {
-              window.location.href = '#Home';
-            }}
-            sx={{
-              textTransform: 'none',
-              mx: 4,
-              fontSize: '1.2rem',
-              backgroundColor: 'transparent', // Set to transparent or any desired color
-              color: 'lightgrey', // Default text color
-              fontWeight: 700,
-              zIndex: 2,
-              '&:hover': {
-                color: 'white' // Change text color on hover
-              }
-            }}>
-            Home
-          </Button>
-          <Button
-            onClick={() => {
-              window.location.href = '#About';
-            }}
-            sx={{
-              textTransform: 'none',
-              mx: 4,
-              fontSize: '1.2rem',
-              backgroundColor: 'transparent', // Set to transparent or any desired color
-              color: 'lightgrey', // Default text color
-              fontWeight: 700,
-              zIndex: 2,
-              '&:hover': {
-                color: 'white' // Change text color on hover
-              }
-            }}>
-            About
-          </Button>
-          <Button
-            onClick={() => {
-              window.location.href = '#Agenda';
-            }}
-            sx={{
-              textTransform: 'none',
-              mx: 4,
-              fontSize: '1.2rem',
-              backgroundColor: 'transparent', // Set to transparent or any desired color
-              color: 'lightgrey', // Default text color
-              fontWeight: 700,
-              zIndex: 2,
-              '&:hover': {
-                color: 'white' // Change text color on hover
-              }
-            }}>
-            Agenda
-          </Button>
-          <Button
-            onClick={() => {
-              window.location.href = '#Sponsors';
-            }}
-            sx={{
-              textTransform: 'none',
-              mx: 4,
-              fontSize: '1.2rem',
-              backgroundColor: 'transparent', // Set to transparent or any desired color
-              color: 'lightgrey', // Default text color
-              fontWeight: 700,
-              zIndex: 2,
-              '&:hover': {
-                color: 'white' // Change text color on hover
-              }
-            }}>
-            Sponsors
-          </Button>
-          <Button
-            onClick={() => {
-              window.location.href = '#FAQ';
-            }}
-            sx={{
-              textTransform: 'none',
-              mx: 4,
-              fontSize: '1.2rem',
-              backgroundColor: 'transparent', // Set to transparent or any desired color
-              color: 'lightgrey', // Default text color
-              fontWeight: 700,
-              zIndex: 2,
-              '&:hover': {
-                color: 'white' // Change text color on hover
-              }
-            }}>
-            FAQ
-          </Button>
-        </div>
-        <IconButton
-          id="menu-button"
-          onClick={handleClick}
-          size="large"
-          color="primary"
-          sx={{ mr: 2 }}>
-          <MenuIcon color="secondary" />
-        </IconButton>
-        <NavbarMenu
-          aria-controls={open ? 'basic-menu' : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? 'true' : undefined}
-          isOpen={open}
-          handleClose={handleClose}
-          anchorEl={anchorEl}
-          aria-label="menu"
-        />
       </Toolbar>
     </Box>
   );
