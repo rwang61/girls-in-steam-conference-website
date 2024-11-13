@@ -53,13 +53,11 @@ const AccordionItem = ({ question, answer }) => {
           margin: '0 0',
           marginTop: '8px',
           marginRight: '10px',
-          // marginBottom: '-16px',
           borderBottom: '1px solid #D0CDEA'
         }} />
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{
-          // margins: '0 0',
           marginTop: '-16px',
           backgroundColor: 'transparent',
           minHeight: '0px',
