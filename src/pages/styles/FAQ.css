@@ -5,18 +5,6 @@
     url('./../../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
-.the-team {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Josefin Sans';
-  font-weight: 500;
-  font-size: xx-large;
-  color: white;
-  text-align: center;
-  padding-top: 1%;
-}
-
 .accordion {
   padding-bottom: 20px;
 }
