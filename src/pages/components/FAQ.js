@@ -11,11 +11,12 @@ import Divider from '@mui/material/Divider';
 const AccordionItem = ({ question, answer }) => {
   return (
     <div className="accordion">
-      <Accordion sx={{
-        marginBottom: '-16px',
-        padding: '0 0',
-        backgroundColor: 'transparent',
-        boxShadow: 'none',
+      <Accordion
+        sx={{
+          marginBottom: '-16px',
+          padding: '0 0',
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
           '& MuiAccordion-root': {
             backgroundColor: 'transparent'
           },
@@ -23,19 +24,22 @@ const AccordionItem = ({ question, answer }) => {
             backgroundColor: 'transparent'
           }
         }}>
-        <AccordionSummary 
-        expandIcon={<ExpandMoreIcon sx={{
-          color: '#D0CDEA',
-          fontSize: '36px',
-          marginRight: '0',
-          padding: '0 0'
-        }}
-        />}
-        sx={{
-          overflowX: 'hidden',
-          padding: '0 0',
-          margins: '0 0'
-        }}>
+        <AccordionSummary
+          expandIcon={
+            <ExpandMoreIcon
+              sx={{
+                color: '#D0CDEA',
+                fontSize: '36px',
+                marginRight: '0',
+                padding: '0 0'
+              }}
+            />
+          }
+          sx={{
+            overflowX: 'hidden',
+            padding: '0 0',
+            margins: '0 0'
+          }}>
           <Typography
             variant="h5"
             sx={{
@@ -48,20 +52,23 @@ const AccordionItem = ({ question, answer }) => {
               padding: '0 0'
             }}>
             {question}
-            <Divider sx={{
-          width: '350%',
-          margin: '0 0',
-          marginTop: '8px',
-          marginRight: '10px',
-          borderBottom: '1px solid #D0CDEA'
-        }} />
+            <Divider
+              sx={{
+                width: '350%',
+                margin: '0 0',
+                marginTop: '8px',
+                marginRight: '10px',
+                borderBottom: '1px solid #D0CDEA'
+              }}
+            />
           </Typography>
         </AccordionSummary>
-        <AccordionDetails sx={{
-          marginTop: '-16px',
-          backgroundColor: 'transparent',
-          minHeight: '0px',
-          maxHeight: '48px'
+        <AccordionDetails
+          sx={{
+            marginTop: '-16px',
+            backgroundColor: 'transparent',
+            minHeight: '0px',
+            maxHeight: '48px'
           }}>
           <Typography
             variant="h6"
@@ -87,7 +94,13 @@ export default function FAQ() {
       <div className="faq-section">
         <Typography
           variant="h4"
-          sx={{ fontWeight: 'bold', marginTop: '30px', marginBottom: '10px', textShadow: '4px 8px 4px rgba(0, 0, 0, 0.25)', color: '#EDE9EA'}}>
+          sx={{
+            fontWeight: 'bold',
+            marginTop: '30px',
+            marginBottom: '10px',
+            textShadow: '4px 8px 4px rgba(0, 0, 0, 0.25)',
+            color: '#EDE9EA'
+          }}>
           FREQUENTLY ASKED QUESTIONS
         </Typography>
         {execTeamFAQData.map((data, index) => (
