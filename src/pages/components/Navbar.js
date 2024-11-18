@@ -19,26 +19,38 @@ export default function ButtonAppBar() {
   };
 
   return (
-    <Box color="primary" sx={{ flexGrow: 1 }}>
+    <Box 
+      sx={{
+        position: 'fixed', 
+        top: 0,
+        width: '100%',
+        left: 0, // Add this to ensure it starts from the left edge
+        right: 0, // Add this to ensure it extends to the right edge
+        zIndex: 1000, 
+        backgroundColor: '#5A4067'// color for the navbar
+      }}
+    >
+
       <Toolbar
         id="toolbar"
-        color="primary"
-        sx={{
-          position: 'fixed',
-          top: 40,
+        sx={{ 
           width: '100%',
-          zIndex: 1000
-        }}>
-        {/* Add an inner container to control margin */}
-        <div style={{ display: 'flex', alignItems: 'center', width: '100%', marginLeft: '60px' }}>
-          <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center' }}>
+          margin: 0,
+          padding: '0 16px', // Add consistent padding
+          minHeight: '64px',
+          justifyContent: 'space-between', // Ensures the logo and buttons are spread across the width
+          display: 'flex'          
+        }}
+      >
+        {/*margin left basically adds padding btwn buttons */}
+        <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+          <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',marginLeft: '20px'}}>
             <a href="/">
               <img src={logo} aria-label="logo" height="50px" data-testid="App-logo" />
             </a>
           </div>
-          <div
-            className="navbar-buttons"
-            style={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+          <div className="navbar-buttons" style={{ display: 'flex', alignItems: 'center', flexGrow: 1,justifyContent: 'center' }}>
+
             <Button
               onClick={() => {
                 window.location.href = '#Hero';
