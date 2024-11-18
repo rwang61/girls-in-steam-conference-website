@@ -3,7 +3,6 @@ import { TiLocation } from 'react-icons/ti';
 import { Box, Button } from '@mui/material';
 import { FaGear } from 'react-icons/fa6';
 import './../styles/Hero.css';
-import Plant from './../images/plant.png';
 
 export default function Hero() {
   return (
@@ -89,19 +88,6 @@ export default function Hero() {
             Support GIS
           </Button>
         </Box>
-
-        {/* Rectangles Section */}
-        <div className="pattern-background">
-          <div className="rectangle rect-0"></div>
-          <div className="rectangle rect-1"></div>
-          <div className="rectangle rect-2"></div>
-          <img src={Plant} alt="Plant" className="plant-image" />
-        </div>
-        <div className="pattern-background2">
-          <div className="rectangle2 rect-3"></div>
-          <div className="rectangle2 rect-4"></div>
-          <div className="rectangle2 rect-5"></div>
-        </div>
       </div>
     </div>
   );

@@ -33,17 +33,7 @@ html {
   background-image: linear-gradient(#7E7ED8, #D0CDEA);
   min-height: 200px;
 }
-.About-Us-Background::before {
-  content: '';
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  right: 0;
-  height: 5%; /* Full height */
-  background: inherit; /* Use the same background as the section */
-  filter: blur(8px); /* Adjust blur strength as needed */
-  z-index: 100; /* Place it behind the content */
-}
+
 
 .Agenda-Background {
   background-image: linear-gradient(#D0CDEA, #7E7ED8, #472E86);

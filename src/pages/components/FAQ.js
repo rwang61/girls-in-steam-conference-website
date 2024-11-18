@@ -6,32 +6,79 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Divider from '@mui/material/Divider';
 
 const AccordionItem = ({ question, answer }) => {
   return (
     <div className="accordion">
-      <Accordion>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+      <Accordion
+        sx={{
+          marginBottom: '-16px',
+          padding: '0 0',
+          backgroundColor: 'transparent',
+          boxShadow: 'none',
+          '& MuiAccordion-root': {
+            backgroundColor: 'transparent'
+          },
+          '& MuiPaper-root': {
+            backgroundColor: 'transparent'
+          }
+        }}>
+        <AccordionSummary
+          expandIcon={
+            <ExpandMoreIcon
+              sx={{
+                color: '#D0CDEA',
+                fontSize: '36px',
+                marginRight: '0',
+                padding: '0 0'
+              }}
+            />
+          }
+          sx={{
+            overflowX: 'hidden',
+            padding: '0 0',
+            margins: '0 0'
+          }}>
           <Typography
             variant="h5"
             sx={{
+              textAlign: 'left',
               fontWeight: 'bold',
-              color: '#6363AB',
-              marginLeft: '10px',
-              fontFamily: 'Josefin Sans'
+              color: '#D0CDEA',
+              marginLeft: '0px',
+              fontFamily: 'Josefin Sans',
+              overflow: 'visible',
+              padding: '0 0'
             }}>
             {question}
+            <Divider
+              sx={{
+                width: '350%',
+                margin: '0 0',
+                marginTop: '8px',
+                marginRight: '10px',
+                borderBottom: '1px solid #D0CDEA'
+              }}
+            />
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails
+          sx={{
+            marginTop: '-16px',
+            backgroundColor: 'transparent',
+            minHeight: '0px',
+            maxHeight: '48px'
+          }}>
           <Typography
             variant="h6"
             sx={{
               textAlign: 'left',
-              color: '#5A4067',
+              color: '#D0CDEA',
               fontWeight: 'medium',
               marginBottom: '70px',
-              marginLeft: '10px'
+              marginLeft: '-16px',
+              marginTop: '0px'
             }}>
             {answer}
           </Typography>
@@ -47,7 +94,13 @@ export default function FAQ() {
       <div className="faq-section">
         <Typography
           variant="h4"
-          sx={{ fontWeight: 'bold', marginTop: '30px', marginBottom: '10px' }}>
+          sx={{
+            fontWeight: 'bold',
+            marginTop: '30px',
+            marginBottom: '10px',
+            textShadow: '4px 8px 4px rgba(0, 0, 0, 0.25)',
+            color: '#EDE9EA'
+          }}>
           FREQUENTLY ASKED QUESTIONS
         </Typography>
         {execTeamFAQData.map((data, index) => (

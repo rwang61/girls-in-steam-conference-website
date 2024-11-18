@@ -46,15 +46,11 @@ export default function ButtonAppBar() {
         <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
           <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',marginLeft: '20px'}}>
             <a href="/">
-              <img
-                src={logo}
-                aria-label="logo"
-                height="50px"
-                data-testid="App-logo"
-              />
+              <img src={logo} aria-label="logo" height="50px" data-testid="App-logo" />
             </a>
           </div>
           <div className="navbar-buttons" style={{ display: 'flex', alignItems: 'center', flexGrow: 1,justifyContent: 'center' }}>
+
             <Button
               onClick={() => {
                 window.location.href = '#Hero';
