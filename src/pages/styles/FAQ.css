@@ -5,6 +5,12 @@
     url('./../../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
+#FAQ {
+  color: #EDE9EA;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
 .accordion {
   padding-bottom: 20px;
 }

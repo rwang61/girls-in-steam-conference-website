@@ -8,7 +8,6 @@ html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   text-align: center;
   justify-content: center;
   font-size: calc(10px + 3vmin);
@@ -23,17 +22,19 @@ html {
   width: 100%;
 }
 
+/* Hero Section */
 .Hero-Background {
   background-image: linear-gradient(#6851A3, #9F9FD6);
   min-height: 500px;
-  margin-top: 70px;
+  margin-top: 20px; /* Reduced gap between Hero and About Us */
 }
 
+/* About Us Section */
 .About-Us-Background {
   background-image: linear-gradient(#7E7ED8, #D0CDEA);
-  min-height: 200px;
+  min-height: 180px; /* Slightly reduced height for About Us */
+  padding-top: 20px; /* Add some padding to the top if needed */
 }
-
 
 .Agenda-Background {
   background-image: linear-gradient(#D0CDEA, #7E7ED8, #472E86);

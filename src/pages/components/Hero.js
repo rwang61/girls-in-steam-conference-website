@@ -85,7 +85,7 @@ export default function Hero() {
               }
             }}
             variant="contained">
-            Support GIS
+            Sponsor GIS
           </Button>
         </Box>
       </div>

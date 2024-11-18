@@ -10,136 +10,114 @@ import NavbarMenu from './Menu';
 
 export default function ButtonAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [activeTab, setActiveTab] = React.useState('Home'); // Track the active tab
   const open = Boolean(anchorEl);
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
 
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    window.location.href = `#${tab}`; // Scrolls to the tab's section
+  };
+
   return (
-    <Box 
+    <Box
       sx={{
-        position: 'fixed', 
+        position: 'fixed',
         top: 0,
         width: '100%',
-        left: 0, // Add this to ensure it starts from the left edge
-        right: 0, // Add this to ensure it extends to the right edge
-        zIndex: 1000, 
-        backgroundColor: '#5A4067'// color for the navbar
-      }}
-    >
-
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        backgroundColor: '#5f4e95',
+        marginBottom: '10px' // Adds a small gap between navbar and content below
+      }}>
       <Toolbar
         id="toolbar"
-        sx={{ 
+        sx={{
           width: '100%',
           margin: 0,
           padding: '0 16px', // Add consistent padding
-          minHeight: '64px',
-          justifyContent: 'space-between', // Ensures the logo and buttons are spread across the width
-          display: 'flex'          
-        }}
-      >
-        {/*margin left basically adds padding btwn buttons */}
-        <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
-          <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',marginLeft: '20px'}}>
+          minHeight: '50px',
+          justifyContent: 'space-between',
+          display: 'flex',
+          alignItems: 'center'
+        }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            width: '100%',
+            justifyContent: 'space-between' // Ensures even spacing of items
+          }}>
+          <div
+            className="navbar-logo"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginLeft: '20px'
+            }}>
             <a href="/">
               <img src={logo} aria-label="logo" height="50px" data-testid="App-logo" />
             </a>
           </div>
-          <div className="navbar-buttons" style={{ display: 'flex', alignItems: 'center', flexGrow: 1,justifyContent: 'center' }}>
-
+          <div
+            className="navbar-buttons"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-evenly', // Evenly spaces the navigation links and the button
+              flexGrow: 1 // Makes the navbar buttons take up remaining space
+            }}>
+            {['Home', 'About', 'Agenda', 'Sponsors', 'FAQ'].map((tab) => (
+              <Button
+                key={tab}
+                onClick={() => handleTabChange(tab === 'Home' ? 'Hero' : tab)} // For Home, navigate to #Hero
+                sx={{
+                  textTransform: 'none',
+                  mx: 2, // Less horizontal margin for better spacing
+                  fontSize: '1.2rem',
+                  backgroundColor: 'transparent',
+                  color: activeTab === tab ? 'white' : 'lightgrey', // Active tab is white
+                  fontWeight: 700,
+                  zIndex: 2,
+                  '&:hover': {
+                    color: 'white',
+                    textDecoration: 'underline' // Underline on hover
+                  }
+                }}>
+                {tab}
+              </Button>
+            ))}
+            {/* Notify Me Button */}
             <Button
               onClick={() => {
-                window.location.href = '#Hero';
+                console.log('Button clicked');
+                window.open('https://linktr.ee/girlsinsteamorg');
               }}
               sx={{
-                textTransform: 'none',
-                mx: 4,
-                fontSize: '1.2rem',
-                backgroundColor: 'transparent',
-                color: 'lightgrey',
+                width: 'auto',
+                height: '40px', // Adjusted button height for better alignment
+                padding: '0 15px', // Added horizontal padding for the button
+                backgroundColor: '#7D5390',
+                color: 'white',
+                borderRadius: 4,
+                fontFamily: 'Josefin Sans',
+                fontSize: 14, // Slightly reduced font size
                 fontWeight: 700,
-                zIndex: 2,
                 '&:hover': {
-                  color: 'white'
+                  boxShadow: '0 0 15px white'
                 }
-              }}>
-              Home
-            </Button>
-            <Button
-              onClick={() => {
-                window.location.href = '#About';
               }}
-              sx={{
-                textTransform: 'none',
-                mx: 4,
-                fontSize: '1.2rem',
-                backgroundColor: 'transparent',
-                color: 'lightgrey',
-                fontWeight: 700,
-                zIndex: 2,
-                '&:hover': {
-                  color: 'white'
-                }
-              }}>
-              About
-            </Button>
-            <Button
-              onClick={() => {
-                window.location.href = '#Agenda';
-              }}
-              sx={{
-                textTransform: 'none',
-                mx: 4,
-                fontSize: '1.2rem',
-                backgroundColor: 'transparent',
-                color: 'lightgrey',
-                fontWeight: 700,
-                zIndex: 2,
-                '&:hover': {
-                  color: 'white'
-                }
-              }}>
-              Agenda
-            </Button>
-            <Button
-              onClick={() => {
-                window.location.href = '#Sponsors';
-              }}
-              sx={{
-                textTransform: 'none',
-                mx: 4,
-                fontSize: '1.2rem',
-                backgroundColor: 'transparent',
-                color: 'lightgrey',
-                fontWeight: 700,
-                zIndex: 2,
-                '&:hover': {
-                  color: 'white'
-                }
-              }}>
-              Sponsors
-            </Button>
-            <Button
-              onClick={() => {
-                window.location.href = '#FAQ';
-              }}
-              sx={{
-                textTransform: 'none',
-                mx: 4,
-                fontSize: '1.2rem',
-                backgroundColor: 'transparent',
-                color: 'lightgrey',
-                fontWeight: 700,
-                zIndex: 2,
-                '&:hover': {
-                  color: 'white'
-                }
-              }}>
-              FAQ
+              variant="contained">
+              Notify Me
             </Button>
           </div>
           <IconButton
