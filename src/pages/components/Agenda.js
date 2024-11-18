@@ -5,12 +5,13 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import SimpleTimeline from './SimpleTimeline';
 
 export default function Agenda() {
-  const [selected, setSelected] = useState(false);
+  // Start with selected state as true to show the content initially
+  const [selected, setSelected] = useState(true);
 
   return (
     <div
       id="Agenda"
-      className={`agenda-background ${selected ? 'collapsed' : 'expanded'}`} // Apply class based on selected state
+      className={`agenda-background ${selected ? 'expanded' : 'collapsed'}`} // Apply class based on selected state
     >
       <div>
         <div className="agenda-header">
@@ -22,20 +23,18 @@ export default function Agenda() {
             className="custom-toggle-button"
             disableRipple>
             {selected ? (
-              <IoIosArrowDown className="arrow-icon" />
+              <IoIosArrowUp className="arrow-icon" /> // Show "up" arrow when expanded
             ) : (
-              <IoIosArrowUp className="arrow-icon" />
+              <IoIosArrowDown className="arrow-icon" /> // Show "down" arrow when collapsed
             )}
           </ToggleButton>
         </div>
 
         {/* Conditionally render the Timeline based on the selected state */}
         {selected ? (
-          <>
-            <div className="schedule-content">
-              <SimpleTimeline />
-            </div>
-          </>
+          <div className="schedule-content">
+            <SimpleTimeline />
+          </div>
         ) : (
           <p>DEFAULT</p>
         )}
