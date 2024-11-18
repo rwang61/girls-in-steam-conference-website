@@ -86,65 +86,77 @@ export default function Footer() {
             />
           </Grid>
           <Grid item xs={12} sm={6} textAlign="left" style={{ paddingRight: '50px' }}>
-            <Typography variant="h4" fontWeight={700}>
+            <Typography variant="h4" fontWeight={700} style={{ color: 'white' }}>
               girls in STEAM
             </Typography>
-            <Typography variant="body2" style={{ maxWidth: '400px' }}>
+            <Typography variant="body2" style={{ maxWidth: '400px', color: 'white' }}>
               Supporting access to STEAM education for girls, gender-diverse students, and the
               LGBTQ+ community.
             </Typography>
-            <Typography variant="body2" style={{ marginTop: '30px' }}>
+            <Typography variant="body2" style={{ marginTop: '30px', color: 'white' }}>
               {'© '}
               {new Date().getFullYear()}
               {' by Girls in STEAM'}
             </Typography>
           </Grid>
           <Grid item xs={12} sm={2}>
-            <Typography variant="h6" fontWeight={700} fontSize="1rem">
+            <Typography variant="h6" fontWeight={700} fontSize="1rem" style={{ color: 'white' }}>
               QUICK LINKS
             </Typography>
-            <Link href="#App" variant="subtitle1">
+            <Link
+              href="#App"
+              variant="subtitle1"
+              style={{ color: 'white', textDecoration: 'none' }}>
               Home
             </Link>
             <br />
-            <Link href="#About" variant="subtitle1">
+            <Link
+              href="#About"
+              variant="subtitle1"
+              style={{ color: 'white', textDecoration: 'none' }}>
               About Us
             </Link>
             <br />
-            <Link href="#Values" variant="subtitle1">
+            <Link
+              href="#Values"
+              variant="subtitle1"
+              style={{ color: 'white', textDecoration: 'none' }}>
               Our Values
             </Link>
             <br />
-            <Link href="/" variant="subtitle1">
+            <Link href="/" variant="subtitle1" style={{ color: 'white', textDecoration: 'none' }}>
               Events
             </Link>
             <br />
-            <Link href="/" variant="subtitle1">
+            <Link href="/" variant="subtitle1" style={{ color: 'white', textDecoration: 'none' }}>
               Resources
             </Link>
             <br />
-            <Link href="/" variant="subtitle1">
+            <Link href="/" variant="subtitle1" style={{ color: 'white', textDecoration: 'none' }}>
               Newsletter
             </Link>
             <br />
           </Grid>
           <Grid item xs={12} sm={2}>
-            <Typography variant="h6" fontWeight={700} fontSize="1rem">
+            <Typography variant="h6" fontWeight={700} fontSize="1rem" style={{ color: 'white' }}>
               SUPPORT
             </Typography>
-            <Link href="#FAQ" variant="subtitle1">
+            <Link
+              href="#FAQ"
+              variant="subtitle1"
+              style={{ color: 'white', textDecoration: 'none' }}>
               Donate
             </Link>
             <br />
-            <Link href="/" variant="subtitle1">
+            <Link href="/" variant="subtitle1" style={{ color: 'white', textDecoration: 'none' }}>
               Become a Sponsor
             </Link>
             <br />
-            <Link href="/" variant="subtitle1">
+            <Link href="/" variant="subtitle1" style={{ color: 'white', textDecoration: 'none' }}>
               FAQ
             </Link>
             <br />
-            <Link href="/" variant="subtitle1">
+            <Link href="/" variant="subtitle1" style={{ color: 'white', textDecoration: 'none' }}>
               Join GIS
             </Link>
             <br />

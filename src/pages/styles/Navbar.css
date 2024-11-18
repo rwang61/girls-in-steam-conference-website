@@ -1,6 +1,10 @@
 #toolbar {
   padding: 0px;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* Adjust this based on the height of your navbar */
+}
 
 @media (max-width: 600px) {
   .navbar-buttons {

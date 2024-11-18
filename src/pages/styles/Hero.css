@@ -9,13 +9,10 @@
   color: #EDE9EA;
   font-family: 'Josefin Sans';
   text-align: left;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
-  max-height: 850px;
+  max-height: 700px;
 }
-
-
-
 
 .description-container {
   display: flex;          /* Use flexbox for alignment */
