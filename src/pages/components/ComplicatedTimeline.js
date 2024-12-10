@@ -1,70 +1,73 @@
 import React from 'react';
 import './../styles/SimpleTimeline.css';
+import catpic from '../images/catpic.jpg';
 
-const SimpleTimeline = () => {
+const ComplicatedTimeline = () => {
   const timelineItems = [
     {
-      time: '6:00AM - 7:00AM',
-      title: '@ Simple Abdul Ladha Science Centre',
+      time: '6:00AM',
+      title: '@ Complicated Abdul Ladha Science Centre',
       content: 'Registration'
     },
     {
-      time: '7:00AM - 7:15AM',
+      time: '7:00AM',
       title: '@ Large Lecture Hall',
-      content: 'Opening Remarks'
+      content: 'Opening Remarks\n\ndescription/details about the activity, what what will go over, etc. Can be as long or short as want. can be a sentence or a paragraph. what ever works.'
     },
     {
-      time: '7:15AM - 7:45AM',
+      time: '8:45AM',
       title: '@ Abdul Ladha Science Centre',
-      content: 'Opening Keynote'
+      image: catpic,
+      content: 'Opening Keynote\n\n Speaker: \nFirst Last\nrole @ loc or title\ndescription/details about the activity, what what will go over, etc. Can be as long or short as want. can be a sentence or a paragraph. what ever works.',
     },
     {
-      time: '7:45AM - 8:00AM',
+      time: '7:45AM',
       title: '@ Abdul Ladha Science Centre',
-      content: 'Coffee Break'
+      content: 'Panel 1: Science and Engineering\nSpeakers:',
+      //images: [catpic, catpic, catpic, catpic]
     },
     {
-      time: '8:00AM - 8:45AM',
+      time: '8:00AM',
       title: '@ Large Lecture Hall',
       content: 'Panel 1: Science and Engineering'
     },
     {
-      time: '8:45AM - 9:45AM',
+      time: '8:45AM',
       title: '@ Abdul Ladha Science Centre',
       content: 'Lunch'
     },
     {
-      time: '9:45AM - 10:45AM',
+      time: '9:45AM',
       title: '@ 2 Large Classrooms',
       content: 'STEAM Workshops Breakout'
     },
     {
-      time: '10:45AM - 11:00AM',
+      time: '10:45AM',
       title: '@ Abdul Ladha Science Centre',
       content: 'Coffee Break'
     },
     {
-      time: '11:00AM - 12:00 PM',
+      time: '11:00AM',
       title: '@ 2 Large Classrooms',
       content: 'STEAM Workshops Breakout'
     },
     {
-      time: '12:00PM - 12:15PM',
+      time: '12:00PM',
       title: '@ Abdul Ladha Science Centre',
       content: 'Coffee Break'
     },
     {
-      time: '12:15PM - 1:00PM',
+      time: '12:15PM',
       title: '@ Abdul Ladha Science Centre',
       content: 'Panel 2: Tech & Maths'
     },
     {
-      time: '1:00PM - 1:15PM',
+      time: '1:00PM',
       title: '@ Abdul Ladha Science Centre',
       content: 'Closing Remarks'
     },
     {
-      time: '1:15PM - 2:00PM',
+      time: '1:15PM',
       title: '@ Abdul Ladha Science Centre',
       content: 'Networking & Mingling'
     }
@@ -80,6 +83,7 @@ const SimpleTimeline = () => {
             <div className="timeline-content">
               <h3>{item.title}</h3>
               <p>{item.content}</p>
+              {item.image && <img src={item.image} alt="Timeline event" className="timeline-image" />}
             </div>
           </div>
         ))}
@@ -88,4 +92,4 @@ const SimpleTimeline = () => {
   );
 };
 
-export default SimpleTimeline;
+export default ComplicatedTimeline;

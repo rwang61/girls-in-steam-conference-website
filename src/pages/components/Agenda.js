@@ -3,10 +3,11 @@ import './../styles/Agenda.css';
 import { ToggleButton } from '@mui/material';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import SimpleTimeline from './SimpleTimeline';
+import ComplicatedTimeline from './ComplicatedTimeline';
 
 export default function Agenda() {
-  // Start with selected state as true to show the content initially
-  const [selected, setSelected] = useState(true);
+  // Start with selected state as false to show the simplified content initially
+  const [selected, setSelected] = useState(false);
 
   return (
     <div
@@ -15,7 +16,7 @@ export default function Agenda() {
     >
       <div>
         <div className="agenda-header">
-          <h2 className="shadow-text">AGENDA</h2>
+          <h2 className="shadow-text">SCHEDULE</h2>
           <ToggleButton
             value="check"
             selected={selected}
@@ -33,10 +34,12 @@ export default function Agenda() {
         {/* Conditionally render the Timeline based on the selected state */}
         {selected ? (
           <div className="schedule-content">
-            <SimpleTimeline />
-          </div>
+          <ComplicatedTimeline /> {/* Show ComplicatedTimeline when expanded */}
+        </div>
         ) : (
-          <p>DEFAULT</p>
+        <div className="schedule-content">
+          <SimpleTimeline /> {/* Show SimpleTimeline when collapsed */}
+        </div>
         )}
       </div>
     </div>

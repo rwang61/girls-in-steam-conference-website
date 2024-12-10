@@ -16,10 +16,12 @@
   }
 
   .agenda-header {
-    display: flex;             /* Use flexbox for layout */
-    justify-content: center;   /* Center horizontally */
-    align-items: center;       /* Center vertically */
+    display: flex;                /* Use flexbox for layout */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
     color: white;
+    width: 100%;                  /* Ensure the container takes full width */
+    text-align: center;           /* Center the text horizontally */
   }
   
 
