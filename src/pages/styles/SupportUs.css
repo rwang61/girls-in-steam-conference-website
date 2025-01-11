@@ -16,10 +16,7 @@
 .blurb {
   font-size: 30px;
   margin: 0; /* Remove any margin */
-  text-shadow: 
-    2px 2px 0 rgba(0, 0, 0, 0.4), /* Hard shadow directly behind */
-    4px 4px 0 rgba(0, 0, 0, 0.3), /* Slightly offset shadow */
-    6px 6px 0 rgba(0, 0, 0, 0.2); /* Further offset shadow */
+  color: #5A4067;
 }
 
 .SponsorLogos {

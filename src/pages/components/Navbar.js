@@ -10,7 +10,7 @@ import NavbarMenu from './Menu';
 
 export default function ButtonAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [activeTab, setActiveTab] = React.useState('Home'); // Track the active tab
+  const [activeTab, setActiveTab] = React.useState('Home');
   const open = Boolean(anchorEl);
 
   const handleClick = (event) => {
@@ -31,31 +31,34 @@ export default function ButtonAppBar() {
       sx={{
         position: 'fixed',
         top: 0,
-        width: '100%',
         left: 0,
         right: 0,
         zIndex: 1000,
         backgroundColor: '#5f4e95',
-        marginBottom: '10px' // Adds a small gap between navbar and content below
+        marginBottom: '10px',
+        width: '100%', // Make sure it spans the full width
+        boxSizing: 'border-box' // Prevents overflow due to padding
       }}>
       <Toolbar
         id="toolbar"
         sx={{
           width: '100%',
           margin: 0,
-          padding: '0 16px', // Add consistent padding
+          padding: '0 16px',
           minHeight: '50px',
-          justifyContent: 'space-between',
           display: 'flex',
-          alignItems: 'center'
+          alignItems: 'center',
+          justifyContent: 'space-between', // Ensures logo and buttons are spaced apart
+          boxSizing: 'border-box' // Prevent overflow from padding
         }}>
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            width: '100%',
-            justifyContent: 'space-between' // Ensures even spacing of items
+            justifyContent: 'space-between',
+            width: '100%' // Makes the content use full width
           }}>
+          {/* Logo Section */}
           <div
             className="navbar-logo"
             style={{
@@ -68,29 +71,33 @@ export default function ButtonAppBar() {
               <img src={logo} aria-label="logo" height="50px" data-testid="App-logo" />
             </a>
           </div>
+
+          {/* Navbar Buttons */}
           <div
             className="navbar-buttons"
             style={{
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-evenly', // Evenly spaces the navigation links and the button
-              flexGrow: 1 // Makes the navbar buttons take up remaining space
+              justifyContent: 'space-evenly',
+              flexGrow: 1,
+              overflow: 'hidden', // Prevent overflow
+              paddingLeft: '10px' // Padding to the left to avoid sticking content
             }}>
             {['Home', 'About', 'Agenda', 'Sponsors', 'FAQ'].map((tab) => (
               <Button
                 key={tab}
-                onClick={() => handleTabChange(tab === 'Home' ? 'Hero' : tab)} // For Home, navigate to #Hero
+                onClick={() => handleTabChange(tab === 'Home' ? 'Hero' : tab)}
                 sx={{
                   textTransform: 'none',
                   mx: 2, // Less horizontal margin for better spacing
                   fontSize: '1.2rem',
                   backgroundColor: 'transparent',
-                  color: activeTab === tab ? 'white' : 'lightgrey', // Active tab is white
+                  color: activeTab === tab ? 'white' : 'lightgrey',
                   fontWeight: 700,
                   zIndex: 2,
                   '&:hover': {
                     color: 'white',
-                    textDecoration: 'underline' // Underline on hover
+                    textDecoration: 'underline'
                   }
                 }}>
                 {tab}
@@ -103,15 +110,15 @@ export default function ButtonAppBar() {
                 window.open('https://linktr.ee/girlsinsteamorg');
               }}
               sx={{
-                width: 'auto',
                 height: '40px', // Adjusted button height for better alignment
-                padding: '0 15px', // Added horizontal padding for the button
+                padding: '0 15px',
                 backgroundColor: '#7D5390',
                 color: 'white',
                 borderRadius: 4,
                 fontFamily: 'Josefin Sans',
-                fontSize: 14, // Slightly reduced font size
+                fontSize: 14,
                 fontWeight: 700,
+                boxShadow: '0 0 10px white',
                 '&:hover': {
                   boxShadow: '0 0 15px white'
                 }
@@ -120,14 +127,21 @@ export default function ButtonAppBar() {
               Notify Me
             </Button>
           </div>
+
+          {/* Menu Icon */}
           <IconButton
             id="menu-button"
             onClick={handleClick}
             size="large"
             color="primary"
-            sx={{ mr: 2 }}>
+            sx={{
+              mr: 2,
+              display: { xs: 'block', md: 'none' } // Hide the menu icon on larger screens
+            }}>
             <MenuIcon color="secondary" />
           </IconButton>
+
+          {/* Mobile Navbar Menu */}
           <NavbarMenu
             aria-controls={open ? 'basic-menu' : undefined}
             aria-haspopup="true"
