@@ -4,51 +4,79 @@ html {
 
 #App {
   text-align: center;
-  background-color: #6851A3;
+  background-color: #D0CDEA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   font-size: calc(10px + 3vmin);
   font-family: sans-serif;
   color: white;
 }
 
+/* Centralized App Component */
 .App-Component {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1024px;
-  width: 100%;
+  max-width: 1024px; /* Maximum width for the main content */
+  width: 90%; /* Ensure content is responsive, takes 90% of available space */
+  padding: 0 10px; /* Adds padding inside the container */
 }
 
 /* Hero Section */
 .Hero-Background {
-  background-image: linear-gradient(#6851A3, #9F9FD6);
+  background-color: #D0CDEA;
   min-height: 500px;
   margin-top: 20px; /* Reduced gap between Hero and About Us */
+  width: 100%; /* Ensure the Hero section stretches full width */
 }
 
 /* About Us Section */
 .About-Us-Background {
-  background-image: linear-gradient(#7E7ED8, #D0CDEA);
+  background-color: #D0CDEA;
   min-height: 180px; /* Slightly reduced height for About Us */
-  padding-top: 20px; /* Add some padding to the top if needed */
+  padding-top: 20px;
+  width: 100%; /* Ensures the About Us section takes up full width */
+  max-width: 1024px; /* Optional: You can restrict the width if needed */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Agenda-Background {
-  background-image: linear-gradient(#D0CDEA, #7E7ED8, #472E86);
+  background-color: #D0CDEA;
   min-height: 200px;
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Sponsor-FAQ-Team-Background {
-  background-image: linear-gradient(#472E86, #5A4067, #472E86);
-  background-size: 100vw !important;
+  background-color: #D0CDEA;
+  background-size: 100vw !important; /* Ensure background covers full viewport */
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
   .Nav-Component {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .App-Component {
+    width: 95%; /* For smaller screens, make the App component take more width */
+    padding: 0 5%; /* Reduced padding for smaller screens */
+  }
+
+  .Hero-Background,
+  .About-Us-Background,
+  .Agenda-Background,
+  .Sponsor-FAQ-Team-Background {
+    width: 100%; /* Ensure sections take up full width on smaller screens */
+    max-width: 100%; /* No maximum width constraint for smaller screens */
   }
 }

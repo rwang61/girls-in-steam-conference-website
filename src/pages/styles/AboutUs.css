@@ -3,6 +3,7 @@
   padding-bottom: 5%;
   align-self: center;
   text-align: center;
+  background-color: #D0CDEA;
 }
 
 .shadow-text {
@@ -45,6 +46,15 @@
   object-fit: cover;
   border-radius: 8px;
 }
+.robotMascot-image {
+  width: 50%; /* Make the image fit the container */
+  max-width: 350px; /* Limit the size */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px; /* Space between the images */
+}
+
+
 
 @media only screen and (max-width: 1000px) {
   #About {
@@ -58,5 +68,9 @@
   .photo {
     width: 90%;
     height: 90%;
+  }
+  .robotMascot-image {
+    width: 90%; /* Adjust for smaller screens */
+    margin-top: 20px;
   }
 }

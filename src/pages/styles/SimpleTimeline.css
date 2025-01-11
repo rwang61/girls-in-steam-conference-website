@@ -7,26 +7,33 @@
 }
 body{
 	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+  
+  html {
+	overflow-x: hidden; /* Prevent horizontal scrolling (applies to entire page) */
+  }
+  
 .timeline-section{
-	background-color: transparent;
+	background-color: #D0CDEA;
 	min-height: 100vh;
     margin-left: -400px;
     margin-top: 0px;
 }
 .timeline-items{
-	max-width: 1000px;
+	max-width: 100%;
 	margin:auto;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
+	background-color: #D0CDEA;
 }
 .timeline-items::before{
 	content: '';
 	position: absolute;
 	width: 2px;
 	height: 100%;
-	background-color: white;
+	background-color: #6363AB;
 	left: calc(50% - 1px);
 }
 .timeline-item{
@@ -48,7 +55,7 @@ body{
 .timeline-dot{
 	height: 16px;
 	width: 16px;
-	background-color: white;
+	background-color: #6363AB;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
@@ -56,7 +63,7 @@ body{
 }
 .timeline-time{
 	font-size: 18px;
-	color: white;
+	color: #6363AB;
 	margin:6px 0 15px;
     margin-left: -210px;
 }
@@ -67,21 +74,29 @@ body{
 }
 .timeline-content h3{
     font-size: 20px;
-	color: #D0CDEA;
+	color: #6363AB;
 	margin:0 0 10px;
 	text-transform: capitalize;
 	font-weight: 500;
 }
-.timeline-content p{
-    color: white;
+.timeline-content h4{
+    color: #6363AB;
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: bold;
+	line-height: 22px;
+	white-space: pre-wrap;
+	margin-bottom: 10px; /* Add space between h4 and p */
+}
+
+.timeline-content p{
+    color: #6363AB;
+	font-size: 16px;
 	line-height: 22px;
 	white-space: pre-wrap;
 }
 
 .timeline-image {
-	max-width: 20%;
+	max-width: 120px;
 	height: auto;
 	margin-top: 10px;
 	display: block; /* Ensure it's not hidden */
@@ -93,7 +108,28 @@ body{
 	gap: 20px;  /* Adjusts space between images */
 	justify-content: flex-start;
 	margin-top: 10px;
+	height: auto;
+	width: 100%;
   }
+
+  .timeline-description {
+    color: #6363AB; /* same color as the timeline content */
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-wrap;
+}
+
+.timeline-bullet-point {
+    color: #6363AB; /* same color as the timeline content */
+    font-size: 16px;
+    line-height: 22px;
+    list-style-type: disc;
+    margin-left: 20px; /* Adjust bullet indentation if needed */
+}
+
+.timeline-bullet-point li {
+    margin-bottom: 10px; /* Adjust space between bullet points */
+}
   
 
 /* responsive */

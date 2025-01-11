@@ -17,8 +17,8 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: (theme) => theme.palette.primary.dark,
-        p: 6
+        backgroundColor: '#6363AB', // Corrected: added quotes around color value
+        p: 6 // padding (p) is shorthand for padding in all directions
       }}>
       <Container maxWidth="lg">
         <Grid container spacing={3} textAlign="left" style={{ marginBottom: '30px' }}>

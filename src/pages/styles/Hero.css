@@ -12,6 +12,10 @@
   padding-top: 10%;
   padding-bottom: 5%;
   max-height: 700px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 50px;
 }
 
 .description-container {
@@ -21,52 +25,69 @@
 }
 
 
-
-.plant-image {
-  position: absolute;
-  top: 105px; /* Adjust as needed */
-  left: 100px;
-  transform: translateX(-50%);
-  width: 300px; /* Adjust to your preferred size */
-  z-index: 2; /* Ensure it appears above the rectangles */
-  opacity: 0.5;
-}
-
 .info-column {
-  display: flex;               /* Use flexbox */
-  flex-direction: column;      /* Stack items vertically */
-  justify-content: center;     /* Center horizontally (if needed) */
-  align-items: center;         /* Center vertically (if needed) */
-  height: 100%;                /* Ensure it takes full height of the parent */
+  display: flex;                /* Use flexbox */
+  flex-direction: column;       /* Stack items vertically */
+  justify-content: flex-start;  /* Align items to the start of the container */
+  align-items: flex-start;      /* Align items to the left (or change to center) */
+  height: 100%;                 /* Ensure it takes full height of the parent */
+  padding-left: 70px;           /* Ensure left padding for alignment */
+  padding-top: 30px;
+}
+.gisConference, .description, .innovate-her-container {
+  text-align: left;  /* Align text to the left for all text elements */
+  margin: 0;         /* Remove any default margin that may cause spacing issues */
 }
 
 .gisConference {
-  font-size: 40px;
-  color: #D0CDEA;
+  font-size: 30px;
+  color: #6363AB;
   text-align: center;         
   margin: 0 0 10px; /* Add bottom margin to create space below */
 }
-
-.blurb {
-  font-size: 50px;
+.innovate-her-container {
+  display: flex;
+  align-items: center; /* Vertically centers the elements */
+}
+.innovate {
+  font-size: 70px;
   margin: 0; /* Remove any margin */
-  text-shadow: 
-    2px 2px 0 rgba(0, 0, 0, 0.4), /* Hard shadow directly behind */
-    4px 4px 0 rgba(0, 0, 0, 0.3), /* Slightly offset shadow */
-    6px 6px 0 rgba(0, 0, 0, 0.2); /* Further offset shadow */
+  color: #5A4067
 }
 
-
+.her {
+  font-size: 70px;
+  margin: 0; /* Remove any margin */
+  color: white;
+}
 
 .description {
-  font-size: 35px; /* Adjust as needed */
-  margin: 0; /* No margin to eliminate space between description headings */
+  font-size: 25px;  /* Adjust to your desired size */
   font-weight: normal;
+  color: #6363AB;
+  margin: 0;  /* Remove margin to keep spacing consistent */
 }
-
 /* Add gap below STEAM */
 .blurb + .description {
   margin-top: 20px; /* Gap between the last STEAM and descriptions */
+}
+.image-container {
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+  align-items: center; /* Vertically center the image */
+  height: 100%; /* Ensure the container takes up the full height of its parent */
+  position: relative; /* Ensures the absolute positioned elements are placed relative to this container */
+}
+
+.mascot-image {
+  width: 100%; /* Allow image to take full width of its container */ 
+  max-width: 500px; /* You can set a max-width for the image */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  padding-left: 200px;
+  padding-top: 15px;
+  margin-left: 200px; /* Space between the image and the right side */
+  position: relative; /* Ensures the image stays on top of other absolute elements */
+  z-index: 2; /* Ensure the mascot is above the rectangle */
 }
 
 
