@@ -93,3 +93,16 @@
   z-index: 100; /* Ensure it stays behind the content */
   pointer-events: none; /* Prevent interaction with the icon */
 }
+
+@media (max-width: 767px) {
+  .agenda-background {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .custom-toggle-button {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+}

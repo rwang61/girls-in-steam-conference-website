@@ -16,6 +16,7 @@
   display: flex;
   justify-content: flex-start;
   padding-right: 50px;
+  
 }
 
 .description-container {
@@ -90,11 +91,204 @@
   z-index: 2; /* Ensure the mascot is above the rectangle */
 }
 
+.mouse-pointer {
+  position: absolute;
+  top: 310px;
+  left: 220px;
+  font-size: 80px;
+  color: #6363AB;
+  transform: rotate(75deg);
+  filter: drop-shadow(0 0 20px white);
+}
 
-@media screen and (max-width: 1100px) {
+.mascot-rectangle {
+  position: absolute;
+  top: 170%;
+  right: 70px;
+  font-size: 60px;
+  background: linear-gradient(to right, rgba(99, 99, 171, 1), rgba(99, 99, 171, 0)); /* Fixed gradient syntax */
+  color: transparent; /* Fixed color value */
+  transform: rotate(90deg) scaleX(5) scaleY(4);
+}
+
+.right-rectangle {
+  position: absolute;
+  top: 185%;
+  right: -220px;
+  font-size: 60px;
+  color: #5A4067;
+  transform: rotate(90deg) scaleX(5) scaleY(3);
+  filter: blur(1px); /* Apply blur effect */
+  border-radius: 0; /* Ensure no rounded edges */
+  box-shadow: none; /* Ensure no shadow or blur effect other than the intentional one */
+}
+
+.left-taller-rectangle {
+  position: absolute;
+  top: 335px;
+  left: -20px;
+  font-size: 60px;
+  color: #5A4067;
+  transform: rotate(90deg) scaleX(4) scaleY(6);
+  filter: blur(1px); /* Apply blur effect */
+  border-radius: 0; /* Ensure no rounded edges */
+  box-shadow: none; /* Ensure no shadow or blur effect other than the intentional one */
+}
+
+.left-shorter-rectangle {
+  position: absolute;
+  top: 363px;
+  left: 100px;
+  font-size: 60px;
+  color: #B0A8D8;
+  transform: rotate(90deg) scaleX(3) scaleY(4);
+  filter: blur(1px); /* Apply blur effect */
+  border-radius: 0; /* Ensure no rounded edges */
+  box-shadow: none; /* Ensure no shadow or blur effect other than the intentional one */
+}
+
+.hanging-line-left {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  font-size: 60px;
+  opacity: 0.5;
+  transform: scaleY(8);
+}
+.left-large-gear {
+  position: absolute;
+  top: 120px;
+  left: 180px;
+  font-size: 90px;
+  z-index: 1;
+  color: #ABA0CE;
+  filter: drop-shadow(0 0 10px white); /* Apply a white glow effect using filter */
+}
+
+.left-plus {
+  position: absolute;
+  left: 200px;
+  color: #9D90C5;
+  font-size: 50px;
+  stroke-width: 1px;
+  filter: drop-shadow(0 0 20px white); /* Apply a white glow effect */
+  transform: rotate(20deg);
+}
+
+.hanging-line-left-gear {
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  font-size: 60px;
+  opacity: 0.5;
+  transform: scaleY(3);
+}
+
+.left-small-gear {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 60px;
+  z-index: 1;
+  color: #ABA0CE;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.hanging-line-flask {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 60px;
+  opacity: 0.5;
+  transform: scaleY(6);
+}
+
+.left-flask {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  font-size: 60px;
+  color: #ABA0CE;
+  transform: rotate(-20deg);
+  filter: drop-shadow(0 0 10px white);
+}
+
+/* right side of hero */
+
+.hanging-line-right {
+  position: absolute;
+  top: -40px;
+  right: -210px;
+  font-size: 60px;
+  opacity: 0.5;
+  transform: scaleY(3) scaleX(2);
+}
+
+.right-gear {
+  position: absolute;
+  top: 55px;
+  right: -235px;
+  font-size: 110px;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px white);
+  color: #A795D6; 
+}
+
+.right-flask {
+  position: absolute;
+  top: -20px;
+  right: -130px;
+  font-size: 90px;
+  color: #A795D6;
+  transform: rotate(20deg);
+  filter: drop-shadow(0 0 10px white);
+}
+
+.right-plus {
+  position: absolute;
+  top: 100px;
+  right: -40px;
+  color: #8175BB;
+  font-size: 30px;
+  stroke-width: 1px;
+  filter: drop-shadow(0 0 10px white);
+  transform: rotate(20deg);
+}
+
+
+@media screen and (max-width: 700px) {
   #Hero {
     padding-left: 5%;
     padding-right: 5%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .info-column {
+    width: 90%; /* Make it take up more width on small screens */
+    margin-top: 20vh; /* Adjust the top margin for mobile */
+    margin-left: 50px;
+    text-align: center;
+    padding: 10px; /* Add some padding */
+   }
+
+   .gisConference {
+    margin-left: 20px;
+   
+   }
+   .innovate-her-container {
+    margin-left: -20px; /* Move the text container to the left */
+  }
+
+
+  .innovate{
+    font-size: 200%;
+  }
+
+  .her {
+    font-size: 200%;
   }
 
   .gisConference {
@@ -108,24 +302,114 @@
   .description {
     font-size: large;
   }
+
+  .description-container {
+    margin-left: -50px;  /* Move the container to the left on mobile */
+  }
+
+  .mouse-pointer {
+    top: 430px;  /* Adjust position for mobile */
+    left: 35vw;  /* Center it horizontally */
+    font-size: 50px;  /* Smaller size on mobile */
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center buttons */
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+  .mascot-image {
+    right: 100px;
+  }
+  .mascot-rectangle {
+    right: 170px;
+  }
+ 
+
+  .left-taller-rectangle {
+   top: 880px;
+   left: 30px;
+  }
+
+  .left-shorter-rectangle {
+    top: 910px;
+    left: 200px;
+   }
+   .left-large-gear {
+    font-size: 60px;
+    top: 100px;
+  }
+
+  .left-plus {
+    top: -15px;
+    font-size: 30px;
+  }
+  
+  .hanging-line-left-gear {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    opacity: 0.5;
+    transform: scaleY(1);
+  }
+  
+  .left-small-gear {
+    top: 15px;
+    left: 150px;
+    font-size: 40px;
+  }
+  
+  .hanging-line-flask {
+    position: absolute;
+    top: -30px;
+    left: 120px;
+    font-size: 60px;
+    opacity: 0.5;
+    transform: scaleY(6);
+  }
+  
+  .hanging-line-left {
+    top: -40px;
+    left: 100px;
+  }
+
+  .left-flask { 
+    top: 140px;
+    left: 135px;
+    font-size: 40px;
+  
+  }
+  
+  
+  /* mobile-right*/
+  .right-rectangle {
+    top: 310px;
+    right: -60px;
+  }
+   .hanging-line-right {
+    top: -550px;
+    left: 345px;
+    transform: scaleY(1) scaleX(1);
+  }
+  .right-gear {
+    font-size: 50px;
+    top: -500px;
+    right: 1px;
+  }
+
+  .right-flask {
+    top: -590px;
+    right: 50px;
+  }
+  
+  .right-plus {
+    top: -470px;
+    right: 90px;
+  }
+
+
 }
 
-@media screen and (max-width: 700px) {
-  .gisConference {
-    font-size: 60%;
-  }
 
-  .blurb {
-    font-size: 100%;
-  }
-
-  .info-column {
-    width: 90%;
-    margin-bottom: 0;
-    margin-top: 10px;
-  }
-
-  .description {
-    font-weight: normal;
-  }
-}
