@@ -27,128 +27,25 @@ export default function Hero() {
         />
 
         {/* Vertical Lines */}
-        <PiLineVerticalBold
-          style={{
-            position: 'absolute',
-            top: '30px',
-            left: '10px',
-            fontSize: '60px',
-            opacity: 0.5,
-            transform: 'scaleY(8)'
-          }}
-        />
+        <PiLineVerticalBold class="hanging-line-left" />
 
-        <PiLineVerticalBold
-          style={{
-            // flask line
-            position: 'absolute',
-            top: '30px',
-            left: '50px',
-            fontSize: '60px',
-            opacity: 0.5,
-            transform: 'scaleY(6)'
-          }}
-        />
+        <PiLineVerticalBold class="hanging-line-flask" />
 
-        <PiLineVerticalBold
-          style={{
-            position: 'absolute',
-            top: '-10px',
-            left: '100px',
-            fontSize: '60px',
-            opacity: 0.5,
-            transform: 'scaleY(3)'
-          }}
-        />
+        <PiLineVerticalBold class="hanging-line-left-gear" />
 
-        {/* Flask Icon */}
-        <MdScience
-          style={{
-            position: 'absolute',
-            top: '200px',
-            left: '50px',
-            fontSize: '60px',
-            color: '#ABA0CE',
-            transform: 'rotate(-20deg)',
-            filter: 'drop-shadow(0 0 10px white)'
-          }}
-        />
+        <MdScience class="left-flask" />
 
         {/* Large Gear Icon */}
-        <FaGear
-          style={{
-            position: 'absolute',
-            top: '120px',
-            left: '180px',
-            fontSize: '90px',
-            zIndex: 1,
-            color: '#ABA0CE',
-            filter: 'drop-shadow(0 0 10px white)' // Apply a white glow effect using filter
-          }}
-        />
+        <FaGear class="left-large-gear" />
 
         {/* Smaller Gear Icon */}
-        <FaGear
-          style={{
-            position: 'absolute',
-            top: '40px',
-            left: '100px',
-            fontSize: '60px',
-            zIndex: 1,
-            color: '#ABA0CE',
-            filter: 'drop-shadow(0 0 10px white)'
-          }}
-        />
+        <FaGear class="left-small-gear" />
 
         {/* Plus Icon */}
-        <ImPlus
-          style={{
-            position: 'absolute',
-            left: '200px',
-            color: '#9D90C5',
-            fontSize: '50px',
-            strokeWidth: '1px',
-            filter: 'drop-shadow(0 0 20px white)',
-            transform: 'rotate(20deg)'
-          }}
-        />
-        <BiSolidRectangle
-          style={{
-            position: 'absolute',
-            top: '335px',
-            left: '-20px',
-            fontSize: '60px',
-            color: '#5A4067',
-            transform: 'rotate(90deg) scaleX(4) scaleY(6)',
-            filter: 'blur(1px)', // Apply blur effect
-            borderRadius: '0', // Ensure no rounded edges
-            boxShadow: 'none' // Ensure no shadow or blur effect other than the intentional one
-          }}
-        />
-        <BiSolidRectangle
-          style={{
-            position: 'absolute',
-            top: '363px',
-            left: '100px',
-            fontSize: '60px',
-            color: '#B0A8D8',
-            transform: 'rotate(90deg) scaleX(3) scaleY(4)',
-            filter: 'blur(1px)', // Apply blur effect
-            borderRadius: '0', // Ensure no rounded edges
-            boxShadow: 'none' // Ensure no shadow or blur effect other than the intentional one
-          }}
-        />
-        <FaMousePointer
-          style={{
-            position: 'absolute',
-            top: '310px',
-            left: '220px',
-            fontSize: '80px',
-            color: '#6363AB',
-            transform: 'rotate(75deg)',
-            filter: 'drop-shadow(0 0 20px white)'
-          }}
-        />
+        <ImPlus class="left-plus" />
+        <BiSolidRectangle class="left-taller-rectangle" />
+        <BiSolidRectangle class="left-shorter-rectangle" />
+        <FaMousePointer class="mouse-pointer" />
       </div>
 
       <div className="info-column">
@@ -227,79 +124,15 @@ export default function Hero() {
 
       <div className="image-container">
         <img src={mascot} alt="mascot" className="mascot-image" />
-        <BiSolidRectangle
-          style={{
-            position: 'absolute',
-            top: '170%',
-            right: '70px',
-            fontSize: '60px',
-            background: 'linear-gradient(to right, rgba(99, 99, 171, 1), rgba(99, 99, 171, 0))', // Linear gradient with opacity
-            color: 'transparent', // Make text color transparent so the gradient shows through
-            transform: 'rotate(90deg) scaleX(5) scaleY(4)'
-          }}
-        />
-        <PiLineVerticalBold
-          style={{
-            // flask line
-            position: 'absolute',
-            top: '-40px',
-            right: '-210px',
-            fontSize: '60px',
-            opacity: 0.5,
-            transform: 'scaleY(3) scaleX(2)'
-          }}
-        />
-        <MdScience
-          style={{
-            position: 'absolute',
-            top: '-20px',
-            right: '-130px',
-            fontSize: '90px',
-            color: '#A795D6',
-            transform: 'rotate(20deg)',
-            filter: 'drop-shadow(0 0 10px white)'
-          }}
-        />
-        {/* Big Gear Icon */}
-        <FaGear
-          style={{
-            position: 'absolute',
-            top: '55px',
-            right: '-235px',
-            fontSize: '110px',
-            zIndex: 1,
-            color: '#A795D6',
-            filter: 'drop-shadow(0 0 10px white)'
-          }}
-        />
+        <BiSolidRectangle class="mascot-rectangle" />
+        <PiLineVerticalBold class="hanging-line-right" />
+        <MdScience class="right-flask" />
+        <FaGear class="right-gear" />
 
         {/* Plus Icon */}
-        <ImPlus
-          style={{
-            position: 'absolute',
-            top: '100px',
-            right: '-40px',
-            color: '#A795D6',
-            fontSize: '30px',
-            strokeWidth: '1px',
-            filter: 'drop-shadow(0 0 10px white)',
-            transform: 'rotate(20deg)'
-          }}
-        />
+        <ImPlus class="right-plus" />
 
-        <BiSolidRectangle
-          style={{
-            position: 'absolute',
-            top: '185%',
-            right: '-220px',
-            fontSize: '60px',
-            color: '#5A4067',
-            transform: 'rotate(90deg) scaleX(5) scaleY(3)',
-            filter: 'blur(1px)', // Apply blur effect
-            borderRadius: '0', // Ensure no rounded edges
-            boxShadow: 'none' // Ensure no shadow or blur effect other than the intentional one
-          }}
-        />
+        <BiSolidRectangle class="right-rectangle" />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 #About {
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
   align-self: center;
   text-align: center;
@@ -51,8 +51,13 @@
   max-width: 350px; /* Limit the size */
   object-fit: cover; /* Maintain aspect ratio */
   border-radius: 8px; /* Rounded corners */
-  margin-top: 20px; /* Space between the images */
+  margin-top: 10px; /* Space between the images */
+  position: absolute; /* Set absolute positioning */
+  bottom: 30%; /* Move the image 30px up from the bottom */
+  right: -180px; /* Move the image 150px to the right */
+  transform: rotate(25deg); /* Rotate the image by 25 degrees */
 }
+
 
 
 
@@ -70,7 +75,9 @@
     height: 90%;
   }
   .robotMascot-image {
-    width: 90%; /* Adjust for smaller screens */
+    width: 20%; /* Adjust for smaller screens */
     margin-top: 20px;
+    bottom: -15%; /* Move the image 30px up from the bottom */
+    right: -30px; /* Move the image 150px to the right */
   }
 }

@@ -117,7 +117,7 @@ const SimpleTimeline = () => {
       <FaGear
         style={{
           position: 'absolute',
-          top: '1%',
+          top: '5%',
           right: '-10%',
           fontSize: '120px',
           zIndex: 1,

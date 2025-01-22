@@ -26,7 +26,7 @@ html {
 /* Hero Section */
 .Hero-Background {
   background-color: #D0CDEA;
-  min-height: 500px;
+  min-height: 300px;
   margin-top: 20px; /* Reduced gap between Hero and About Us */
   width: 100%; /* Ensure the Hero section stretches full width */
 }
@@ -61,7 +61,7 @@ html {
 }
 
 /* Responsive Adjustments */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .Nav-Component {
     padding-left: 5%;
     padding-right: 5%;
@@ -70,6 +70,10 @@ html {
   .App-Component {
     width: 95%; /* For smaller screens, make the App component take more width */
     padding: 0 5%; /* Reduced padding for smaller screens */
+  }
+
+  .Hero-Background {
+    height: 120vh;
   }
 
   .Hero-Background,

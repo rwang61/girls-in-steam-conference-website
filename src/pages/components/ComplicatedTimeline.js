@@ -5,7 +5,6 @@ import placeholder2 from '../images/steambbt.png';
 import { MdScience } from 'react-icons/md';
 import { FaGear } from 'react-icons/fa6';
 import { ImPlus } from 'react-icons/im';
-import mascot from '../images/mascot.png';
 
 const ComplicatedTimeline = () => {
   const timelineItems = [
@@ -201,17 +200,6 @@ const ComplicatedTimeline = () => {
           </div>
         ))}
 
-        <img
-          src={mascot}
-          alt="mascot"
-          style={{
-            width: '200px', // Set width
-            position: 'absolute',
-            top: '38%',
-            right: '5%'
-          }}
-        />
-
         <ImPlus
           style={{
             position: 'absolute',
@@ -242,7 +230,7 @@ const ComplicatedTimeline = () => {
         <FaGear
           style={{
             position: 'absolute',
-            top: '1%',
+            top: '3%',
             right: '-10%',
             fontSize: '120px',
             zIndex: 1,
@@ -271,7 +259,7 @@ const ComplicatedTimeline = () => {
             fontSize: '600px',
             transform: 'rotate(-30deg)',
             color: '#AD83C2',
-            opacity: '0.4'
+            opacity: '0.1'
           }}
         />
       </div>

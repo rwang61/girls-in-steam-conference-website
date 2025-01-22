@@ -87,20 +87,7 @@ export default function AboutUs() {
           </div>
 
           {/* Robot Mascot Image placed beside and near bottom with tilt */}
-          <img
-            src={robotMascot}
-            alt="robotMascot"
-            className="robotMascot-image"
-            style={{
-              position: 'absolute',
-              bottom: '30px', // Adjust this to place it near the bottom
-              right: '-150px', // Adjust this to move it beside the photo
-              transform: 'rotate(25deg)', // Tilt the robot image
-              maxWidth: '250px', // Limit width
-              objectFit: 'cover', // Maintain aspect ratio
-              borderRadius: '8px'
-            }}
-          />
+          <img src={robotMascot} alt="robotMascot" className="robotMascot-image" />
         </Grid>
       </Grid>
     </div>

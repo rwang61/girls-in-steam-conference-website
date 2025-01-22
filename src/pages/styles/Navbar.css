@@ -1,21 +1,19 @@
-#toolbar {
-  padding: 0px;
-}
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Adjust this based on the height of your navbar */
-  overflow-x: hidden; /* Prevent horizontal scrolling (applies to entire page) */
-}
-
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar-buttons {
-    display: none;
+    display: none !important; /* Force hiding for small screens */
+  }
+
+  #menu-button {
+    display: block !important; /* Show menu button for small screens */
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 769px) {
+  .navbar-buttons {
+    display: flex !important; /* Show navbar buttons for larger screens */
+  }
+
   #menu-button {
-    display: none;
+    display: none !important; /* Hide menu button for larger screens */
   }
 }
