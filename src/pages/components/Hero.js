@@ -98,7 +98,7 @@ export default function Hero() {
           </Button>
           <Button
             onClick={() => {
-              window.open('https://linktr.ee/girlsinsteamorg');
+              window.location.href = 'mailto:UBC.sponsorship@girlsinsteam.org';
             }}
             sx={{
               width: 180,
