@@ -227,7 +227,7 @@ export const bioData = [
     email: 'ubc.vpf@girlsinsteam.org',
     pronouns: PRONOUN_STRINGS.SHEHER,
     location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '😁🤟🏽🤠🤍😎,
+    emojis: '😁🤟🏽🤠🤍😎',
     desc: 'Hemanya is currently in her second year studying biomedical engineering. She is passionate about encouraging STEAM education among girls within the engineering community! In her free time she enjoys cooking, hiking, and spending time with friends.  ',
     quote:
       'STEAM is so important in our daily lives, as it is the bulding blocks for almost everything we interact with daily, from our laptops to our homes. STEAM education is important to me because I believe everyone deserves the opportunity to do something they love and contribute to the advancement of society!  '
@@ -239,7 +239,7 @@ export const bioData = [
     email: 'ubc.vpc@girlsinsteam.org',
     pronouns: PRONOUN_STRINGS.SHEHER,
     location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '☺️🐿️🤠🧪💗,
+    emojis: '☺️🐿️🤠🧪💗',
     desc: 'Sukhman is currently in her second year of university majoring in biology. She is a hardworking individual who strives to be her best. Some of her hobbies include reading, taking long walks and spending time with her loved ones.  ',
     quote:
       'As someone who is pursuing her studies and career in a field in STEAM, I believe STEAM is an important part of life that allows the world to understand how everything works. STEAM is very dear to me since it is something I have grown around and learned to appreciate throughout my experience with it. '
