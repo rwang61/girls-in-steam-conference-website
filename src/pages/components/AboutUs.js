@@ -46,12 +46,8 @@ export default function AboutUs() {
               fontWeight: 'normal',
               marginBottom: '20px'
             }}>
-            At the Girls in STEAM Conference, our mission is to cultivate a dynamic space for high
-            school and college students in the Greater Vancouver Area to explore and engage with
-            Science, Technology, Engineering, Arts, and Maths (STEAM) alongside principles of
-            Accessibility. Our full-day event is dedicated to bridging the gender gap in STEM
-            industries by providing immersive workshops, insightful panels, and interactive
-            experiences that embrace all dimensions of STEAM, including Art and Accessibility.
+            At InnovateHER, our mission is to cultivate a dynamic space for high school and college students in the Greater Vancouver Area to explore and engage with Science, Technology, Engineering, Arts, and Maths (STEAM) alongside principles of Accessibility. Our full-day event is dedicated to bridging the gender gap in STEM industries by providing immersive workshops, insightful panels, and interactive experiences that embrace all dimensions of STEAM, including Art and Accessibility.
+            We are committed to nurturing the talents and passions of young female and gender-diverse students, equipping them with the skills, confidence, and resources necessary to thrive in STEAM fields. Through collaboration, education, and empowerment, we aspire to inspire the next generation of innovators, problem solvers, and leaders who will shape the future of STEAM with inclusivity and excellence.
           </Typography>
           <Typography
             variant="h6"
@@ -61,10 +57,7 @@ export default function AboutUs() {
               fontWeight: 'medium',
               marginBottom: '70px'
             }}>
-            Join us as we embark on a journey of discovery, creativity, and empowerment, paving the
-            way for a more diverse and inclusive landscape in STEAM. Together, we can break
-            barriers, shatter stereotypes, and forge new pathways toward a brighter, more
-            sustainable, and more equitable future for all.
+            Join us as we embark on a journey of discovery, creativity, and empowerment, paving the way for a more diverse and inclusive landscape in STEAM. Together, we can break barriers, shatter stereotypes, and forge new pathways toward a brighter, more sustainable, and more equitable future for all.
           </Typography>
         </Grid>
 
