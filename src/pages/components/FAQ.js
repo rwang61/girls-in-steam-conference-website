@@ -14,13 +14,13 @@ const AccordionItem = ({ question, answer }) => {
       <Accordion
         sx={{
           marginBottom: '-16px',
-          padding: '0 0',
+          padding: '0',
           backgroundColor: 'transparent',
           boxShadow: 'none',
-          '& MuiAccordion-root': {
+          '& .MuiAccordion-root': {
             backgroundColor: 'transparent'
           },
-          '& MuiPaper-root': {
+          '& .MuiPaper-root': {
             backgroundColor: 'transparent'
           }
         }}>
@@ -28,28 +28,29 @@ const AccordionItem = ({ question, answer }) => {
           expandIcon={
             <ExpandMoreIcon
               sx={{
-                color: '#6363AB',
+                color: 'white',
                 fontSize: '36px',
                 marginRight: '0',
-                padding: '0 0'
+                padding: '0'
               }}
             />
           }
           sx={{
             overflowX: 'hidden',
-            padding: '0 0',
-            margins: '0 0'
+            padding: '0',
+            margin: '0'
           }}>
           <Typography
             variant="h5"
             sx={{
               textAlign: 'left',
               fontWeight: 'bold',
-              color: '#6363AB',
-              marginLeft: '0px',
+              color: 'white',
+              marginLeft: '0',
               fontFamily: 'Josefin Sans',
               overflow: 'visible',
-              padding: '0 0'
+              padding: '0',
+              fontSize: { xs: '1.2rem', sm: '1.5rem' } // Responsive font size
             }}>
             {question}
             <Divider
@@ -58,7 +59,7 @@ const AccordionItem = ({ question, answer }) => {
                 margin: '0 0',
                 marginTop: '8px',
                 marginRight: '10px',
-                borderBottom: '1px solid #6363AB'
+                borderBottom: '1px solid white'
               }}
             />
           </Typography>
@@ -67,18 +68,19 @@ const AccordionItem = ({ question, answer }) => {
           sx={{
             marginTop: '-16px',
             backgroundColor: 'transparent',
-            minHeight: '0px',
+            minHeight: '0',
             maxHeight: '48px'
           }}>
           <Typography
             variant="h6"
             sx={{
               textAlign: 'left',
-              color: '#6363AB',
+              color: 'white',
               fontWeight: 'medium',
               marginBottom: '70px',
               marginLeft: '-16px',
-              marginTop: '0px'
+              marginTop: '0',
+              fontSize: { xs: '0.9rem', sm: '1rem' } // Responsive font size
             }}>
             {answer}
           </Typography>
@@ -98,7 +100,8 @@ export default function FAQ() {
             fontWeight: 'bold',
             marginTop: '30px',
             marginBottom: '10px',
-            color: '#5A4067'
+            color: 'white',
+            fontSize: { xs: '1.5rem', sm: '2rem' } // Responsive font size
           }}>
           FREQUENTLY ASKED QUESTIONS
         </Typography>

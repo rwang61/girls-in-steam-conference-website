@@ -208,7 +208,7 @@ const ComplicatedTimeline = () => {
             color: '#A795D6',
             fontSize: '60px',
             strokeWidth: '1px',
-            filter: 'drop-shadow(0 0 10px white)',
+            filter: 'drop-shadow(0 0 5px white)',
             transform: 'rotate(20deg)'
           }}
         />
@@ -221,7 +221,7 @@ const ComplicatedTimeline = () => {
             opacity: '0.3',
             fontSize: '300px',
             strokeWidth: '1px',
-            filter: 'drop-shadow(0 0 10px white)',
+            filter: 'drop-shadow(0 0 5px white)',
             transform: 'rotate(45deg)',
             overflow: 'hidden'
           }}
@@ -230,13 +230,26 @@ const ComplicatedTimeline = () => {
         <FaGear
           style={{
             position: 'absolute',
-            top: '3%',
+            top: '1%',
             right: '-10%',
             fontSize: '120px',
             zIndex: 1,
             color: '#ABA0CE',
-            filter: 'drop-shadow(0 0 10px white)', // Apply a white glow effect using filter,
+            filter: 'drop-shadow(0 0 5px white)', // Apply a white glow effect using filter,
             opacity: '0.8'
+          }}
+        />
+
+        <FaGear
+          style={{
+            position: 'absolute',
+            top: '-5%',
+            right: '-30%',
+            fontSize: '550px',
+            zIndex: 1,
+            color: '#ABA0CE',
+            filter: 'drop-shadow(0 0 5px white)', // Apply a white glow effect using filter,
+            opacity: '0.2'
           }}
         />
         <MdScience
@@ -247,7 +260,7 @@ const ComplicatedTimeline = () => {
             fontSize: '120px',
             transform: 'rotate(-30deg)',
             color: '#B8B2DA',
-            filter: 'drop-shadow(0 0 10px white)'
+            filter: 'drop-shadow(0 0 5px white)'
           }}
         />
 
@@ -259,7 +272,7 @@ const ComplicatedTimeline = () => {
             fontSize: '600px',
             transform: 'rotate(-30deg)',
             color: '#AD83C2',
-            opacity: '0.1'
+            opacity: '0.3'
           }}
         />
       </div>

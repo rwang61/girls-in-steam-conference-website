@@ -42,7 +42,7 @@
 
 .gisConference {
   font-size: 30px;
-  color: #6363AB;
+  color: #D0CDEA;
   text-align: center;         
   margin: 0 0 10px; /* Add bottom margin to create space below */
 }
@@ -53,19 +53,47 @@
 .innovate {
   font-size: 70px;
   margin: 0; /* Remove any margin */
-  color: #5A4067
+  color: #D0CDEA;
+  filter: drop-shadow(0 0 20px black);
+  position: relative;
 }
+
+.innovate::after {
+  content: "Innovate"; /* Same text as the original */
+  position: absolute;
+  top: 30%; /* Position the reflection below the original text */
+  left: 3%;
+  width: 100%;
+  color: black;
+  opacity: 0.1; /* Make the reflection a bit more transparent */
+  filter: blur(2px); /* Add blur to simulate a shadow effect */
+}
+
 
 .her {
   font-size: 70px;
   margin: 0; /* Remove any margin */
-  color: white;
+  color: #E8C3D1;
+  filter: drop-shadow(0 0 20px black);
+  z-index: 10;
 }
+
+.her::after {
+  content: "HER"; /* Same text as the original */
+  position: absolute;
+  top: 30%; /* Position the reflection below the original text */
+  left: 5%;
+  width: 100%;
+  color: black;
+  opacity: 0.1; /* Make the reflection a bit more transparent */
+  filter: blur(2px); /* Add blur to simulate a shadow effect */
+}
+
 
 .description {
   font-size: 25px;  /* Adjust to your desired size */
   font-weight: normal;
-  color: #6363AB;
+  color: #D0CDEA;
   margin: 0;  /* Remove margin to keep spacing consistent */
 }
 /* Add gap below STEAM */
@@ -162,7 +190,7 @@
   font-size: 90px;
   z-index: 1;
   color: #ABA0CE;
-  filter: drop-shadow(0 0 10px white); /* Apply a white glow effect using filter */
+  filter: drop-shadow(0 0 5px white); /* Apply a white glow effect using filter */
 }
 
 .left-plus {
@@ -171,13 +199,13 @@
   color: #9D90C5;
   font-size: 50px;
   stroke-width: 1px;
-  filter: drop-shadow(0 0 20px white); /* Apply a white glow effect */
+  filter: drop-shadow(0 0 5px white); /* Apply a white glow effect */
   transform: rotate(20deg);
 }
 
 .hanging-line-left-gear {
   position: absolute;
-  top: -10px;
+  top: -50px;
   left: 100px;
   font-size: 60px;
   opacity: 0.5;
@@ -191,7 +219,7 @@
   font-size: 60px;
   z-index: 1;
   color: #ABA0CE;
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 5px white);
 }
 
 .hanging-line-flask {
@@ -210,7 +238,7 @@
   font-size: 60px;
   color: #ABA0CE;
   transform: rotate(-20deg);
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 5px white);
 }
 
 /* right side of hero */
@@ -230,7 +258,7 @@
   right: -235px;
   font-size: 110px;
   z-index: 1;
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 5px white);
   color: #A795D6; 
 }
 
@@ -241,7 +269,7 @@
   font-size: 90px;
   color: #A795D6;
   transform: rotate(20deg);
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 5px white);
 }
 
 .right-plus {
@@ -251,7 +279,7 @@
   color: #8175BB;
   font-size: 30px;
   stroke-width: 1px;
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 5px white);
   transform: rotate(20deg);
 }
 
