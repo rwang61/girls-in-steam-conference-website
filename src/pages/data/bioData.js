@@ -12,12 +12,12 @@ import jelenna from './../images/placeholder.png';
 import vanessa from './../images/placeholder.png';
 import carys from './../images/placeholder.png';
 import christabel from './../images/placeholder.png';
-import livia from './../images/placeholder.png';
+import maggie from './../images/placeholder.png';
 
 // pronouns
 const PRONOUN_STRINGS = {
   SHEHER: 'she/her/hers',
-  OTHER: 'other'  
+  OTHER: 'other'
 };
 
 const LOCATION_STRINGS = {
@@ -197,18 +197,6 @@ export const bioData = [
       'It brings energy and excitement to the world around us. Without it, life would be dull and uninspired, a spark would be missing.'
   },
   {
-    name: 'Livia',
-    src: livia,
-    role: 'Web Designer',
-    email: 'ubc.vpt@girlsinsteam.org',
-    pronouns: PRONOUN_STRINGS.SHEHER,
-    location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '💻🍓🎨🧋🎶',
-    desc: 'Livia is a 2nd year UBC student studying Cognitive Systems – Computational Intelligence and Design. Stemming from her enjoyment of making art, interest in cognition, and her newly found interest in programming, she plans to pursue UI/UX design and web development in the future. She hopes to inspire others to work towards a goal that their heart desires without doubting their abilities. Outside of school, Livia is a math tutor and enjoys watching k-dramas, eating, and playing the piano. ',
-    quote:
-      'I value STEAM because all the different aspects of it work together to make up our holistic experiences in daily life. All aspects play an important role in how we may feel, and how we can use and experience the world around us. Through Girls in STEAM, I hope to help other girls explore the different facets of STEAM and have confidence in pursuing their interests in it. '
-  },
-  {
     name: 'Maggie',
     src: maggie,
     role: 'Experience Design Coordinator',
@@ -219,41 +207,5 @@ export const bioData = [
     desc: 'Maggie is a first year student majoring in Science and comes from Calgary, Alberta. She is interested in the field of technology and  hopes to go into something computer science related. ',
     quote:
       'STEAM is important to me as it promotes a passion for understanding the world we live in. Being in STEAM means creating a supportive community focused on innovation and continuous knowledge to improve what is around us, which is something I really value. I hope that through investing in STEAM education, more people can access opportunities to think creatively and critically, overcoming challenges to positively make a difference. '
-  },
-  {
-    name: 'Hemanya',
-    src: hemanya,
-    role: 'VP Finance',
-    email: 'ubc.vpf@girlsinsteam.org',
-    pronouns: PRONOUN_STRINGS.SHEHER,
-    location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '😁🤟🏽🤠🤍😎',
-    desc: 'Hemanya is currently in her second year studying biomedical engineering. She is passionate about encouraging STEAM education among girls within the engineering community! In her free time she enjoys cooking, hiking, and spending time with friends.  ',
-    quote:
-      'STEAM is so important in our daily lives, as it is the bulding blocks for almost everything we interact with daily, from our laptops to our homes. STEAM education is important to me because I believe everyone deserves the opportunity to do something they love and contribute to the advancement of society!  '
-  },
-  {
-    name: 'Sukhman',
-    src: sukhman,
-    role: 'Co-VP Communications',
-    email: 'ubc.vpc@girlsinsteam.org',
-    pronouns: PRONOUN_STRINGS.SHEHER,
-    location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '☺️🐿️🤠🧪💗',
-    desc: 'Sukhman is currently in her second year of university majoring in biology. She is a hardworking individual who strives to be her best. Some of her hobbies include reading, taking long walks and spending time with her loved ones.  ',
-    quote:
-      'As someone who is pursuing her studies and career in a field in STEAM, I believe STEAM is an important part of life that allows the world to understand how everything works. STEAM is very dear to me since it is something I have grown around and learned to appreciate throughout my experience with it. '
-  },
-  {
-    name: 'Rhiannon',
-    src: rhiannon,
-    role: 'Co-VP Communications',
-    email: 'ubc.vpt@girlsinsteam.org',
-    pronouns: PRONOUN_STRINGS.SHEHER,
-    location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '🎧🎮🍟🛹🧏‍♀️',
-    desc: 'Rhiannon is a 1st year student at UBC. She loves watching videos and playing video games with her friends. She is scared of unemployment. ',
-    quote:
-      'STEAM is important to me because it shows me the infinite possibilities in life, and guides me to see all aspects of beauty!  '
   }
 ];
