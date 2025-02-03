@@ -4,60 +4,44 @@ html {
 
 #App {
   text-align: center;
-  background-color: #D0CDEA;
+  background-color: #6363AB;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
   justify-content: center;
   font-size: calc(10px + 3vmin);
   font-family: sans-serif;
   color: white;
 }
 
-/* Centralized App Component */
 .App-Component {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1024px; /* Maximum width for the main content */
-  width: 90%; /* Ensure content is responsive, takes 90% of available space */
-  padding: 0 10px; /* Adds padding inside the container */
+  max-width: 1024px;
+  width: 100%;
 }
 
-/* Hero Section */
 .Hero-Background {
-  background-color: #D0CDEA;
-  min-height: 300px;
-  margin-top: 20px; /* Reduced gap between Hero and About Us */
-  width: 100%; /* Ensure the Hero section stretches full width */
+  background-image: linear-gradient(#6363AB, #9F9FD6);
+  min-height: 500px;
+  margin-top: 70px;
 }
 
-/* About Us Section */
 .About-Us-Background {
-  background-color: #D0CDEA;
-  min-height: 180px; /* Slightly reduced height for About Us */
-  padding-top: 20px;
-  width: 100%; /* Ensures the About Us section takes up full width */
-  max-width: 1024px; /* Optional: You can restrict the width if needed */
-  margin-left: auto;
-  margin-right: auto;
+  background-image: linear-gradient(#9F9FD6, #6363AB, #9F9FD6);
+  min-height: 200px;
 }
 
 .Agenda-Background {
-  background-color: #D0CDEA;
+  background-image: #6363AB;
   min-height: 200px;
-  width: 100%;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .Sponsor-FAQ-Team-Background {
-  background-color: #D0CDEA;
-  background-size: 100vw !important; /* Ensure background covers full viewport */
-  width: 100%;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: linear-gradient(#6363AB, #5A4067);
+  background-size: 100vw !important;
 }
 
 /* Responsive Adjustments */

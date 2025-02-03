@@ -12,7 +12,7 @@ export default function Agenda() {
     <div id="Agenda" className={`agenda-background ${selected ? 'expanded' : 'collapsed'}`}>
       <div>
         <div className="agenda-header">
-          <h2>SCHEDULE</h2>
+          <h2>AGENDA</h2>
           <ToggleButton
             value="check"
             selected={selected}
@@ -29,11 +29,11 @@ export default function Agenda() {
 
         {selected ? (
           <div className="schedule-content">
-            <ComplicatedTimeline />
+            <SimpleTimeline />
           </div>
         ) : (
           <div className="schedule-content">
-            <SimpleTimeline />
+            <ComplicatedTimeline />
           </div>
         )}
       </div>

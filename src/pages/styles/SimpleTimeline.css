@@ -16,7 +16,7 @@ html {
 }
 
 .timeline-section {
-  background-color: #D0CDEA;
+  background-color: #6363AB ;
   min-height: 100vh;
   margin-left: -400px;
   margin-top: 0;
@@ -28,7 +28,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  background-color: #D0CDEA;
+  background-image: #6363AB;
 }
 
 .timeline-items::before {
@@ -36,7 +36,7 @@ html {
   position: absolute;
   width: 2px;
   height: 100%;
-  background-color: #6363AB;
+  background-color: white;
   left: 50%;
   transform: translateX(-50%); /* Ensure the line stays centered */
 }
@@ -64,7 +64,7 @@ html {
 .timeline-dot {
   height: 16px;
   width: 16px;
-  background-color: #6363AB;
+  background-color: white;
   position: absolute;
   left: 50%;
   border-radius: 50%;
@@ -74,7 +74,7 @@ html {
 
 .timeline-time {
   font-size: 18px;
-  color: #6363AB;
+  color: white;
   margin: 6px 0 15px;
   margin-left: -210px;
 }
@@ -97,14 +97,14 @@ html {
 
 .timeline-content h3 {
   font-size: 20px;
-  color: #6363AB;
+  color: white;
   margin: 0 0 10px;
   text-transform: capitalize;
   font-weight: 500;
 }
 
 .timeline-content h4 {
-  color: #6363AB;
+  color: white;
   font-size: 16px;
   font-weight: bold;
   line-height: 22px;
@@ -113,7 +113,7 @@ html {
 }
 
 .timeline-content p {
-  color: #6363AB;
+  color: white;
   font-size: 16px;
   line-height: 22px;
   white-space: pre-wrap;
@@ -137,14 +137,14 @@ html {
 }
 
 .timeline-description {
-  color: #6363AB; /* same color as the timeline content */
+  color: white; /* same color as the timeline content */
   font-size: 16px;
   line-height: 22px;
   white-space: pre-wrap;
 }
 
 .timeline-bullet-point {
-  color: #6363AB; /* same color as the timeline content */
+  color: white; /* same color as the timeline content */
   font-size: 16px;
   line-height: 22px;
   list-style-type: disc;

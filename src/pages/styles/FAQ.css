@@ -8,8 +8,36 @@
 #FAQ {
   padding-top: 5%;
   padding-bottom: 1%;
+  color: white;
 }
 
 .accordion {
   padding-bottom: 20px;
+  color: white;
+}
+
+
+/* Style adjustments for mobile devices */
+@media (max-width: 600px) {
+  .accordion {
+    width: 100%;
+    padding: 0;
+  }
+
+  .MuiAccordionSummary-root {
+    padding: 0;
+  }
+
+  .MuiTypography-root {
+    font-size: 1.1rem; /* Adjust font size for mobile */
+  }
+
+  .MuiAccordionDetails-root {
+    padding: 10px 16px;
+  }
+
+  /* Adjust Divider to avoid overflow */
+  .MuiDivider-root {
+    width: 100%;
+  }
 }

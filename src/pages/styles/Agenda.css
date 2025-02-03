@@ -15,7 +15,7 @@
   display: flex;                /* Use flexbox for layout */
   justify-content: center;      /* Center horizontally */
   align-items: center;          /* Center vertically */
-  color: #5A4067;
+  color: #E8C3D1;
   width: 100%;                  /* Ensure the container takes full width */
   text-align: center;           /* Center the text horizontally */
 }  
@@ -24,7 +24,7 @@
   margin-top: 10px;
   padding: 8px;
   transition: max-height 0.3s ease-in-out;
-  background-color: #D0CDEA;
+  background-color: #6363AB ;
   position: relative;
   z-index: 2; /* Ensure content is above the icon */
 }
@@ -34,7 +34,7 @@
   font-size: 3rem;
   padding: 8px 16px;
   background-color: transparent; /* Ensure background is transparent */
-  color: #5A4067; /* Arrow is white in both states */
+  color: #E8C3D1; /* Arrow is white in both states */
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth expand effect */
   box-shadow: none; /* Remove any box shadow */
 }
@@ -60,7 +60,7 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: #5A4067; /* Arrow is white in both states */
+  color: #E8C3D1; /* Arrow is white in both states */
   transition: transform 0.2s ease-in-out; /* Smooth expand effect */
 }
 

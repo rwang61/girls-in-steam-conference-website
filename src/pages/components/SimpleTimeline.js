@@ -118,12 +118,24 @@ const SimpleTimeline = () => {
         style={{
           position: 'absolute',
           top: '5%',
-          right: '-10%',
+          right: '-5%',
           fontSize: '120px',
           zIndex: 1,
           color: '#ABA0CE',
           filter: 'drop-shadow(0 0 10px white)', // Apply a white glow effect using filter,
           opacity: '0.8'
+        }}
+      />
+      <FaGear
+        style={{
+          position: 'absolute',
+          top: '-5%',
+          right: '-30%',
+          fontSize: '550px',
+          zIndex: 1,
+          color: '#ABA0CE',
+          filter: 'drop-shadow(0 0 5px white)', // Apply a white glow effect using filter,
+          opacity: '0.2'
         }}
       />
       <MdScience

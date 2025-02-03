@@ -17,7 +17,7 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: '#6363AB', // Corrected: added quotes around color value
+        backgroundColor: '#5A4067', // Updated background color
         p: 6 // padding (p) is shorthand for padding in all directions
       }}>
       <Container maxWidth="lg">
@@ -26,9 +26,12 @@ export default function Footer() {
             <Typography variant="h6" fontWeight={700}>
               Contact Us
             </Typography>
-            <Typography variant="body2" style={{ maxWidth: '400px' }}>
+            <Typography variant="body2" style={{ maxWidth: '400px', color: 'white' }}>
               💌 Email us at&nbsp;
-              <Link href="mailto:ubc.conference@girlsinsteam.org">
+              <Link
+                href="mailto:ubc.conference@girlsinsteam.org"
+                style={{ color: 'white' }} // Ensures the email link is white
+              >
                 ubc.conference@girlsinsteam.org
               </Link>
               &nbsp;if you have any questions
