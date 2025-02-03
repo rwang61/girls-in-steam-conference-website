@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.b72ac138.css",
-    "main.js": "/static/js/main.90319704.js",
-    "static/media/mascot.png": "/static/media/mascot.0092d61b81c8787b175e.png",
-    "static/media/robot-mascot.png": "/static/media/robot-mascot.055e44283a176f2bf758.png",
-    "static/media/JosefinSans-VariableFont_wght.ttf": "/static/media/JosefinSans-VariableFont_wght.d7d14147b960fccdc60f.ttf",
-    "static/media/Rastano.ttf": "/static/media/Rastano.8f11c8416cc542cc5d51.ttf",
-    "static/media/steambbt.png": "/static/media/steambbt.fc992c6e447bc4ca5e49.png",
-    "static/media/SS-Logo-Vector_White-230131.png": "/static/media/SS-Logo-Vector_White-230131.c641dbb9ff8fc011e46e.png",
-    "static/media/SAC_FINAL-wordmark-colour.png": "/static/media/SAC_FINAL-wordmark-colour.4ecd7951610d4290bd14.png",
-    "static/media/catpic.jpg": "/static/media/catpic.a08393fa3cc0a916eabc.jpg",
-    "static/media/booth.jpg": "/static/media/booth.9e2b679919b3ef500926.jpg",
-    "static/media/McElhanney - Logo 08-21-2023.png": "/static/media/McElhanney - Logo 08-21-2023.bd23220e694c3ca2fc1b.png",
-    "static/media/Yoggu_Black-01 (1).png": "/static/media/Yoggu_Black-01 (1).e6a8de323d1de0accac5.png",
-    "static/media/DangGoodBath-removebg-preview.png": "/static/media/DangGoodBath-removebg-preview.2c4cf6348ff3a7d0bf91.png",
-    "index.html": "/index.html",
-    "static/media/instagram-icon.svg": "/static/media/instagram-icon.a5709c4f039bad198827061ab952ebd7.svg",
-    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.57ca537470a1b2077e965bf884c35a2b.svg",
-    "static/media/youtube-icon.svg": "/static/media/youtube-icon.47804aeee78cdeb1c486c3fbe5df1715.svg",
-    "static/media/facebook-icon.svg": "/static/media/facebook-icon.96857caa195d062410b52e7e6b5c4349.svg",
-    "main.b72ac138.css.map": "/static/css/main.b72ac138.css.map",
-    "main.90319704.js.map": "/static/js/main.90319704.js.map"
+    "main.css": "/girls-in-steam-conference-website/static/css/main.f2ee61a6.css",
+    "main.js": "/girls-in-steam-conference-website/static/js/main.d2c669d3.js",
+    "static/media/mascot.png": "/girls-in-steam-conference-website/static/media/mascot.0092d61b81c8787b175e.png",
+    "static/media/robot-mascot.png": "/girls-in-steam-conference-website/static/media/robot-mascot.055e44283a176f2bf758.png",
+    "static/media/JosefinSans-VariableFont_wght.ttf": "/girls-in-steam-conference-website/static/media/JosefinSans-VariableFont_wght.d7d14147b960fccdc60f.ttf",
+    "static/media/Rastano.ttf": "/girls-in-steam-conference-website/static/media/Rastano.8f11c8416cc542cc5d51.ttf",
+    "static/media/steambbt.png": "/girls-in-steam-conference-website/static/media/steambbt.fc992c6e447bc4ca5e49.png",
+    "static/media/SS-Logo-Vector_White-230131.png": "/girls-in-steam-conference-website/static/media/SS-Logo-Vector_White-230131.c641dbb9ff8fc011e46e.png",
+    "static/media/SAC_FINAL-wordmark-colour.png": "/girls-in-steam-conference-website/static/media/SAC_FINAL-wordmark-colour.4ecd7951610d4290bd14.png",
+    "static/media/catpic.jpg": "/girls-in-steam-conference-website/static/media/catpic.a08393fa3cc0a916eabc.jpg",
+    "static/media/booth.jpg": "/girls-in-steam-conference-website/static/media/booth.9e2b679919b3ef500926.jpg",
+    "static/media/McElhanney - Logo 08-21-2023.png": "/girls-in-steam-conference-website/static/media/McElhanney - Logo 08-21-2023.bd23220e694c3ca2fc1b.png",
+    "static/media/Yoggu_Black-01 (1).png": "/girls-in-steam-conference-website/static/media/Yoggu_Black-01 (1).e6a8de323d1de0accac5.png",
+    "static/media/DangGoodBath-removebg-preview.png": "/girls-in-steam-conference-website/static/media/DangGoodBath-removebg-preview.2c4cf6348ff3a7d0bf91.png",
+    "index.html": "/girls-in-steam-conference-website/index.html",
+    "static/media/instagram-icon.svg": "/girls-in-steam-conference-website/static/media/instagram-icon.a5709c4f039bad198827061ab952ebd7.svg",
+    "static/media/linkedin-icon.svg": "/girls-in-steam-conference-website/static/media/linkedin-icon.57ca537470a1b2077e965bf884c35a2b.svg",
+    "static/media/youtube-icon.svg": "/girls-in-steam-conference-website/static/media/youtube-icon.47804aeee78cdeb1c486c3fbe5df1715.svg",
+    "static/media/facebook-icon.svg": "/girls-in-steam-conference-website/static/media/facebook-icon.96857caa195d062410b52e7e6b5c4349.svg",
+    "main.f2ee61a6.css.map": "/girls-in-steam-conference-website/static/css/main.f2ee61a6.css.map",
+    "main.d2c669d3.js.map": "/girls-in-steam-conference-website/static/js/main.d2c669d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b72ac138.css",
-    "static/js/main.90319704.js"
+    "static/css/main.f2ee61a6.css",
+    "static/js/main.d2c669d3.js"
   ]
 }
