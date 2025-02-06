@@ -1,18 +1,21 @@
-import allison from './../images/placeholder.png';
-import rachel from './../images/placeholder.png';
-import arnima from './../images/placeholder.png';
-import drishti_a from './../images/placeholder.png';
-import manpreet from './../images/placeholder.png';
-import sameera from './../images/placeholder.png';
-import drishti_t from './../images/placeholder.png';
-import nysa from './../images/placeholder.png';
-import bhavneet from './../images/placeholder.png';
-import dhiya from './../images/placeholder.png';
-import jelenna from './../images/placeholder.png';
-import vanessa from './../images/placeholder.png';
-import carys from './../images/placeholder.png';
-import christabel from './../images/placeholder.png';
-import maggie from './../images/placeholder.png';
+import rachelng from './../images/rachelng.jpeg';
+import arnima from './../images/arnima.jpg';
+import drishtitanwani from './../images/drishtitanwani.jpeg';
+import carmen from './../images/carmen.jpeg';
+import maggie from './../images/maggie.jpeg';
+import manpreet from './../images/manpreet.jpeg';
+import sameera from './../images/sameera.jpg';
+import nancy from './../images/nancy.jpg';
+import emma from './../images/emma.jpg';
+import jaskiran from './../images/jaskiran.png';
+import christabel from './../images/christabel.jpg';
+import nika from './../images/nika.png';
+import allisonduong from './../images/allisonduong.jpeg';
+import bhavneet from './../images/bhavneet.jpg';
+import dhiya from './../images/dhiya.jpeg';
+import nysa from './../images/nysa.png';
+import vanessa from './../images/vanessa.jpg';
+import jelenna from './../images/jelenna.jpeg';
 
 // pronouns
 const PRONOUN_STRINGS = {
@@ -30,7 +33,7 @@ const LOCATION_STRINGS = {
 export const bioData = [
   {
     name: 'Allison',
-    src: allison,
+    src: allisonduong,
     role: 'Co-Marketing Director',
     email: 'ubc.marketing@girlsinsteam.org',
     pronouns: PRONOUN_STRINGS.SHEHER,
@@ -42,7 +45,7 @@ export const bioData = [
   },
   {
     name: 'Rachel',
-    src: rachel,
+    src: rachelng,
     role: 'Conference Co-Chair',
     email: 'ubc.conference@girlsinsteam.org',
     pronouns: PRONOUN_STRINGS.SHEHER,
@@ -65,8 +68,8 @@ export const bioData = [
       "As a woman of color who isn't often represented in STEAM fields, I find it incredibly important to both pursue and share this knowledge with others. Being in these spaces allows me to challenge stereotypes and show that there is room for diverse voices in science, technology, engineering, arts, and mathematics. The opportunity to bring this education to others—especially those who may feel underrepresented—excites me because it opens doors and empowers individuals who can thrive in these fields. I’m proud to be part of that change."
   },
   {
-    name: 'Drishti A.',
-    src: drishti_a,
+    name: 'Drishti',
+    src: drishtitanwani,
     role: 'Experience Design Coordinator',
     email: 'ubc.exd@girlsinsteam.org',
     pronouns: PRONOUN_STRINGS.SHEHER,
@@ -75,6 +78,17 @@ export const bioData = [
     desc: 'Drishti is a dedicated second-year BSc student at UBC on her path to studying data science, behavioural science, and system design. With a strong passion for neuroscience and artificial intelligence, she aspires to contribute to the fields of neurotechnology and health tech. Drishti hopes to increase the prevalence of interdisciplinary approaches in addressing complex challenges, particularly at the intersection of technology and human cognition. Through her involvement with Girls in STEAM, she is eager to create accessible opportunities for mentorship and skill development, encouraging girls and gender-diverse individuals to explore and excel in STEAM fields while promoting inclusivity and creativity. In her free time, she enjoys reading fiction, watching Netflix and hanging out with friends!',
     quote:
       'STEAM is important to me because it unites diverse perspectives to solve real-world problems creatively. As someone passionate about the interdisciplinary fields, I believe it encourages collaboration across boundaries. I hope to contribute to creating opportunities for individuals, especially from underrepresented groups, to explore STEAM, unlocking their potential and driving transformative solutions for the future.'
+  },
+  {
+    name: 'Carmen',
+    src: carmen,
+    role: 'Experience Design Co-Director',
+    email: 'ubc.exd@girlsinsteam.org',
+    pronouns: PRONOUN_STRINGS.SHEHER,
+    location: LOCATION_STRINGS.VANCOUVER,
+    emojis: '🫶🏻😼💛🌻🥹',
+    desc: 'Carmen is an outgoing and spirited person. She enjoys collecting enamel pins and Miffy. ',
+    quote: 'It’s important to get the representation you want to see!'
   },
   {
     name: 'Manpreet',
@@ -99,18 +113,6 @@ export const bioData = [
     desc: 'Sameera is from Vancouver but currently in Ontario for her undergraduate degree, she is in her third year and is in Biology. She is a determined, responsible, organized, adventurous girl. She loves to travel and loves trying new things. One of the most adventurous things she has done is gone skydiving! She enjoys going on walks with her dog, shopping, listening to music, and cooking.',
     quote:
       'STEAM is important to me because of its diversity, having women in STEAM fields brings diverse perspectives and helps close the gender gap. These fields have traditionally been male-dominated, so encouraging more women to pursue STEAM helps address gender disparities and promotes equality. Girls in STEAM is also important to me because we are role models for future generations, we inspire young girls to explore these fields and show that women can be in these fields too.'
-  },
-  {
-    name: 'Drishti T.',
-    src: drishti_t,
-    role: 'Experience Design Director',
-    email: 'ubc.exd@girlsinsteam.org',
-    pronouns: PRONOUN_STRINGS.SHEHER,
-    location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '🤍🪩💌🎀🍰',
-    desc: 'Drishti is a fourth-year Psychology and Economics student with a love for good food and discovering new restaurants and cafés. Growing up in Seoul, South Korea, she has a soft spot for Korean food and enjoys reconnecting with her roots through her favorite dishes. She’s also a fan of strawberry matcha and finds running a great way to unwind. Drishti values new experiences and approaches everything with curiosity and enthusiasm.',
-    quote:
-      'STEAM is important to me because it promotes equality in education and encourages individuals to pursue their passions rather than conforming to societal norms. It empowers women to apply their skills in meaningful ways, driving innovation and creating a positive impact on the world. I believe that fostering diverse perspectives in STEAM fields is essential for solving complex problems and unlocking potential. Not using this talent would be a missed opportunity to better our world.'
   },
   {
     name: 'Nysa',
@@ -172,18 +174,7 @@ export const bioData = [
     quote:
       'It helps people develop a well-rounded approach to problem-solving, encouraging them to think outside the box and explore different fields. STEAM is a platform that does not limit areas of expertise; it fosters new opportunities while promoting diverse perspectives and knowledge. By recognizing and embracing strengths from various disciplines, STEAM shows that people do not have to choose between being analytical or creative—they can be both!'
   },
-  {
-    name: 'Carys',
-    src: carys,
-    role: 'Sponsorship Co-Director',
-    email: 'ubc.sponsorship@girlsinsteam.org',
-    pronouns: PRONOUN_STRINGS.SHEHER,
-    location: LOCATION_STRINGS.VANCOUVER,
-    emojis: '🐈‍⬛ 🎧🪷💭🧋',
-    desc: 'Whether she’s lost in the pages of a novel, the energy at a concert, or endlessly scrolling on Pinterest, Carys finds inspiration in creativity and meaningful connection. As a first year student studying Business and Computer Science (BUCS), her academic passion lies in computational molecular biology and learning about the intersection of medical advancement and technology. Passionate, curious, and always up for a challenge, Carys hopes to help create a future that blends logic with creativity and ambition with intention.',
-    quote:
-      'STEAM is important to me because it embodies the spirit of innovation and discovery, allowing me to see the world in a different and more critical way. By helping to culture the spirit of both creativity and innovation that studies in STEAM encourages, we can begin to approach problems from multiple perspectives, blending analytical reasoning with imaginative solutions. Through studying disciplines in STEAM, we can learn to approach challenges with a mindset that values not just accuracy and precision, but also collaboration and imagination.'
-  },
+
   {
     name: 'Christabel',
     src: christabel,
@@ -207,5 +198,52 @@ export const bioData = [
     desc: 'Maggie is a first year student majoring in Science and comes from Calgary, Alberta. She is interested in the field of technology and  hopes to go into something computer science related. ',
     quote:
       'STEAM is important to me as it promotes a passion for understanding the world we live in. Being in STEAM means creating a supportive community focused on innovation and continuous knowledge to improve what is around us, which is something I really value. I hope that through investing in STEAM education, more people can access opportunities to think creatively and critically, overcoming challenges to positively make a difference. '
+  },
+  {
+    name: 'Nancy',
+    src: nancy,
+    role: 'Experience Design Coordinator',
+    email: 'ubc.exd@girlsinsteam.org',
+    pronouns: PRONOUN_STRINGS.SHEHER,
+    location: LOCATION_STRINGS.VANCOUVER,
+    emojis: '🫥🛌🏻🍨🎬🎧',
+    desc: 'TBA',
+    quote:
+      'Girls In Steam is a  organization of many fundamental jobs/areas to build a community with a good quality of life. I feel proud to be able to learn and continue studies/creations that have been passed down for centuries of time.'
+  },
+  {
+    name: 'Emma',
+    src: emma,
+    role: 'Experience Design Coordinator',
+    email: 'ubc.exd@girlsinsteam.org',
+    pronouns: PRONOUN_STRINGS.SHEHER,
+    location: LOCATION_STRINGS.VANCOUVER,
+    emojis: '🎀📚🍄🌌🎏',
+    desc: 'Emma is in their first year and is pursuing an honours degree in physics at UBC. She is particularly interested in photonics and optics and hopes to be a researcher in these fields someday. In her free time, Emma likes to read, make pasta, travelling and journal.',
+    quote:
+      'STEAM is important to me because I think there is nothing more interesting than answering questions about our natural world using creativity, reasoning and testing. Whether it’s through technology, hands-on experiments, or artistic expression, STEAM encourages curiosity and continuous learning. STEAM appeals to me because I love to solve problems and think of new ways of approaching them. I find nothing so satisfying as coming to a solution after hours of learning, trial and error and discussion with others.'
+  },
+  {
+    name: 'Nika',
+    src: nika,
+    role: 'Marketing Conference Co-Director',
+    email: 'ubc.marketing@girlsinsteam.org',
+    pronouns: PRONOUN_STRINGS.SHEHER,
+    location: LOCATION_STRINGS.VANCOUVER,
+    emojis: '🫥🛌🏻🍨🎬🎧',
+    desc: 'Nika is a fourth-year psychology student at the University of British Columbia with a strong interest in pursuing UX design post-graduation. Having had a passion for art and creativity since childhood, she enjoys using her artistic abilities in order to support organizations through web and graphic design work. Nika has previously done marketing and graphic design work for several clubs, organizations, and app startups, including Girl Up, SDC, and the SDG Student Hub at UBC. She also works as a teacher at an Oxford Learning Centre where she supports students ranging from elementary to high school in furthering their education beyond the classroom.',
+    quote:
+      'I believe the inclusion of arts & design in STEAM is so important, especially in a society where it has become so devalued despite being such a crucial aspect of technology and user experience. Girls in STEAM’s mission to support access to STEAM education for women, gender-diverse people, and the LGBTQ+ community is one that aligns with many of my passions, and I’m glad I can contribute my skills towards supporting this amazing team!'
+  },
+  {
+    name: 'Jaskiran',
+    src: jaskiran,
+    role: 'Experience Design Coordinator',
+    email: 'ubc.exd@girlsinsteam.org',
+    pronouns: PRONOUN_STRINGS.SHEHER,
+    location: LOCATION_STRINGS.VANCOUVER,
+    emojis: '🫥🛌🏻🍨🎬🎧',
+    desc: 'TBA',
+    quote: 'TBA'
   }
 ];
