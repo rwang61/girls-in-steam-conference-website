@@ -22,7 +22,7 @@ const PRONOUN_STRINGS = {
   SHEHER: 'she/her/hers',
   OTHER: 'other'
 };
-
+// location
 const LOCATION_STRINGS = {
   VANCOUVER: 'Vancouver, Canada',
   SURREY: 'Surrey, Canada',
